@@ -1,0 +1,228 @@
+*
+{
+    font-family: Poppins, sans-serif;
+}
+
+body
+{
+    background-color: rgba(55, 88, 255, 0.5);
+    overflow: hidden !important;
+}
+.whole-page-con-2
+{
+    background-color: white;
+    width: 95vw;
+    height: 92vh;
+    border-radius: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.left-image
+{
+    background-color: rgba(55, 88, 255, 0.2);
+    border-radius: 60px 0 0 60px;
+}
+.left-image img
+{
+    width: 90vh;
+    height: 85vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.survey-form-content .survey-form-bottom-content
+{
+    width: 100%;
+}
+.select-button
+{
+    width: 28vw;
+    height: 5vw;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: gray;
+    font-size: 1.2vw;
+    margin-bottom: 1.5vh;
+    margin-right: 1.5vh;
+}
+.survey-form-2-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    margin-left: 3vw;
+}
+.survey-form-2-content .col-12 , .survey-form-2-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col-12 h4
+{
+    font-size: 1.8vw;
+    margin-bottom: 4vh;
+    margin-top: -3vh;
+    margin-left: -3vw;
+}
+.select-button-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+.survey-form-bottom-absolute
+{
+    position: absolute;
+    bottom: 2.5vh;
+}
+.survey-form-bottom
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2vw;
+}
+.form-group p
+{
+    color: #AFAFAF;
+}
+.survey-form-bottom .col-3 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-3 a
+{
+    text-decoration: none;
+    color: gray;
+}
+.form-control-range
+{
+    height: 1vw;
+}
+.survey-form-bottom .col-6 p
+{
+    text-align: center;
+}
+.survey-form-bottom p
+{
+    margin: 0 0 0 0 !important;
+    font-size: 1vw;
+}
+.previous-arrow
+{
+    margin-top: 1vw;
+}
+.next-button:hover
+{
+    color: white;
+}
+.next-button
+{
+    background-color: #3758FF;
+    color: white;
+    border-radius: 10px 10px 30px 10px;
+    width: 8vw;
+    height: 3vw;
+    font-size: 1vw;
+    margin-left: 3vw;
+}
+.survey-form-bottom a
+{
+    text-decoration: none;
+    color: #464646;
+}
+.whole-page-con-2.row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+.col-4 {
+    -ms-flex: 0 0 28.333333%;
+    flex: 0 0 28.333333%;
+    max-width: 28.333333%;
+  }
+  .col-5 {
+    -ms-flex: 0 0 38%;
+    flex: 0 0 38%;
+    max-width: 38%;
+  }
+  .blue-click
+  {
+      border: 2px solid #3758FF;
+      color: #3758FF;
+  }
+  .custom-range
+{
+    width: 100%;
+    height: 0.8vw;
+    background-color: lightgray;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 0.5vw;
+}
+.custom-range-color-bar-4
+{
+    width: 70%;
+    height: 0.8vw;
+    background-color: #3758FF;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+  }
+  @media screen and (max-width: 425px) 
+  {
+      .row.whole-page-con-2
+      {
+          overflow: hidden;
+      }
+    .left-image
+    {
+        display: none !important;
+    }
+    .whole-page-con-2
+    {
+        border-radius: 20px !important;
+    }
+    .survey-form-2-content h4 
+    {
+        font-size: 4vw;
+    }
+    .select-button
+{
+    width: 30vw;
+    height:8vw;
+    border: 1px solid #AFAFAF;
+    border-radius: 5px;
+    color: gray;
+    font-size: 2.3vw;
+    margin-bottom: 1.5vh;
+    margin-right: 1.5vh;
+}
+.survey-form-bottom p
+{
+    margin: 0 0 0 0 !important;
+    font-size: 2.5vw;
+}
+.next-button
+{
+    width: 20vw;
+    height: 6vw;
+    font-size: 2vw;
+}
+  } 

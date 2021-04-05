@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mob ERP Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-arabic.css" />
+</head>
+
+<body style="background-color: white">
+    <div class="container-fluid p-0">
+        <div class="row m-0" style="background-color: white">
+            <div class="col-12 p-0 merp-1">
+                <div class="merp-header">
+                    <img src="img/velocity.svg" />
+                    <p>فاونتن بلو لتصليح السيارات ش.ذ</p>
+                </div>
+                <img class="merp-burger" src="img/merp-burger.svg" />
+            </div>
+            <div class="col-12 px-3 merp-2">
+                <div class="merp-head-note">
+                    <h1>اونتن بلو اونتن بلو</h1>
+                    <div>
+                        <div class="popa-pending-tag">اونتن بلو</div>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="popa-filed">
+                    <p>اونتن بلو اونتن</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="popa-filed">
+                    <p>اونتن بلو</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="popa-filed">
+                    <p>اونتن بلو/اونتن بلو</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="popa-filed">
+                    <p>اونتن بلو</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="popa-filed">
+                    <p>اونتن بلو ا</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="popa-filed">
+                    <p>اونتن بلو</p>
+                    <div class="popa-edit-doc">
+                        <input style="width: 70%;" type="text" class="form-control">
+                        <span>
+                            <i style="color: #FF7E7E;" class="fas fa-trash"></i>
+                            <i style="color: var(--mblue);" class="fas fa-plus-circle"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="popa-filed">
+                    <p>اونتن بلو</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="popa-filed">
+                    <p>اونتن بلو اونت</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="popa-filed">
+                    <p>اونتن بلو</p>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-12 p-0 merp-3">
+                <div class="merp-nav-boxes">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="merp-nav-boxes merp-nav-box-active">
+                    اونتن بلو <i class="fas fa-circle"></i>
+                </div>
+                <div class="merp-nav-boxes"><img src="img/mern-search.svg" /></div>
+                <div class="merp-nav-boxes"><img src="img/merp-user.svg" /></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popa-btns-edit">
+        <span><i class="fas fa-times"></i></span>
+        <div style="background-color: #0096D8;">اونتن </div>
+        <div style="background-color: #2AAC67;">اونتن بلو اونتن</div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/javas.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/circularProgressBar.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(".useful-sort-by").click(() => {
+            $(".useful-sort-by-box").css({ display: "flex" });
+        });
+        $(".useful-sort-by-box-back, .sort-by-close").click(() => {
+            $(".useful-sort-by-box").css({ display: "none" });
+        });
+    </script>
+    <script>
+        ".merp-burger".click(() => {
+            ".merp-menu-box".css({ display: "flex" });
+        });
+        ".merp-menu-box".click(() => {
+            ".merp-menu-box".css({ display: "none" });
+        });
+        $(".aj-div-click-1").click(function () {
+            $(".aj-div-collapse-1").slideToggle(500)
+            $(".aj-div-click-1").toggleClass("fa-chevron-down fa-chevron-up");
+        });
+    </script>
+</body>
+
+</html>

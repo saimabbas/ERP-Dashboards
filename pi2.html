@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PI 2</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <style>
+      .next-prev-2 , .next-prev-3 , .next-prev-4 , .next-prev-5 , .anim-2 , .anim-3 , .anim-4 , .anim-5 
+      {
+          display: none;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+      <div class="row nav-top">
+          <div class="col-6 nav-logo-display">
+              <i class="menu-icon fa fa-list"></i>
+              <img class="surf-logo" src="img/surf-logo.svg">
+              <p class="top-logo-name">5D Solutions LLC</p>
+          </div>
+          <div class="col-3 offset-3 nav-icons">
+              <i class="fas fa-home"></i>
+              <i class="fas fa-tasks"></i>
+              <i class="fas fa-bell"></i>
+              <i class="fas fa-bullhorn"></i>
+              <i class="fas fa-envelope"><span class="notification">2</span></i>
+              <i class="fas fa-cloud"></i>
+              <div class="profile-display">
+                  <div class="dropdown">
+                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" id="top-nav-whole">
+                          <img class="profile-picture" src="img/profile-picture-image.jpg" />
+                          <div class="profile-name-dislay">
+                              <p class="profile-name">Appraisal Hub Consulting LLC</p>
+                          </div>
+                          <i class="fas fa-chevron-down ml-4"></i>
+                      </button>
+                      <div class="dropdown-menu " id="top-nav-menu">
+                          <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Change Password</a>
+                          <a class="dropdown-item" href="#"><i class="far fa-user"></i> Profile</a>
+                          <a class="dropdown-item border-bottom-start" href="#"><i class="far fa-edit"></i> SURF Updates</a>
+                          <a class="dropdown-item" href="#"><i class="fas fa-headset"></i> Support</a>
+                          <a class="dropdown-item" href="#"><i class="fas fa-tools"></i> Services</a>
+                          <a class="dropdown-item border-bottom-start" href="#"><i class="fas fa-language"></i> Language</a>
+                          <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> logout</a>
+                      </div>
+                  </div>
+          </div>
+          </div>
+          
+      </div>
+  </div>
+
+    <div class="whole-body">
+
+      <div class="container-fluid swiper-super-display">
+        <div class="row swiper-display">
+          <div class="col-1 swiper-prev-display">
+            <div class="swiper-button-prev-custom">
+              <img src="img/slider-prev.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-10 swiper-slides-display">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide col-1">
+                  <img src="https://dev.5dsurf.com/application/third_party/functions_icon2/grid_dot_report.png" />
+                  <p>Company Profile</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="https://dev.5dsurf.com/application/third_party/functions_icon2/grid_dot_report.png" />
+                  <p>Product Catalog</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="https://dev.5dsurf.com/application/third_party/functions_icon2/grid_dot_report.png" />
+                  <p>Submit Quote</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 377.svg" />
+                  <p>Purchase Order</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 379.svg" />
+                  <p>GRN/Work Confirmations</p>
+                </div>
+              </div>
+            </div>
+            <div class="blue-underline"></div>
+          </div>
+          <div class="col-1 swiper-next-display">
+            <div class="swiper-button-next-custom">
+              <img src="img/slider-next.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row bread-super-display">
+            <div class="col-6 bread-end">
+                <div class="bread-display">
+                    <div class="bread">
+                        <i class="fas fa-chevron-right"></i>
+                        <p><a href="#">Dashboard</a></p>
+                    </div>
+                </div>
+                <div class="bread-display">
+                    <div class="bread">
+                        <i class="fas fa-chevron-right"></i>
+                        <p><a href="#">Request For Quotation</a></p>
+                    </div>
+                </div>
+                <div class="bread-display">
+                    <div class="bread">
+                        <i class="fas fa-chevron-right"></i>
+                        <p class="active-page"><a href="#">New Record</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 offset-2 po-end"><h3 class="po-number">Payable Invoice</h3></div>
+        </div>
+    </div>
+
+    <div class="white-body">
+        
+        <div class="row" style="margin-left: 0;">
+            <div class="col-3 pi2-sidepic" >
+                <!-- <div class="row  pi2-sidepic-display">
+                    <div class="col-9 sidepic-text">
+                        <div class="pi2-stage-1 " style="margin-top: 12vw;" >
+                            <p class="sp-1">RFQ Overview</p>
+                            <p class="sp-2">Review or Submit RFQ</p>
+                        </div>
+                        <div class="pi2-stage-2" style="margin-top: 7.5vw;" >
+                            <p class="sp-1">Basic Instructions</p>
+                            <p class="sp-2">View or add basic info</p>
+                        </div>
+                        <div class="pi2-stage-3" style="margin-top: 7vw;" >
+                            <p class="sp-1">Instructions and Requirements</p>
+                            <p class="sp-2">Add or view requirements</p>
+                        </div>
+                        <div class="pi2-stage-4" style="margin-top: 7vw;" >
+                            <p class="sp-1">Suppliers and Invitations</p>
+                            <p class="sp-2">View invites and suppliers</p>
+                        </div>
+                        <div class="pi2-stage-5" style="margin-top: 7vw;" >
+                            <p class="sp-1">Approval Details</p>
+                            <p class="sp-2">View approvals</p>
+                        </div>
+                    </div>
+                    <div class="col-3 sidepic-pic anim-1"><img src="img/pi-1.svg"></div>
+                    <div class="col-3 sidepic-pic anim-2"><img src="img/pi-2.svg"></div>
+                    <div class="col-3 sidepic-pic anim-3"><img src="img/pi-3.svg"></div>
+                    <div class="col-3 sidepic-pic anim-4"><img src="img/pi-4.svg"></div>
+                    <div class="col-3 sidepic-pic anim-5"><img src="img/pi-5.svg"></div>
+                </div> -->
+                <div class="row" style="display: flex; align-items: center !important;
+                justify-content: center; position: relative;">
+                  <div class="prog-end"  style="margin-right: 3vw;">
+                    <div class="prog-1">
+                      <div class="prog-dot"></div>
+                      <i class="prog-icon fas fa-file-alt"></i>
+                      <div class="prog-text" style="margin-left: 2vw;">
+                        <h6>RFQ Overview</h6>
+                        <p>Review or Submit RFQ</p>
+                      </div>
+                    </div>
+                    <div class="prog-1">
+                      <div class="prog-dot"></div>
+                      <i class="prog-icon fas fa-file-alt"></i>
+                      <div class="prog-text" style="margin-left: 2vw;">
+                        <h6>RFQ Overview</h6>
+                        <p>Review or Submit RFQ</p>
+                      </div>
+                    </div>
+                    <div class="prog-1">
+                      <i class="prog-icon fas fa-file-alt"></i>
+                      <div class="prog-text" style="margin-left: 2vw;">
+                        <h6>RFQ Overview</h6>
+                        <p>Review or Submit RFQ</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+            </div>
+            <div class="col-9">
+
+                <div class="col-12 mt-4">
+                    <p class="searching-criteria">
+                      <i class="fas fa-arrow-circle-down"></i> Searching Criteria
+                    </p>
+                  </div>
+                  <div class="container-fluid" id="sc">
+                    <div class="row">
+                      <div class="col-3 all-any">
+                        <form class="form-inline">
+                          <label>Match</label>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              name="match"
+                              id="all"
+                              class="form-check-input"
+                              checked
+                            />
+                            <label for="all" class="form-check-label">All</label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              name="match"
+                              id="any"
+                              class="form-check-input"
+                            />
+                            <label for="any" class="form-check-label">Any</label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row budget-form-part-1 mt-4">
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label>Purchase Order Number</label>
+                          <input class="form-control form-control-sm" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label>From Purchase Order Date</label>
+                          <input
+                            class="form-control form-control-sm"
+                            type="date"
+                            placeholder="mm/dd/yyyy"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label>To Purchase Order Date</label>
+                          <input
+                            class="form-control form-control-sm"
+                            type="date"
+                            placeholder="mm/dd/yyyy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row budget-form-part-1">
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label>Delivery Date</label>
+                          <input
+                            class="form-control form-control-sm"
+                            type="date"
+                            placeholder="mm/dd/yyyy"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <label>Delivery Date</label>
+                        <select class="form-control form-control-sm" style="font-size: 0.8vw;">
+                            <option>Choose Status</option>
+                            <option>Saudi Arabia</option>
+                            <option>Iraq</option>
+                            <option>Iran</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>China</option>
+                            <option>England</option>
+                            <option>Korea</option>
+                        </select>
+                      </div>
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label>Reference Number</label>
+                          <input class="form-control form-control-sm" type="text" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row budget-form-part-1 budget-form-part-3" style="border-bottom:  0;">
+                      <div class="col-4">
+                        <div class="form-group">
+                          <label>Delivery Date</label>
+                          <input
+                            class="form-control form-control-sm"
+                            type="date"
+                            placeholder="mm/dd/yyyy"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-4 pi2-pop-check">
+                        <div class="form-check">
+                            <input type="checkbox" name="assets" id="l1" class="form-check-input" checked>
+                            <label for="l1" class="form-check-label">All Locations</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="assets" id="l1" class="form-check-input" checked>
+                            <label for="l1" class="form-check-label">Saudi Arabia</label>
+                        </div>
+                      </div>
+                      <div class="col-4"></div>
+                    </div>
+                    
+                  </div>
+                  <div class="container-fluid">
+                    <div class="row jv-part-4" style="border-top: 0;">
+                      <div class="col-8 below-tab-buttons">
+                        <button class="btn">
+                          <i class="fas fa-pencil-alt mr-2"></i> New
+                        </button>
+                        <div class="dropdown">
+                          <button
+                            type="button"
+                            class="btn btn-primary dropdown-toggle"
+                            data-toggle="dropdown"
+                          >
+                            <i class="fas fa-vector-square mr-2"></i> View
+                            <i class="fas fa-chevron-down ml-2"></i>
+                          </button>
+                          <div
+                            class="dropdown-menu "
+                            id="btb-drop"
+                          >
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                          </div>
+                        </div>
+                        <button class="btn">
+                          <i class="fas fa-paint-roller mr-2"></i> Format
+                          <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <button class="btn"><i class="far fa-edit mr-2"></i> Edit</button>
+                        <button class="btn">
+                          <i class="far fa-clone mr-2"></i> Copy
+                        </button>
+                        <button class="btn">
+                          Create <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <button class="btn">Learners</button>
+                      </div>
+                      <div class="col-3 below-tab-buttons-2 mr-3">
+                        <div class="dropdown mr-4">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle"
+                            data-toggle="dropdown"
+                          >
+                            <img src="img/pie-chart.svg" class="mr-2" /> Legend
+                            <i class="fas fa-chevron-down ml-2"></i>
+                          </button>
+                          <div
+                            class="dropdown-menu legend-items"
+                            id="legend"
+                          >
+                            <a class="dropdown-item" href="#"
+                              ><img src="img/Ellipse 116.svg" /> Payment due more than 120
+                              Days</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><img src="img/Ellipse 115.svg" alt="" /> Payment due
+                              between 90 - 120 Days</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><img src="img/Ellipse 114.svg" alt="" /> Payment due
+                              between 60 - 90 Days</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><img src="img/Ellipse 117.svg" alt="" /> Payment due
+                              between 30 - 60 Days</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><img src="img/Ellipse 118.svg" alt="" /> Payment due less
+                              than 30 Days</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><img src="img/Ellipse 138.svg" alt="" /> Payment due less
+                              than 10 Days</a
+                            >
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle"
+                            data-toggle="dropdown"
+                          >
+                            <img src="img/excel.svg" class="mr-2" /> Export
+                            <i class="fas fa-chevron-down ml-2"></i>
+                          </button>
+                          <div
+                            class="dropdown-menu excel-items pi2-excel"
+                            id="excel"
+                          >
+                            <a class="dropdown-item" href="#">In MS Word</a>
+                            <a class="dropdown-item" href="#">In PDF</a>
+                            <a class="dropdown-item" href="#">In MS Excel</a>
+                            <a class="dropdown-item" href="#">In CSV</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="table" style="width: 100%;">
+                    <thead class="table-head-s">
+                      <tr> 
+                        <th>Project Name</th>
+                        <th>Supplier</th>
+                        <th>GL Period</th>
+                        <th>Payable Amount</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                        <th>Progress</th>
+                        <th style="background-color: #F7F8F9; color: #707070;" class="search">Search </th>
+                        <th style="background-color: #F7F8F9; color: #707070; margin-right: 2vw !important;" class="search"> <i class="fas fa-chevron-up" style="margin-left: -1vw;"></i></th>
+                      </tr>
+                      
+                    </thead>
+                    <tbody>
+                      <tr class="table-row-custom"  >
+                        <td class="search-bar search-bar-end" colspan="12">
+                          <input
+                            class="form-control search-bar-end"
+                            type="text"
+                            placeholder=" Search by person, operation or date"
+                          />
+                        </td>
+                      </tr>
+                      <tr  class="table-bordered">
+                        <td> </td>
+                        <td>Takaful Emarat Insurance P.S.C</td>
+                        <td>Sept 20, 2020</td>
+                        <td>1,050.00 AED</td>
+                        <td>Initiated</td>
+                        <td class="action-s">
+                          <p><i class="far fa-edit"></i></p>
+                          <p><i class="fas fa-info-circle"></i></p>
+                        </td>
+                        <td class="progress-s" colspan="2">
+                          <p>34.5%</p>
+                          <div class="progress-bar-table-display">
+                            <div class="progress-bar-progress"></div>
+                          </div>
+                        </td>
+                        <td class="options-s">
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/3-vertical-dots.svg">
+                            </button>
+                            <div class="dropdown-menu" id="table-drop">
+                              <a class="dropdown-item" href="#">Link 1</a>
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                        </td>
+                      </tr>
+                      <tr  class="table-bordered">
+                        <td> </td>
+                        <td>Takaful Emarat Insurance P.S.C</td>
+                        <td>Sept 20, 2020</td>
+                        <td>1,050.00 AED</td>
+                        <td>Initiated</td>
+                        <td class="action-s"><p><i class="far fa-edit"></i></p>
+                          <p><i class="fas fa-info-circle"></i></p></td>
+                        <td class="progress-s" colspan="2">
+                          <p>34.5%</p>
+                          <div class="progress-bar-table-display">
+                            <div class="progress-bar-progress"></div>
+                          </div>
+                        </td>
+                        <td class="options-s"><p><i class="fas fa-ellipsis-v"></i></p></td>
+                      </tr>
+                      <tr  class="table-bordered">
+                        <td> </td>
+                        <td>Takaful Emarat Insurance P.S.C</td>
+                        <td>Sept 20, 2020</td>
+                        <td>1,050.00 AED</td>
+                        <td>Initiated</td>
+                        <td class="action-s"><p><i class="far fa-edit"></i></p>
+                          <p><i class="fas fa-info-circle"></i></p></td>
+                        <td class="progress-s" colspan="2">
+                          <p>34.5%</p>
+                          <div class="progress-bar-table-display">
+                            <div class="progress-bar-progress"></div>
+                          </div>
+                        </td>
+                        <td class="options-s"><p><i class="fas fa-ellipsis-v"></i></p></td>
+                      </tr>
+                      <tr  class="table-bordered">
+                        <td> </td>
+                        <td>Takaful Emarat Insurance P.S.C</td>
+                        <td>Sept 20, 2020</td>
+                        <td>1,050.00 AED</td>
+                        <td>Initiated</td>
+                        <td class="action-s"><p><i class="far fa-edit"></i></p>
+                          <p><i class="fas fa-info-circle"></i></p></td>
+                        <td class="progress-s" colspan="2">
+                          <p>34.5%</p>
+                          <div class="progress-bar-table-display">
+                            <div class="progress-bar-progress"></div>
+                          </div>
+                        </td>
+                        <td class="options-s"><p><i class="fas fa-ellipsis-v"></i></p></td>
+                      </tr>
+                      <tr  class="table-bordered">
+                        <td> </td>
+                        <td>Takaful Emarat Insurance P.S.C</td>
+                        <td>Sept 20, 2020</td>
+                        <td>1,050.00 AED</td>
+                        <td>Initiated</td>
+                        <td class="action-s"><p><i class="far fa-edit"></i></p>
+                          <p><i class="fas fa-info-circle"></i></p></td>
+                        <td class="progress-s" colspan="2">
+                          <p>34.5%</p>
+                          <div class="progress-bar-table-display">
+                            <div class="progress-bar-progress"></div>
+                          </div>
+                        </td>
+                        <td class="options-s"><p><i class="fas fa-ellipsis-v"></i></p></td>
+                      </tr>
+                      <tr  class="table-bordered">
+                        <td> </td>
+                        <td>Takaful Emarat Insurance P.S.C</td>
+                        <td>Sept 20, 2020</td>
+                        <td>1,050.00 AED</td>
+                        <td>Initiated</td>
+                        <td class="action-s"><p><i class="far fa-edit"></i></p>
+                          <p><i class="fas fa-info-circle"></i></p></td>
+                        <td class="progress-s" colspan="2">
+                          <p>34.5%</p>
+                          <div class="progress-bar-table-display">
+                            <div class="progress-bar-progress"></div>
+                          </div>
+                        </td>
+                        <td class="options-s"><p><i class="fas fa-ellipsis-v"></i></p></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <div class="row">
+                    <div class="col-4 offset-8 pi2-end-btn next-prev-1">
+                        <button class="btn pi2-close prev-1">Previous</button>
+                        <button class="btn pi2-ok next-1">Next</button>
+                    </div>
+<!--                     <div class="col-4 offset-8 pi2-end-btn next-prev-2">
+                        <button class="btn pi2-close prev-2">Previous</button>
+                        <button class="btn pi2-ok next-2">Next</button>
+                    </div>
+                    <div class="col-4 offset-8 pi2-end-btn next-prev-3">
+                        <button class="btn pi2-close prev-3">Previous</button>
+                        <button class="btn pi2-ok next-3">Next</button>
+                    </div>
+                    <div class="col-4 offset-8 pi2-end-btn next-prev-4">
+                        <button class="btn pi2-close prev-4">Previous</button>
+                        <button class="btn pi2-ok next-4">Next</button>
+                    </div>
+                    <div class="col-4 offset-8 pi2-end-btn next-prev-5">
+                        <button class="btn pi2-close prev-5">Previous</button>
+                        <button class="btn pi2-ok next-5">Next</button>
+                    </div> -->
+                  </div>
+        </div>
+    </div>
+
+    </div>
+
+      <div class="container-fluid">
+        <div class="row footer">
+          <div class="col-4 offset-4 footer-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div class="col-12">
+            <p>
+              5D Solutions | 5D Solutions Terms of use for SURF ERP Portal | 5D
+              Solutions Privacy Policy
+            </p>
+          </div>
+          <div class="col-12">
+            <p>5D SOLUTIONS © 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/javas.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
+    <script>
+        $(".next-1").click(function(){
+          $(".anim-1").css("display","none");
+          $(".anim-2").css("display","flex");
+          $(".next-prev-1").css("display","none");
+          $(".next-prev-2").css("display","flex");
+        })
+        $(".next-2").click(function(){
+          $(".anim-2").css("display","none");
+          $(".anim-3").css("display","flex");
+          $(".next-prev-2").css("display","none");
+          $(".next-prev-3").css("display","flex");
+        })
+        $(".next-3").click(function(){
+          $(".anim-3").css("display","none");
+          $(".anim-4").css("display","flex");
+          $(".next-prev-3").css("display","none");
+          $(".next-prev-4").css("display","flex");
+        })
+        $(".next-4").click(function(){
+          $(".anim-4").css("display","none");
+          $(".anim-5").css("display","flex");
+          $(".next-prev-4").css("display","none");
+          $(".next-prev-5").css("display","flex");
+        })
+        $(".next-5").click(function(){
+          
+        })
+        $(".prev-1").click(function(){
+          
+        })
+        $(".prev-2").click(function(){
+          $(".anim-2").css("display","none");
+          $(".anim-1").css("display","flex");
+          $(".next-prev-2").css("display","none");
+          $(".next-prev-1").css("display","flex");
+        })
+        $(".prev-3").click(function(){
+          $(".anim-3").css("display","none");
+          $(".anim-2").css("display","flex");
+          $(".next-prev-3").css("display","none");
+          $(".next-prev-2").css("display","flex");
+        })
+        $(".prev-4").click(function(){
+          $(".anim-4").css("display","none");
+          $(".anim-3").css("display","flex");
+          $(".next-prev-4").css("display","none");
+          $(".next-prev-3").css("display","flex");
+        })
+        $(".prev-5").click(function(){
+          $(".anim-5").css("display","none");
+          $(".anim-4").css("display","flex");
+          $(".next-prev-5").css("display","none");
+          $(".next-prev-4").css("display","flex");
+        })
+    </script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-custom",
+        },
+        loop: true,
+        spaceBetween: 10,
+      });
+    </script>
+    <script>
+      $(".hold-1 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-1 .yes").css("display", "flex");
+      });
+      $(".hold-1 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-1 .no").css("display", "flex");
+      });
+
+      $(".hold-2 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-2 .yes").css("display", "flex");
+      });
+      $(".hold-2 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-2 .no").css("display", "flex");
+      });
+
+      $(".hold-3 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-3 .yes").css("display", "flex");
+      });
+      $(".hold-3 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-3 .no").css("display", "flex");
+      });
+
+      $(".hold-4 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-4 .yes").css("display", "flex");
+      });
+      $(".hold-4 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-4 .no").css("display", "flex");
+      });
+
+      $(".hold-5 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-5 .yes").css("display", "flex");
+      });
+      $(".hold-5 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-5 .no").css("display", "flex");
+      });
+
+      $(".hold-6 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-6 .yes").css("display", "flex");
+      });
+      $(".hold-6 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-6 .no").css("display", "flex");
+      });
+
+      $(".hold-7 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-7 .yes").css("display", "flex");
+      });
+      $(".hold-7 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-7 .no").css("display", "flex");
+      });
+    </script>
+    <script>
+      $(".search").click(function () {
+        $(".search-bar-end").slideToggle(1000);
+        $(".search i").toggleClass("fa-chevron-up");
+        $(".search i").toggleClass("fa-chevron-down");
+      });
+      $(".searching-criteria").click(function () {
+        $("#sc").slideToggle(1000);
+        $(".searching-criteria i").toggleClass("fa-arrow-circle-right");
+        $(".searching-criteria i").toggleClass("fa-arrow-circle-down");
+      });
+    </script>
+  </body>
+</html>

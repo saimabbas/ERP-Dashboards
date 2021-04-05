@@ -1,0 +1,116 @@
+.merp-slide-content h1,
+.merp-two-boxes h6,
+.bb-2 p,
+.bb-3 span,
+.merp-header p,
+.ne-text-box,
+.merp-2,
+.white-span,
+.bb-3-details p,
+.merp-profile__box > p,
+.cnn,
+.merp-2-2-main-box span,
+.mpcsb-1-1 {
+  text-align: right;
+}
+.mpcsb-1-1 img {
+    margin-left: 2.5vw;
+    margin-right: 0vw;
+}
+.merp-header-content img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  margin-left: 5vw;
+  margin-right: 0;
+}
+.merp-header-content span {
+  width: unset;
+}
+.tar {
+  text-align: right;
+}
+.merp-header img {
+  width: 10vw;
+  height: 10vw;
+  margin-right: 0vw;
+  margin-left: 5vw;
+}
+.merp-two-boxes h6 {
+    margin: 0 2.5vw 0 0;
+    font-size: 0.8rem;
+}
+.bb-1-1 p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 2vw 0 0;
+}
+.bb-3 span {
+    margin-left: 0vw;
+    margin-right: 3vw;
+}
+.bb-4 div button {
+    margin-left: 0vw;
+    margin-right: 2.5vw;
+}
+.merp-slide-content h1
+{
+    margin: 1.5vw 0;
+}
+.bb-1-1 p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 2vw 0 0;
+}
+.merp-pos-slide-content {
+    padding: 4vw 4vw 4vw 0;
+}
+.merp-2-2-main-box {
+    display: flex;
+    flex-direction: column;
+}
+.merp-pp-2 span h5 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #aaaaaa;
+    margin: 0;
+}
+.merp-pp-2 span p {
+    margin: 0 0 0 2.5vw;
+}
+.ne-box-3 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: unset;
+    bottom: 0;
+    transform: translate(-5%, 5%);
+}
+.popa-pending-tag {
+    margin-left: 2vw;
+    margin-right: 0;
+}
+.at-btn-top span {
+    margin-right: 0;
+    margin-left: 2.5vw;
+}
+.merp-head-note div i {
+    font-size: 1.5rem;
+    color: #707070;
+    margin-right: 3.5vw;
+    margin-left: 0;
+}
+.ad-1-1 > div span {
+    margin-left: 2.5vw;
+    margin-right: 0;
+}
+.at-btn-top span {
+    margin-left: 2.5vw;
+    margin-right: 0vw;
+}

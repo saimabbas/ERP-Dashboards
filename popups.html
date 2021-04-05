@@ -1,0 +1,4277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pop Ups</title>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/swiper.css" />
+	<link rel="stylesheet" href="css/all.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<style>
+		.next-prev-2,
+		.next-prev-3,
+		.next-prev-4,
+		.next-prev-5,
+		.anim-2,
+		.anim-3,
+		.anim-4,
+		.anim-5 {
+			display: none !important;
+		}
+	</style>
+</head>
+
+<body>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal1">
+		Popup 1
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal2">
+		Popup 2
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal3">
+		Popup 3
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal4">
+		Popup 4
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal5">
+		Popup 5
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal6">
+		Popup 6
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal7">
+		Popup 7
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal8">
+		Popup 8
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal9">
+		Popup 9
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal10">
+		Popup 10
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal11">
+		Popup 11
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal12">
+		Popup 12
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal13">
+		Popup 13
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal14">
+		Popup 14
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal15">
+		Popup 15
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal16">
+		Popup 16
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal17">
+		Popup 17
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal18">
+		Popup 18
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal19">
+		Popup 19
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal20">
+		Popup 20
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal21">
+		Popup 21
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#popmodal-1">
+		Popup 22
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#popmodal-2">
+		Popup 23
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#popmodal-3">
+		Popup 24
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#popmodal-4">
+		Popup 25
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal1-new">
+		Popup 1 New
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal2-new">
+		Popup 2 New
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal-ace">
+		Popup Ace
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#unknown-pop-1">
+		Unknown Popup 1
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#unknown-pop-2">
+		Unknown Popup 2
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#small-alert-1">
+		Small Alert 1
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#small-alert-2">
+		Small Alert 2
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#small-alert-3">
+		Small Alert 3
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#big-alert-1">
+		Big Alert 1
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#big-alert-2">
+		Big Alert 2
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#big-alert-3">
+		Big Alert 3
+	</button>
+	<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#just-fields-pop">
+		Just Fields Pop
+	</button>
+	<br /><br />
+
+	<div class="modal" id="myModal1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row edit-purchase-order">
+						<div class="col-12">
+							<div class="row epo-part-1">
+								<div class="col-4 offset-4">
+									<h6>Edit Purchase Order</h6>
+								</div>
+								<div class="col-1 offset-3">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+						</div>
+						<div class="whole-body-pop">
+							<div class="col-12">
+								<div class="row epo-part-2">
+									<div class="col-3">
+										<div class="form-group">
+											<label>Creation Date</label>
+											<input class="form-control" type="date" />
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="form-group">
+											<label>Delivery Date</label>
+											<input class="form-control" type="date" />
+										</div>
+									</div>
+									<div class="col-3 offset-3">
+										<i class="fas fa-paperclip"></i> Attach Documents
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="row epo-part-3">
+									<div class="col-3">
+										<div class="form-group">
+											<label>Creation Date</label>
+											<input class="form-control mb-3" type="text" placeholder="Name" />
+											<input class="form-control" type="text" placeholder="Email" />
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="form-group">
+											<label>Creation Date</label>
+											<input class="form-control mb-3" type="text" placeholder="Location" />
+											<input class="form-control" type="text" placeholder="Address" />
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="form-group">
+											<label>Creation Date</label>
+											<input class="form-control mb-3" type="text" placeholder="Location" />
+											<input class="form-control" type="text" placeholder="Address" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="row epo-part-4">
+									<div class="col-3">
+										<div class="form-group">
+											<label>Supplier</label>
+											<input class="form-control mb-3" type="text" placeholder="Name" />
+											<input class="form-control" type="text" placeholder="Email" />
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="form-group">
+											<label>Legal Entity</label>
+											<label>BUDGET</label>
+											<label>Included in budget</label>
+											<select class="form-control">
+												<option>Select Item</option>
+												<option>Saudi Arabia</option>
+												<option>Iraq</option>
+												<option>Iran</option>
+												<option>India</option>
+												<option>USA</option>
+												<option>China</option>
+												<option>England</option>
+												<option>Korea</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="form-group">
+											<label>Legal Entity</label>
+											<label>BUDGET</label>
+											<label>Included in budget</label>
+											<select class="form-control">
+												<option>Select Item</option>
+												<option>Saudi Arabia</option>
+												<option>Iraq</option>
+												<option>Iran</option>
+												<option>India</option>
+												<option>USA</option>
+												<option>China</option>
+												<option>England</option>
+												<option>Korea</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="row epo-part-5">
+									<div class="col-3">
+										<div class="form-inline">
+											<div class="form-check mr-4">
+												<input type="radio" name="payment" id="prepayment"
+													class="form-check-input" />
+												<label for="prepayment" class="form-check-label">Prepayment</label>
+											</div>
+											<div class="form-check">
+												<input type="radio" name="payment" id="postpayment"
+													class="form-check-input" />
+												<label for="postpayment" class="form-check-label">Postpayment</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="form-group">
+											<div class="form-inline">
+												<label class="mr-2">Available amount :</label>
+												<input class="form-control" type="text" placeholder="00.00 AED" />
+											</div>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="form-group">
+											<div class="form-inline">
+												<label class="mr-2">Available amount :</label>
+												<input class="form-control" type="text" placeholder="00.00 AED" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-11">
+								<div class="row epo-part-6">
+									<div class="col-3">
+										<label>ORDER CURRENCY</label>
+										<select class="form-control">
+											<option>Select Currency</option>
+											<option>Saudi Arabia</option>
+											<option>Iraq</option>
+											<option>Iran</option>
+											<option>India</option>
+											<option>USA</option>
+											<option>China</option>
+											<option>England</option>
+											<option>Korea</option>
+										</select>
+									</div>
+									<div class="col-3">
+										<label>SUBTOTAL AED</label>
+										<input class="form-control" type="text" placeholder="Enter subtotal" />
+									</div>
+									<div class="col-3">
+										<label>TAXES</label>
+										<input class="form-control" type="text" placeholder="Tax sum" />
+									</div>
+									<div class="col-3">
+										<input class="form-control" type="text" placeholder="Grand Total" />
+									</div>
+								</div>
+							</div>
+							<div class="col-12 progress-bar-display epo-part-7">
+								<img class="progress-bar-main" src="img/progress-bar.svg" />
+								<img class="progress-bar-flow" src="img/progress-bar-flow.svg" />
+								<img class="progress-bar-flow" src="img/progress-bar-flow.svg" />
+							</div>
+							<div class="col-12">
+								<div class="row epo-part-8">
+									<div class="col-8">
+										<button class="btn">Product status and email</button>
+										<button class="btn">Product status and email</button>
+										<button class="btn">Product status and email</button>
+									</div>
+									<div class="col-3 offset-1">
+										<button class="btn epo-close">Close</button>
+										<button class="btn epo-save">Save</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br /><br />
+
+	<div class="modal" id="myModal2">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row edit-approver">
+						<div class="col-12">
+							<div class="row ea-part-1">
+								<div class="col-4 offset-4">
+									<h6>Edit Approver</h6>
+								</div>
+								<div class="col-1 offset-3">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="whole-body-pop row">
+								<div class="col-4 ae-part-1">
+									<h6 class="mb-3">USER</h6>
+									<p>Jessie Lin</p>
+									<p class="mb-3">product-team@5dsol.com</p>
+
+									<h6 class="mb-3">APPROVAL THRESHOLD</h6>
+
+									<div class="form-check">
+										<input type="radio" name="comparison" id="any" class="form-check-input" />
+										<label for="any" class="form-check-label">Any</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="comparison" id="less-or-equal"
+											class="form-check-input" />
+										<label for="less-or-equal" class="form-check-label">Less or equal</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="comparison" id="greater-than"
+											class="form-check-input" />
+										<label for="greater-than" class="form-check-label">Greater than</label>
+									</div>
+									<div class="form-check">
+										<input type="radio" name="comparison" id="from-to" class="form-check-input" />
+										<label for="from-to" class="form-check-label">From to</label>
+									</div>
+								</div>
+								<div class="col-4 ae-part-2">
+									<h6>LOCATIONS</h6>
+									<div class="form-check">
+										<input type="checkbox" name="assets" id="l1" class="form-check-input" />
+										<label for="l1" class="form-check-label">All Locations</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" name="assets" id="l2" class="form-check-input" />
+										<label for="l2" class="form-check-label">Saudi Arabia</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" name="assets" id="l3" class="form-check-input" />
+										<label for="l3" class="form-check-label">Saudi Arabia</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" name="assets" id="l4" class="form-check-input" />
+										<label for="l4" class="form-check-label">Saudi Arabia</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" name="assets" id="l5" class="form-check-input" />
+										<label for="l5" class="form-check-label">Saudi Arabia</label>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" name="assets" id="l6" class="form-check-input" />
+										<label for="l6" class="form-check-label">Saudi Arabia</label>
+									</div>
+								</div>
+								<div class="col-4 ae-part-3">
+									<h6>DOCUMENT COST CENTERS</h6>
+									<div class="form-check">
+										<input type="checkbox" name="document" id="access-to-dcc"
+											class="form-check-input" />
+										<label for="access-to-dcc" class="form-check-label">Access to all Document Cost
+											Centers</label>
+									</div>
+									<p class="mb-3">
+										Departments <i class="fas fa-chevron-down"></i>
+									</p>
+									<div class="form-group">
+										<label>From Purchase Order Date</label>
+										<input class="form-control form-control-lg" type="date" />
+									</div>
+									<div class="form-group">
+										<label>To Purchase Order Date</label>
+										<input class="form-control form-control-lg" type="date" />
+									</div>
+									<div class="form-group">
+										<label>Legal Entity</label>
+										<label>BUDGET</label>
+										<label>Included in budget</label>
+										<select class="form-control">
+											<option>Select Item</option>
+											<option>Saudi Arabia</option>
+											<option>Iraq</option>
+											<option>Iran</option>
+											<option>India</option>
+											<option>USA</option>
+											<option>China</option>
+											<option>England</option>
+											<option>Korea</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-12 ae-part-4 mt-4">
+									<button class="btn customize">Customized Threshold</button>
+									<button class="btn update">Update</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br /><br />
+
+	<div class="modal" id="myModal3">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid sure-display">
+					<div class="row sure">
+						<div class="col-1 offset-11 s-part-1 close" type="button" data-dismiss="modal">
+							<i class="far fa-times-circle"></i>
+						</div>
+						<div class="col-8 offset-2 s-part-2">
+							<h5>Are you sure you want to approve Purchase Order #12?</h5>
+							<p>
+								AFTER APPROVAL, THE PURCHASE ORDER WILL BE SENT TO THE NEXT
+								APPROVER.
+							</p>
+							<select class="form-control">
+								<option>Reason</option>
+								<option>Saudi Arabia</option>
+								<option>Iraq</option>
+								<option>Iran</option>
+								<option>India</option>
+								<option>USA</option>
+								<option>China</option>
+								<option>England</option>
+								<option>Korea</option>
+							</select>
+							<textarea class="form-control" rows="5" placeholder="Remarks"></textarea>
+						</div>
+						<dyes class="col-4 offset-4 s-part-3">
+							<button class="btn s-part-3-no">NO</button>
+							<button class="btn s-part-3-yes">YES</button>
+						</dyes>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal20">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid sure-display">
+					<div class="row sure">
+						<div class="col-12">
+							<div class="row a-part-1">
+								<div class="col-8 offset-2">
+									<h6>Line Information</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row a-part-2 ea-part-2-bl">
+								<div class="col-10">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-2 ea-part-2-bl">
+								<div class="col-10">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-2 ea-part-2-bl">
+								<div class="col-10">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<select class="form-control form-control-sm">
+											<option>Select Item</option>
+											<option>Saudi Arabia</option>
+											<option>Iraq</option>
+											<option>Iran</option>
+											<option>India</option>
+											<option>USA</option>
+											<option>China</option>
+											<option>England</option>
+											<option>Korea</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-2 ea-part-2-bl">
+								<div class="col-10">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<select class="form-control form-control-sm">
+											<option>Select Item</option>
+											<option>Saudi Arabia</option>
+											<option>Iraq</option>
+											<option>Iran</option>
+											<option>India</option>
+											<option>USA</option>
+											<option>China</option>
+											<option>England</option>
+											<option>Korea</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-2 ea-part-2-bl">
+								<div class="col-10">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<select class="form-control form-control-sm">
+											<option>Select Item</option>
+											<option>Saudi Arabia</option>
+											<option>Iraq</option>
+											<option>Iran</option>
+											<option>India</option>
+											<option>USA</option>
+											<option>China</option>
+											<option>England</option>
+											<option>Korea</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-2 ea-part-2-bl">
+								<div class="col-10">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<select class="form-control form-control-sm">
+											<option>Select Item</option>
+											<option>Saudi Arabia</option>
+											<option>Iraq</option>
+											<option>Iran</option>
+											<option>India</option>
+											<option>USA</option>
+											<option>China</option>
+											<option>England</option>
+											<option>Korea</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-2 ea-part-2-bl">
+								<div class="col-10">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<select class="form-control form-control-sm">
+											<option>Select Item</option>
+											<option>Saudi Arabia</option>
+											<option>Iraq</option>
+											<option>Iran</option>
+											<option>India</option>
+											<option>USA</option>
+											<option>China</option>
+											<option>England</option>
+											<option>Korea</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-2 ea-part-2-bl">
+								<div class="col-10">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<select class="form-control form-control-sm">
+											<option>Select Item</option>
+											<option>Saudi Arabia</option>
+											<option>Iraq</option>
+											<option>Iran</option>
+											<option>India</option>
+											<option>USA</option>
+											<option>China</option>
+											<option>England</option>
+											<option>Korea</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="row poh-part-4">
+								<div class="col-6 offset-6">
+									<button class="btn poh-ok">OK</button>
+									<button class="btn poh-close">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br /><br />
+
+	<div class="modal" id="myModal4">
+		<div class="container-fluid next-step-green-display">
+			<div class="row next-step-green">
+				<div class="col-1"><i class="fas fa-info-circle"></i></div>
+				<div class="col-10">
+					<p>
+						Purchase Order has been approved. Pending approval on the next
+						step
+					</p>
+				</div>
+				<div class="col-1"><i class="far fa-times-circle"></i></div>
+			</div>
+		</div>
+	</div>
+
+	<br /><br />
+
+	<div class="modal" id="myModal5">
+		<div class="container-fluid next-step-red-display">
+			<div class="row next-step-red">
+				<div class="col-1"><i class="fas fa-info-circle"></i></div>
+				<div class="col-10">
+					<p>
+						Purchase Order has been approved. Pending approval on the next
+						step
+					</p>
+				</div>
+				<div class="col-1"><i class="far fa-times-circle"></i></div>
+			</div>
+		</div>
+	</div>
+
+	<br /><br />
+
+	<div class="modal" id="myModal6">
+		<div class="container-fluid next-step-yellow-display">
+			<div class="row next-step-yellow">
+				<div class="col-1"><i class="fas fa-info-circle"></i></div>
+				<div class="col-10">
+					<p>
+						Purchase Order has been approved. Pending approval on the next
+						step
+					</p>
+				</div>
+				<div class="col-1"><i class="far fa-times-circle"></i></div>
+			</div>
+		</div>
+	</div>
+
+	<br /><br />
+
+	<div class="modal" id="myModal7">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid workflow-details-display">
+					<div class="row workflow-details">
+						<div class="col-12">
+							<div class="row wd-part-1">
+								<div class="col-8 offset-2">
+									<h6>Workflow Detail: Local Purchase Order LPO-10285</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row wd-part-2">
+								<div class="col-10">
+									<img class="img-1" src="img/profile-picture-image.jpg" />
+									<div class="prepared-by">
+										<p>Prepared By: Manzoor Ahmed Shah</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1 wd-parent-line"></div>
+
+								<div class="col-11">
+									<div class="row wd-part-3 mt-3">
+										<div class="col-12">
+											<img class="connect-workflow" src="img/connect-workflow.svg" />
+											<div class="from-fyr row">
+												<div class="col-12 from">
+													From :
+													<div class="img-2-container">
+														<img class="img-2" src="img/profile-picture-image.jpg" />
+														<p>Adil Javed</p>
+													</div>
+												</div>
+												<div class="col-12 fyr">
+													<div class="fyr-text">FYR</div>
+													<div class="img-3-container">
+														<img class="img-2" src="img/profile-picture-image.jpg" />
+														<p>Muhammad Ali</p>
+														<p>
+															<i class="far fa-clock"></i> Begin Date:
+															<span>202009-16 - 11:42</span>
+														</p>
+														<p>
+															<i class="far fa-clock"></i> Updated Date:
+															<span>202009-16 - 11:42</span>
+														</p>
+														<p><i class="fas fa-comments"></i> CLOSED</p>
+														<div class="action-status">
+															Action Status: Approved
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- <div class="col-12 approved-end-box">
+                                            <div class="appreved-end" ><p>APPROVED</p></div>
+                                        </div> -->
+									</div>
+									<div class="row wd-part-3 mt-3">
+										<div class="col-12">
+											<img class="connect-workflow" src="img/connect-workflow.svg" />
+											<div class="from-fyr row">
+												<div class="col-12 from">
+													From :
+													<div class="img-2-container">
+														<img class="img-2" src="img/profile-picture-image.jpg" />
+														<p>Adil Javed</p>
+													</div>
+												</div>
+												<div class="col-12 fyr">
+													<div class="fyr-text">FYR</div>
+													<div class="img-3-container">
+														<img class="img-2" src="img/profile-picture-image.jpg" />
+														<p>Muhammad Ali</p>
+														<p>
+															<i class="far fa-clock"></i> Begin Date:
+															<span>202009-16 - 11:42</span>
+														</p>
+														<p>
+															<i class="far fa-clock"></i> Updated Date:
+															<span>202009-16 - 11:42</span>
+														</p>
+														<p><i class="fas fa-comments"></i> CLOSED</p>
+														<div class="action-status">
+															Action Status: Approved
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- <div class="col-12 approved-end-box">
+                                            <div class="appreved-end" ><p>APPROVED</p></div>
+                                        </div> -->
+									</div>
+									<div class="row wd-part-3 mt-3">
+										<div class="col-12">
+											<img class="connect-workflow" src="img/connect-workflow.svg" />
+											<div class="from-fyr row">
+												<div class="col-12 from">
+													From :
+													<div class="img-2-container">
+														<img class="img-2" src="img/profile-picture-image.jpg" />
+														<p>Adil Javed</p>
+													</div>
+												</div>
+												<div class="col-12 fyr">
+													<div class="fyr-text">FYR</div>
+													<div class="img-3-container">
+														<img class="img-2" src="img/profile-picture-image.jpg" />
+														<p>Muhammad Ali</p>
+														<p>
+															<i class="far fa-clock"></i> Begin Date:
+															<span>202009-16 - 11:42</span>
+														</p>
+														<p>
+															<i class="far fa-clock"></i> Updated Date:
+															<span>202009-16 - 11:42</span>
+														</p>
+														<p><i class="fas fa-comments"></i> CLOSED</p>
+														<div class="action-status">
+															Action Status: Approved
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- <div class="col-12 approved-end-box">
+                                            <div class="appreved-end" ><p>APPROVED</p></div>
+                                        </div> -->
+									</div>
+									<div class="row wd-part-3 mt-3">
+										<div class="col-12">
+											<img class="connect-workflow" src="img/connect-workflow.svg" />
+											<div class="from-fyr row">
+												<div class="col-12 from">
+													From :
+													<div class="img-2-container">
+														<img class="img-2" src="img/profile-picture-image.jpg" />
+														<p>Adil Javed</p>
+													</div>
+												</div>
+												<div class="col-12 fyr">
+													<div class="fyr-text">FYR</div>
+													<div class="img-3-container">
+														<img class="img-2" src="img/profile-picture-image.jpg" />
+														<p>Muhammad Ali</p>
+														<p>
+															<i class="far fa-clock"></i> Begin Date:
+															<span>202009-16 - 11:42</span>
+														</p>
+														<p>
+															<i class="far fa-clock"></i> Updated Date:
+															<span>202009-16 - 11:42</span>
+														</p>
+														<p><i class="fas fa-comments"></i> CLOSED</p>
+														<div class="action-status">
+															Action Status: Approved
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- <div class="col-12 approved-end-box">
+                                            <div class="appreved-end" ><p>APPROVED</p></div>
+                                        </div> -->
+									</div>
+									<div class="row wd-part-3 mt-3">
+										<div class="col-12">
+											<img class="connect-workflow" src="img/connect-workflow.svg" />
+											<div class="from-fyr row">
+												<div class="col-12 from">
+													From :
+													<div class="img-2-container">
+														<img class="img-2" src="img/profile-picture-image.jpg" />
+														<p>Adil Javed</p>
+													</div>
+												</div>
+												<div class="col-12 fyr">
+													<div class="fyr-text">FYR</div>
+													<div class="img-3-container">
+														<img class="img-2" src="img/profile-picture-image.jpg" />
+														<p>Muhammad Ali</p>
+														<p>
+															<i class="far fa-clock"></i> Begin Date:
+															<span>202009-16 - 11:42</span>
+														</p>
+														<p>
+															<i class="far fa-clock"></i> Updated Date:
+															<span>202009-16 - 11:42</span>
+														</p>
+														<p><i class="fas fa-comments"></i> CLOSED</p>
+														<div class="action-status">
+															Action Status: Approved
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 approved-end-box">
+											<div class="appreved-end">
+												<p>APPROVED</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal8">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row your-response">
+						<div class="col-12">
+							<div class="row yr-part-1">
+								<div class="col-8 offset-2">
+									<h6>For Your Response</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row yr-part-2">
+								<div class="col-2">
+									<p>Purchase order</p>
+								</div>
+								<div class="col-6">
+									<p class="yr-part-2-p-1">From:</p>
+									<img class="mr-3" src="img/profile-picture-image.jpg" />
+									<p class="yr-part-2-p-2">PIB. MANSOOR</p>
+									<p class="yr-part-2-p-3">
+										<i class="far fa-clock"></i> <span>Sent on: </span> 7 Oct
+										2020 12:15 pm
+									</p>
+								</div>
+							</div>
+							<div class="row yr-part-3">
+								<div class="col-12">
+									<p>Purchase Order Basic Detail</p>
+								</div>
+							</div>
+							<div class="row yr-part-4">
+								<div class="col-5">
+									<table class="table table-bordered" id="yr-table">
+										<tr>
+											<td class="yr-td-1">P.O. Number</td>
+											<td class="yr-td-2">LPO-18037</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">P.O. Date</td>
+											<td class="yr-td-2">2020-07-07</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">Supplier</td>
+											<td class="yr-td-2">
+												Al Wathba National Insurance Co. P.S.C.
+											</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">Project</td>
+											<td class="yr-td-2"></td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">P.O. Amount (AED)</td>
+											<td class="yr-td-2">26250</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">VAT Amount</td>
+											<td class="yr-td-2">1250</td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-5">
+									<table class="table table-bordered" id="yr-table">
+										<tr>
+											<td class="yr-td-1">P.O. Number</td>
+											<td class="yr-td-2">LPO-18037</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">P.O. Date</td>
+											<td class="yr-td-2">2020-07-07</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">Supplier</td>
+											<td class="yr-td-2">
+												Al Wathba National Insurance Co. P.S.C.
+											</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">Project</td>
+											<td class="yr-td-2"></td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">P.O. Amount (AED)</td>
+											<td class="yr-td-2">26250</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">VAT Amount</td>
+											<td class="yr-td-2">1250</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="row yr-part-3">
+								<div class="col-12">
+									<p>Remarks</p>
+								</div>
+							</div>
+							<div class="row yr-part-6">
+								<div class="col-12">
+									<textarea class="form-control" rows="5"
+										placeholder="Please give remarks if any..."></textarea>
+								</div>
+							</div>
+							<div class="row yr-part-7">
+								<div class="col-3 offset-9">
+									<button class="btn yr-part-7-cancel">Cancel</button>
+									<button class="btn yr-part-7-initiate">Initiate</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal9">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row attachments">
+						<div class="col-12">
+							<div class="row a-part-1">
+								<div class="col-8 offset-2">
+									<h6>Attachments</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row a-part-2">
+								<div class="col-5">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="col-5">
+									<label><span>*</span> Document Type</label>
+									<select class="form-control form-control-sm">
+										<option>Select Item</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+								</div>
+							</div>
+							<div class="row a-part-3">
+								<div class="col-11 file-oh-oh">
+									<img src="img/file.svg" />
+									<p class="a-part-3-p-1">Drag and drop your document</p>
+									<p class="a-part-3-p-2">Or click <span> Upload</span></p>
+									<input class="form-control-file file-oh" type="file" />
+								</div>
+							</div>
+							<div class="row a-part-4">
+								<div class="col-11">
+									<img src="img/Document_2_.svg" />
+									<div class="a-part-4-oh">
+										<p class="a-part-4-oh-p-1">
+											List of medical supplies and recommendations 2020
+										</p>
+										<p class="a-part-4-oh-p-2">Document Type: MS Excel</p>
+										<div class="progress-aaa">
+											<div class="progress-a">
+												<div class="progress-aa"></div>
+											</div>
+											<p>20%</p>
+										</div>
+									</div>
+									<div class="delete-attachments">
+										<i class="far fa-trash-alt"></i>
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-4">
+								<div class="col-11">
+									<img src="img/Document_2_.svg" />
+									<div class="a-part-4-oh">
+										<p class="a-part-4-oh-p-1">
+											List of medical supplies and recommendations 2020
+										</p>
+										<p class="a-part-4-oh-p-2">Document Type: MS Excel</p>
+										<div class="progress-aaa">
+											<p style="color: #aaaaaa">297KB</p>
+										</div>
+									</div>
+									<div class="delete-attachments">
+										<i class="far fa-trash-alt"></i>
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-5">
+								<div class="col-8">
+									<p style="font-weight: 700; margin-right: 0.5vw">Note:</p>
+									<div style="font-weight: 600">
+										<p>The uploaded files are currently temporary</p>
+										<p>Please click "OK" to save permanently</p>
+									</div>
+								</div>
+								<div class="col-4">
+									<button class="btn attachment-ok">OK</button>
+									<button class="btn attachment-close">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal19">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row attachments">
+						<div class="col-12">
+							<div class="row a-part-1">
+								<div class="col-8 offset-2">
+									<h6>Line Information</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row a-part-2">
+								<div class="col-5">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="col-5">
+									<label><span>*</span> Document Type</label>
+									<select class="form-control form-control-sm">
+										<option>Select Item</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+								</div>
+							</div>
+							<div class="row a-part-2" style="border-bottom: 1px solid #ececec; padding-bottom: 1vw">
+								<div class="col-5">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="col-5">
+									<label><span>*</span> Document Type</label>
+									<select class="form-control form-control-sm">
+										<option>Select Item</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+								</div>
+							</div>
+							<div class="row a-part-2" style="border-bottom: 1px solid #ececec; padding-bottom: 1vw">
+								<div class="col-10">
+									<div class="form-group">
+										<label>Message</label>
+										<textarea class="form-control" rows="5"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-2">
+								<div class="col-5">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="col-5">
+									<label><span>*</span> Document Type</label>
+									<select class="form-control form-control-sm">
+										<option>Select Item</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+								</div>
+							</div>
+							<div class="row a-part-2">
+								<div class="col-5">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="col-5">
+									<label><span>*</span> Document Type</label>
+									<select class="form-control form-control-sm">
+										<option>Select Item</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+								</div>
+							</div>
+							<div class="row a-part-2">
+								<div class="col-5">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="col-5">
+									<label><span>*</span> Document Type</label>
+									<select class="form-control form-control-sm">
+										<option>Select Item</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+								</div>
+							</div>
+							<div class="row a-part-2 a-part-2-oh">
+								<div class="col-5">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="col-5">
+									<div class="form-inline">
+										<input type="checkbox" name="assets" id="webdeveloper"
+											class="form-check-input" />
+										<label> Document Type</label>
+									</div>
+								</div>
+							</div>
+							<div class="row a-part-2" style="border-bottom: 1px solid #ececec; padding-bottom: 1vw">
+								<div class="col-5">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="col-5">
+									<div class="form-group">
+										<label><span>*</span> Title</label>
+										<input class="form-control" type="date" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="row poh-part-4">
+								<div class="col-4 offset-8">
+									<button class="btn poh-ok">OK</button>
+									<button class="btn poh-close">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal10">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row default-access">
+						<div class="col-12">
+							<div class="row d-part-1">
+								<div class="col-8 offset-2">
+									<h6>Default Access</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row d-part-2">
+								<div class="col-12">
+									<p class="d-part-2-p-1">Default Access Details</p>
+									<p class="d-part-2-p-2">
+										Default Access Number <span>OLC187052</span>
+									</p>
+								</div>
+							</div>
+							<div class="row d-part-3">
+								<div class="col-12">
+									<p class="d-part-3-p-1">Self-Service Settings</p>
+									<p class="d-part-3-p-2">View Mode</p>
+									<select class="form-control form-control-sm">
+										<option>Summary View</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+								</div>
+							</div>
+							<div class="row d-part-3">
+								<div class="col-12">
+									<p class="d-part-3-p-1">Learner Self-Service Settings</p>
+									<p class="d-part-3-p-2">Enrollment Settings</p>
+									<p class="d-part-3-p-3">Initial Learning Record Status</p>
+									<select class="form-control form-control-sm">
+										<option>Requested</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+									<div class="form-check mr-4 mt-2">
+										<input type="checkbox" id="default-access-1" class="form-check-input" />
+										<label for="default-access-1" class="form-check-label">Show Enrollment
+											Form</label>
+									</div>
+									<div class="form-check mr-4">
+										<input type="checkbox" id="default-access-2" class="form-check-input" />
+										<label for="default-access-2" class="form-check-label">Activate enrollment
+											requests automatically
+											after
+											approval</label>
+									</div>
+									<div class="form-check mr-4">
+										<input type="checkbox" id="default-access-3" class="form-check-input" />
+										<label for="default-access-3" class="form-check-label">Allow enrollment when
+											required prerequisites
+											aren't
+											achieved</label>
+									</div>
+								</div>
+							</div>
+							<div class="row d-part-3 d-part-5">
+								<div class="col-12">
+									<p class="d-part-3-p-1">Manager Self-Service Settings</p>
+									<p class="d-part-3-p-2">Enrollment Settings</p>
+									<p class="d-part-3-p-3">Initial Learning Record Status</p>
+									<select class="form-control form-control-sm">
+										<option>Activate</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+									<div class="form-check mr-4 mt-2">
+										<input type="checkbox" id="default-access-1" class="form-check-input" />
+										<label for="default-access-1" class="form-check-label">Withdraw enrollments in
+											the pending
+											prerequisite
+											status</label>
+									</div>
+								</div>
+							</div>
+							<div class="row d-part-4">
+								<div class="col-5 offset-7">
+									<button class="btn default-ok">Save</button>
+									<button class="btn default-close">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal11">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row line-information">
+						<div class="col-3" style="
+                  display: flex;
+                  align-items: center !important;
+                  justify-content: center;
+                  position: relative;
+                ">
+							<div class="prog-end">
+								<div class="prog-1">
+									<div class="prog-dot"></div>
+									<i class="prog-icon fas fa-file-alt"></i>
+									<div class="prog-text">
+										<h6>RFQ Overview</h6>
+										<p>Review or Submit RFQ</p>
+									</div>
+								</div>
+								<div class="prog-1">
+									<div class="prog-dot"></div>
+									<i class="prog-icon fas fa-file-alt"></i>
+									<div class="prog-text">
+										<h6>RFQ Overview</h6>
+										<p>Review or Submit RFQ</p>
+									</div>
+								</div>
+								<div class="prog-1">
+									<div class="prog-dot"></div>
+									<i class="prog-icon fas fa-file-alt"></i>
+									<div class="prog-text">
+										<h6>RFQ Overview</h6>
+										<p>Review or Submit RFQ</p>
+									</div>
+								</div>
+								<div class="prog-1">
+									<i class="prog-icon fas fa-file-alt"></i>
+									<div class="prog-text">
+										<h6>RFQ Overview</h6>
+										<p>Review or Submit RFQ</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-9">
+							<div class="row li-part-2">
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>**</span> GL No</label>
+										<input class="form-control form-control-sm" type="text" />
+									</div>
+								</div>
+								<div class="col-6">
+									<label><span>**</span> Category</label>
+									<select class="form-control form-control-sm">
+										<option>Select Item</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+								</div>
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>**</span> GL Period From</label>
+										<input class="form-control form-control-sm" type="date" />
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>*</span> Document No.</label>
+										<input class="form-control form-control-sm" type="text" />
+									</div>
+								</div>
+							</div>
+							<div class="row li-part-2">
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>**</span> Journal Name</label>
+										<input class="form-control form-control-sm" type="text" />
+									</div>
+								</div>
+								<div class="col-6">
+									<label><span>**</span> Source</label>
+									<select class="form-control form-control-sm">
+										<option>Select Item</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+								</div>
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>**</span> GL Period To</label>
+										<input class="form-control form-control-sm" type="date" />
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>*</span> Posting Date</label>
+										<input class="form-control form-control-sm" type="date" />
+									</div>
+								</div>
+							</div>
+							<div class="row li-part-2">
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>**</span> GL No</label>
+										<input class="form-control form-control-sm" type="text" />
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>**</span> GL Period From</label>
+										<input class="form-control form-control-sm" type="date" />
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>**</span> GL Period From</label>
+										<input class="form-control form-control-sm" type="text" />
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="form-check mr-4 mt-2">
+										<input type="checkbox" id="default-access-1" class="form-check-input" />
+										<label for="default-access-1" class="form-check-label">Enable Weights</label>
+									</div>
+								</div>
+							</div>
+							<div class="row li-part-2">
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>**</span> GL No</label>
+										<input class="form-control form-control-sm" type="text" />
+									</div>
+								</div>
+								<div class="col-6">
+									<label><span>**</span> Category</label>
+									<select class="form-control form-control-sm">
+										<option>Select Item</option>
+										<option>Saudi Arabia</option>
+										<option>Iraq</option>
+										<option>Iran</option>
+										<option>India</option>
+										<option>USA</option>
+										<option>China</option>
+										<option>England</option>
+										<option>Korea</option>
+									</select>
+								</div>
+								<div class="col-6">
+									<div class="form-group">
+										<label><span>**</span> GL Period From</label>
+										<input class="form-control form-control-sm" type="date" />
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="form-check mr-4 mt-2">
+										<input type="checkbox" id="li-1" class="form-check-input" />
+										<label for="li-1" class="form-check-label">Enable Weights</label>
+									</div>
+								</div>
+							</div>
+							<div class="row li-part-4">
+								<div class="col-4 offset-8">
+									<button class="btn li-ok">OK</button>
+									<button class="btn li-close">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="myModal17">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="container-fluid">
+					<div class="row whole-page-con-2-popup">
+						<div class="col-sm-12 col-12">
+							<div class="row survey-form-2-content">
+								<div class="col-12 end-infinite">
+									<h4 class="f-survey-form-1-top-heading">
+										How would you describe your business?
+									</h4>
+									<i class="fas fa-times" data-dismiss="modal"></i>
+								</div>
+								<div class="col-12">
+									<div class="row select-button-container">
+										<button class="col-5 btn select-button">
+											Manufacturer / Factory
+										</button>
+										<button class="col-5 btn select-button">
+											Online shop / Store
+										</button>
+										<button class="col-5 btn select-button">
+											Trading Company
+										</button>
+										<button class="col-5 btn select-button">
+											Distributor / Wholesaler
+										</button>
+										<button class="col-5 btn select-button">Retailer</button>
+										<button class="col-5 btn select-button">
+											Buying Office
+										</button>
+										<button class="col-5 btn select-button">
+											Individual
+										</button>
+										<button class="col-5 btn select-button">
+											Online shop / Store
+										</button>
+										<button class="col-5 btn select-button">
+											Trading Company
+										</button>
+										<button class="col-5 btn select-button">
+											Distributor / Wholesaler
+										</button>
+										<button class="col-5 btn select-button">Retailer</button>
+										<button class="col-5 btn select-button">
+											Buying Office
+										</button>
+										<button class="col-5 btn select-button">
+											Individual
+										</button>
+										<button class="col-5 btn select-button">
+											Online shop / Store
+										</button>
+										<button class="col-5 btn select-button">
+											Trading Company
+										</button>
+										<button class="col-5 btn select-button">
+											Distributor / Wholesaler
+										</button>
+										<button class="col-5 btn select-button">Retailer</button>
+										<button class="col-5 btn select-button">
+											Buying Office
+										</button>
+										<button class="col-5 btn select-button">
+											Individual
+										</button>
+										<button class="col-5 btn select-button">Other</button>
+									</div>
+								</div>
+							</div>
+							<div class="row survey-form-bottom survey-form-bottom-oh">
+								<div class="col-3">
+									<a href="#">
+										<p class="previous-arrow">
+											<i class="fas fa-arrow-left"></i> Previous
+										</p>
+									</a>
+								</div>
+								<div class="col-sm-4 col-6">
+									<div class="form-group">
+										<p>3 out of 15</p>
+										<div class="range-bar">
+											<div class="custom-range">
+												<div class="custom-range-color-bar-4"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-3 f-survey-form-2-bottom-button-next-oh">
+									<button class="btn next-button proceed-button">
+										Next
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="myModal18">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row whole-page-con-2-popup-oh">
+						<div class="col-sm-12 col-12">
+							<div class="row">
+								<div class="col-12 my-2">
+									<h4 class="f-survey-form-1-top-heading f-survey-form-3-top-heading m-0"
+										style="text-align: center">
+										Which sub-categories are relevant to you?
+									</h4>
+								</div>
+								<div class="col-12 survey-form-3-overflow">
+									<div class="row">
+										<div class="col-sm-4 mb-4 mb-sm-0 col-8 overflow-details">
+											<div class="overflow-heading">Electronics</div>
+											<div class="overflow-items">
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 mb-4 mb-sm-0 col-8 overflow-details">
+											<div class="overflow-heading">Electronics</div>
+											<div class="overflow-items">
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4 mb-4 mb-sm-0 col-8 overflow-details">
+											<div class="overflow-heading">Electronics</div>
+											<div class="overflow-items">
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+												<div class="overflow-heading-item">
+													Commonly Used Accessories
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row survey-form-bottom survey-form-bottom-oh-oh">
+								<div class="col-sm-2 col-3">
+									<a href="#">
+										<p class="previous-arrow">
+											<i class="fas fa-arrow-left"></i> Previous
+										</p>
+									</a>
+								</div>
+								<div class="col-sm-6 col-6">
+									<div class="form-group">
+										<p>3 out of 15</p>
+										<div class="range-bar">
+											<div class="custom-range">
+												<div class="custom-range-color-bar-4"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2 col-3 f-survey-form-2-bottom-button-next-oh">
+									<button class="btn next-button f-next-button-survey-form-3 proceed-button">
+										Next
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal12">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row po-history">
+						<div class="col-12">
+							<div class="row li-part-1">
+								<div class="col-8 offset-2">
+									<h6>Purchase Order History</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row poh-part-2">
+								<div class="col-12">
+									<div class="form-group">
+										<input class="form-control form-control-lg" type="search"
+											placeholder="Search P.O. Items" />
+									</div>
+								</div>
+							</div>
+							<div class="row poh-cards">
+								<div class="col-1">
+									<img src="img/documents.svg" />
+								</div>
+								<div class="col-2">
+									<p>PO-276</p>
+								</div>
+								<div class="col-9">
+									<p class="li-p-1">
+										KSUO-68 / Saleh Al Souqi Trading Co. LLC
+									</p>
+									<p class="li-p-2 lid-1">
+										Details <i class="fas fa-chevron-down"></i>
+									</p>
+								</div>
+								<div class="offset-3 col-9 lid-card-1" style="display: none">
+									<div class="row">
+										<div class="col-8">
+											<p>
+												<span>Item:</span> Bolt | GR-9.9 | MS | . M14 x 23mm
+											</p>
+											<p><span>Qty:</span> 129</p>
+										</div>
+										<div class="col-4">
+											<p><span>Date:</span> Nov 12, 2020</p>
+											<p><span>Price:</span> 4135</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row poh-cards">
+								<div class="col-1">
+									<img src="img/documents.svg" />
+								</div>
+								<div class="col-2">
+									<p>PO-276</p>
+								</div>
+								<div class="col-9">
+									<p class="li-p-1">
+										KSUO-68 / Saleh Al Souqi Trading Co. LLC
+									</p>
+									<p class="li-p-2 lid-2">
+										Details <i class="fas fa-chevron-down"></i>
+									</p>
+								</div>
+								<div class="offset-3 col-9 lid-card-2" style="display: none">
+									<div class="row">
+										<div class="col-8">
+											<p>
+												<span>Item:</span> Bolt | GR-9.9 | MS | . M14 x 23mm
+											</p>
+											<p><span>Qty:</span> 129</p>
+										</div>
+										<div class="col-4">
+											<p><span>Date:</span> Nov 12, 2020</p>
+											<p><span>Price:</span> 4135</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row poh-cards">
+								<div class="col-1">
+									<img src="img/documents.svg" />
+								</div>
+								<div class="col-2">
+									<p>PO-276</p>
+								</div>
+								<div class="col-9">
+									<p class="li-p-1">
+										KSUO-68 / Saleh Al Souqi Trading Co. LLC
+									</p>
+									<p class="li-p-2 lid-3">
+										Details <i class="fas fa-chevron-down"></i>
+									</p>
+								</div>
+								<div class="offset-3 col-9 lid-card-3" style="display: none">
+									<div class="row">
+										<div class="col-8">
+											<p>
+												<span>Item:</span> Bolt | GR-9.9 | MS | . M14 x 23mm
+											</p>
+											<p><span>Qty:</span> 129</p>
+										</div>
+										<div class="col-4">
+											<p><span>Date:</span> Nov 12, 2020</p>
+											<p><span>Price:</span> 4135</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row poh-cards">
+								<div class="col-1">
+									<img src="img/documents.svg" />
+								</div>
+								<div class="col-2">
+									<p>PO-276</p>
+								</div>
+								<div class="col-9">
+									<p class="li-p-1">
+										KSUO-68 / Saleh Al Souqi Trading Co. LLC
+									</p>
+									<p class="li-p-2 lid-4">
+										Details <i class="fas fa-chevron-down"></i>
+									</p>
+								</div>
+								<div class="offset-3 col-9 lid-card-4" style="display: none">
+									<div class="row">
+										<div class="col-8">
+											<p>
+												<span>Item:</span> Bolt | GR-9.9 | MS | . M14 x 23mm
+											</p>
+											<p><span>Qty:</span> 129</p>
+										</div>
+										<div class="col-4">
+											<p><span>Date:</span> Nov 12, 2020</p>
+											<p><span>Price:</span> 4135</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row poh-cards">
+								<div class="col-1">
+									<img src="img/documents.svg" />
+								</div>
+								<div class="col-2">
+									<p>PO-276</p>
+								</div>
+								<div class="col-9">
+									<p class="li-p-1">
+										KSUO-68 / Saleh Al Souqi Trading Co. LLC
+									</p>
+									<p class="li-p-2 lid-5">
+										Details <i class="fas fa-chevron-down"></i>
+									</p>
+								</div>
+								<div class="offset-3 col-9 lid-card-5" style="display: none">
+									<div class="row">
+										<div class="col-8">
+											<p>
+												<span>Item:</span> Bolt | GR-9.9 | MS | . M14 x 23mm
+											</p>
+											<p><span>Qty:</span> 129</p>
+										</div>
+										<div class="col-4">
+											<p><span>Date:</span> Nov 12, 2020</p>
+											<p><span>Price:</span> 4135</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row poh-cards">
+								<div class="col-1">
+									<img src="img/documents.svg" />
+								</div>
+								<div class="col-2">
+									<p>PO-276</p>
+								</div>
+								<div class="col-9">
+									<p class="li-p-1">
+										KSUO-68 / Saleh Al Souqi Trading Co. LLC
+									</p>
+									<p class="li-p-2 lid-6">
+										Details <i class="fas fa-chevron-down"></i>
+									</p>
+								</div>
+								<div class="offset-3 col-9 lid-card-6" style="display: none">
+									<div class="row">
+										<div class="col-8">
+											<p>
+												<span>Item:</span> Bolt | GR-9.9 | MS | . M14 x 23mm
+											</p>
+											<p><span>Qty:</span> 129</p>
+										</div>
+										<div class="col-4">
+											<p><span>Date:</span> Nov 12, 2020</p>
+											<p><span>Price:</span> 4135</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row poh-cards">
+								<div class="col-1">
+									<img src="img/documents.svg" />
+								</div>
+								<div class="col-2">
+									<p>PO-276</p>
+								</div>
+								<div class="col-9">
+									<p class="li-p-1">
+										KSUO-68 / Saleh Al Souqi Trading Co. LLC
+									</p>
+									<p class="li-p-2 lid-7">
+										Details <i class="fas fa-chevron-down"></i>
+									</p>
+								</div>
+								<div class="offset-3 col-9 lid-card-7" style="display: none">
+									<div class="row">
+										<div class="col-8">
+											<p>
+												<span>Item:</span> Bolt | GR-9.9 | MS | . M14 x 23mm
+											</p>
+											<p><span>Qty:</span> 129</p>
+										</div>
+										<div class="col-4">
+											<p><span>Date:</span> Nov 12, 2020</p>
+											<p><span>Price:</span> 4135</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row poh-cards" style="border-bottom: 0">
+								<div class="col-1">
+									<img src="img/documents.svg" />
+								</div>
+								<div class="col-2">
+									<p>PO-276</p>
+								</div>
+								<div class="col-9">
+									<p class="li-p-1">
+										KSUO-68 / Saleh Al Souqi Trading Co. LLC
+									</p>
+									<p class="li-p-2 lid-8">
+										Details <i class="fas fa-chevron-down"></i>
+									</p>
+								</div>
+								<div class="offset-3 col-9 lid-card-8" style="display: none">
+									<div class="row">
+										<div class="col-8">
+											<p>
+												<span>Item:</span> Bolt | GR-9.9 | MS | . M14 x 23mm
+											</p>
+											<p><span>Qty:</span> 129</p>
+										</div>
+										<div class="col-4">
+											<p><span>Date:</span> Nov 12, 2020</p>
+											<p><span>Price:</span> 4135</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 pagination-display"
+									style="margin-top: 0; border-bottom: 1px solid #ececec">
+									<ul class="pagination">
+										<li class="page-item">
+											<a class="page-link" href="#">1</a>
+										</li>
+										<li class="page-item active">
+											<a class="page-link" href="#">2</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">3</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">4</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">5</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row poh-part-4">
+								<div class="col-4 offset-8">
+									<button class="btn poh-ok">OK</button>
+									<button class="btn poh-close">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal13">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row line-information">
+						<div class="col-12">
+							<div class="row li-part-1">
+								<div class="col-8 offset-2">
+									<h6>Journal Voucher</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row" style="margin-left: -0.2vw">
+								<div class="col-12">
+									<p class="searching-criteria jv-search-criteria">
+										<i class="fas fa-arrow-circle-down"></i> Searching
+										Criteria
+									</p>
+								</div>
+							</div>
+
+							<div class="row" id="sc">
+								<div class="col-12">
+									<div class="row" style="margin-left: -0.2vw">
+										<div class="col-2 all-any">
+											<form class="form-inline">
+												<label>Match</label>
+												<div class="form-check">
+													<input type="radio" name="match" id="all" class="form-check-input"
+														checked />
+													<label for="all" class="form-check-label">All</label>
+												</div>
+												<div class="form-check">
+													<input type="radio" name="match" id="any"
+														class="form-check-input" />
+													<label for="any" class="form-check-label">Any</label>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="row li-part-2">
+										<div class="col-3">
+											<div class="form-group">
+												<label><span>**</span> GL No</label>
+												<input class="form-control form-control-sm" type="text" />
+											</div>
+										</div>
+										<div class="col-3">
+											<label><span>**</span> Category</label>
+											<select class="form-control form-control-sm">
+												<option>Select Item</option>
+												<option>Saudi Arabia</option>
+												<option>Iraq</option>
+												<option>Iran</option>
+												<option>India</option>
+												<option>USA</option>
+												<option>China</option>
+												<option>England</option>
+												<option>Korea</option>
+											</select>
+										</div>
+										<div class="col-3">
+											<div class="form-group">
+												<label><span>**</span> GL Period From</label>
+												<input class="form-control form-control-sm" type="date" />
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="form-group">
+												<label><span>*</span> Document No.</label>
+												<input class="form-control form-control-sm" type="text" />
+											</div>
+										</div>
+									</div>
+									<div class="row li-part-2">
+										<div class="col-3">
+											<div class="form-group">
+												<label><span>**</span> Journal Name</label>
+												<input class="form-control form-control-sm" type="text" />
+											</div>
+										</div>
+										<div class="col-3">
+											<label><span>**</span> Source</label>
+											<select class="form-control form-control-sm">
+												<option>Select Item</option>
+												<option>Saudi Arabia</option>
+												<option>Iraq</option>
+												<option>Iran</option>
+												<option>India</option>
+												<option>USA</option>
+												<option>China</option>
+												<option>England</option>
+												<option>Korea</option>
+											</select>
+										</div>
+										<div class="col-3">
+											<div class="form-group">
+												<label><span>**</span> GL Period To</label>
+												<input class="form-control form-control-sm" type="date" />
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="form-group">
+												<label><span>*</span> Posting Date</label>
+												<input class="form-control form-control-sm" type="date" />
+											</div>
+										</div>
+									</div>
+									<div class="row jv-part-3">
+										<div class="col-4">
+											<p class="ml-2 mr-4"><span>*</span> Required</p>
+											<p><span>**</span> At least one is required</p>
+										</div>
+										<div class="col-8">
+											<button class="btn jv-ok">Reset Filters</button>
+											<button class="btn jv-search">Search</button>
+											<button class="btn jv-close">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row jv-part-4">
+								<div class="col-7 below-tab-buttons">
+									<button class="btn">
+										<i class="fas fa-pencil-alt mr-2"></i> New
+									</button>
+									<div class="dropdown">
+										<button type="button" class="btn btn-primary dropdown-toggle"
+											data-toggle="dropdown">
+											<i class="fas fa-vector-square mr-2"></i> View
+											<i class="fas fa-chevron-down ml-2"></i>
+										</button>
+										<div class="dropdown-menu" id="btb-drop">
+											<a class="dropdown-item" href="#">Link 1</a>
+											<a class="dropdown-item" href="#">Link 2</a>
+											<a class="dropdown-item" href="#">Link 3</a>
+										</div>
+									</div>
+									<button class="btn">
+										<i class="fas fa-paint-roller mr-2"></i> Format
+										<i class="fas fa-chevron-down ml-2"></i>
+									</button>
+									<button class="btn">
+										<i class="far fa-edit mr-2"></i> Edit
+									</button>
+									<button class="btn">
+										<i class="far fa-clone mr-2"></i> Copy
+									</button>
+									<button class="btn">
+										Create <i class="fas fa-chevron-down ml-2"></i>
+									</button>
+									<button class="btn">Learners</button>
+								</div>
+								<div class="col-3 offset-1 below-tab-buttons-2" style="margin-right: 1.5vw !important">
+									<div class="dropdown mr-4">
+										<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+											<img src="img/pie-chart.svg" class="mr-2" /> Legend
+											<i class="fas fa-chevron-down ml-2"></i>
+										</button>
+										<div class="dropdown-menu legend-items" id="legend">
+											<a class="dropdown-item" href="#"><img src="img/Ellipse 116.svg" /> Payment
+												due more
+												than 120 Days</a>
+											<a class="dropdown-item" href="#"><img src="img/Ellipse 115.svg" alt="" />
+												Payment due
+												between 90 - 120 Days</a>
+											<a class="dropdown-item" href="#"><img src="img/Ellipse 114.svg" alt="" />
+												Payment due
+												between 60 - 90 Days</a>
+											<a class="dropdown-item" href="#"><img src="img/Ellipse 117.svg" alt="" />
+												Payment due
+												between 30 - 60 Days</a>
+											<a class="dropdown-item" href="#"><img src="img/Ellipse 118.svg" alt="" />
+												Payment due
+												less than 30 Days</a>
+											<a class="dropdown-item" href="#"><img src="img/Ellipse 138.svg" alt="" />
+												Payment due
+												less than 10 Days</a>
+										</div>
+									</div>
+									<div class="dropdown">
+										<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+											<img src="img/excel.svg" class="mr-2" /> Export
+											<i class="fas fa-chevron-down ml-2"></i>
+										</button>
+										<div class="dropdown-menu excel-items jv-excel" id="excel">
+											<a class="dropdown-item" href="#">In MS Word</a>
+											<a class="dropdown-item" href="#">In PDF</a>
+											<a class="dropdown-item" href="#">In MS Excel</a>
+											<a class="dropdown-item" href="#">In CSV</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row jv-part-5">
+								<table class="table" style="width: 100%">
+									<thead class="table-head-s">
+										<tr>
+											<th>Invoice Type</th>
+											<th>Invoice No.</th>
+											<th>Project Name</th>
+											<th>Supplier</th>
+											<th>GL Period</th>
+											<th>Payable Amount</th>
+											<th>Status</th>
+											<th>Progress</th>
+											<th style="background-color: #f7f8f9; color: #707070" class="search">
+												Search
+											</th>
+											<th style="
+                            background-color: #f7f8f9;
+                            color: #707070;
+                            margin-right: 2vw !important;
+                          " class="search">
+												<i class="fas fa-chevron-up" style="margin-left: -1vw"></i>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-row-custom">
+											<td class="search-bar search-bar-end" colspan="12">
+												<input class="form-control search-bar-end" type="text"
+													placeholder=" Search by person, operation or date" />
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="yellow">Debit Note</td>
+											<td>AP-18169</td>
+											<td></td>
+											<td>Takaful Emarat Insurance P.S.C</td>
+											<td>Sept 20, 2020</td>
+											<td>1,050.00 AED</td>
+											<td>Initiated</td>
+											<td class="progress-s" colspan="2">
+												<p>34.5%</p>
+												<div class="progress-bar-table-display">
+													<div class="progress-bar-progress"></div>
+												</div>
+											</td>
+											<td class="options-s">
+												<div class="dropdown">
+													<button type="button" class="btn btn-primary dropdown-toggle"
+														data-toggle="dropdown">
+														<img src="img/3-vertical-dots.svg" />
+													</button>
+													<div class="dropdown-menu jv-option" id="table-drop">
+														<a class="dropdown-item" href="#">Link 1</a>
+														<a class="dropdown-item" href="#">Link 2</a>
+														<a class="dropdown-item" href="#">Link 3</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>Debit Note</td>
+											<td>AP-18169</td>
+											<td></td>
+											<td>Takaful Emarat Insurance P.S.C</td>
+											<td>Sept 20, 2020</td>
+											<td>1,050.00 AED</td>
+											<td>Initiated</td>
+											<td class="progress-s" colspan="2">
+												<p>34.5%</p>
+												<div class="progress-bar-table-display">
+													<div class="progress-bar-progress"></div>
+												</div>
+											</td>
+											<td class="options-s">
+												<p><i class="fas fa-ellipsis-v"></i></p>
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="red">Debit Note</td>
+											<td>AP-18169</td>
+											<td></td>
+											<td>Takaful Emarat Insurance P.S.C</td>
+											<td>Sept 20, 2020</td>
+											<td>1,050.00 AED</td>
+											<td>Initiated</td>
+											<td class="progress-s" colspan="2">
+												<p>34.5%</p>
+												<div class="progress-bar-table-display">
+													<div class="progress-bar-progress"></div>
+												</div>
+											</td>
+											<td class="options-s">
+												<p><i class="fas fa-ellipsis-v"></i></p>
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="green">Debit Note</td>
+											<td>AP-18169</td>
+											<td></td>
+											<td>Takaful Emarat Insurance P.S.C</td>
+											<td>Sept 20, 2020</td>
+											<td>1,050.00 AED</td>
+											<td>Initiated</td>
+											<td class="progress-s" colspan="2">
+												<p>34.5%</p>
+												<div class="progress-bar-table-display">
+													<div class="progress-bar-progress"></div>
+												</div>
+											</td>
+											<td class="options-s">
+												<p><i class="fas fa-ellipsis-v"></i></p>
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>Debit Note</td>
+											<td>AP-18169</td>
+											<td></td>
+											<td>Takaful Emarat Insurance P.S.C</td>
+											<td>Sept 20, 2020</td>
+											<td>1,050.00 AED</td>
+											<td>Initiated</td>
+											<td class="progress-s" colspan="2">
+												<p>34.5%</p>
+												<div class="progress-bar-table-display">
+													<div class="progress-bar-progress"></div>
+												</div>
+											</td>
+											<td class="options-s">
+												<p><i class="fas fa-ellipsis-v"></i></p>
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="blue">Debit Note</td>
+											<td>AP-18169</td>
+											<td></td>
+											<td>Takaful Emarat Insurance P.S.C</td>
+											<td>Sept 20, 2020</td>
+											<td>1,050.00 AED</td>
+											<td>Initiated</td>
+											<td class="progress-s" colspan="2">
+												<p>34.5%</p>
+												<div class="progress-bar-table-display">
+													<div class="progress-bar-progress"></div>
+												</div>
+											</td>
+											<td class="options-s">
+												<p><i class="fas fa-ellipsis-v"></i></p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="row">
+								<div class="col-12 pagination-display" style="margin-top: 0">
+									<ul class="pagination">
+										<li class="page-item">
+											<a class="page-link" href="#">1</a>
+										</li>
+										<li class="page-item active">
+											<a class="page-link" href="#">2</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">3</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">4</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">5</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal14">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row supplier-list">
+						<div class="col-12">
+							<div class="row li-part-1">
+								<div class="col-8 offset-2">
+									<h6>Supplier List</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row jv-part-5">
+								<table class="table table-striped" style="width: 100%">
+									<thead class="table-head-s">
+										<tr>
+											<th>Supplier Number</th>
+											<th>Supplier Name</th>
+											<th>GL Period</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-row-custom">
+											<td class="search-bar search-bar-end" colspan="3">
+												<input class="form-control search-bar-end" type="text"
+													placeholder=" Search by person, operation or date" />
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>CUST-1234</td>
+											<td>HEY VIP LUXURY CAR TRANSPORT - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>CUST-1234</td>
+											<td>
+												Mohammad Al Shamsi Trading Establishment - CN -
+												1234567
+											</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>CUST-1234</td>
+											<td>HEY VIP LUXURY CAR TRANSPORT - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>CUST-1234</td>
+											<td>
+												Mohammad Al Shamsi Trading Establishment - CN -
+												1234567
+											</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="row">
+								<div class="col-12 sl-note">
+									<p><span>Note: </span> Click on any row to select</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 pagination-display" style="margin-top: 0">
+									<ul class="pagination">
+										<li class="page-item">
+											<a class="page-link" href="#">1</a>
+										</li>
+										<li class="page-item active">
+											<a class="page-link" href="#">2</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">3</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">4</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">5</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal21">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row supplier-list">
+
+						<div class="col-12">
+							<div class="row li-part-1">
+								<div class="col-8 offset-2">
+									<h6>Supplier List</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row jv-part-5">
+								<table class="table table-striped" style="width: 100%">
+									<thead class="table-head-s">
+										<tr style="text-align: center">
+											<th>
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</th>
+											<th>Supplier Number</th>
+											<th>Supplier Name</th>
+											<th>GL Period</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-row-custom">
+											<td class="oh-first-td search-bar">
+												<i class="fas fa-plus-circle add-oh"></i>
+											</td>
+											<td class="search-bar search-bar-end" colspan="3">
+												<input class="form-control search-bar-end" type="text"
+													placeholder=" Search by person, operation or date" />
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</td>
+											<td>CUST-1234</td>
+											<td>HEY VIP LUXURY CAR TRANSPORT - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</td>
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</td>
+											<td>CUST-1234</td>
+											<td>
+												Mohammad Al Shamsi Trading Establishment - CN -
+												1234567
+											</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</td>
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</td>
+											<td>CUST-1234</td>
+											<td>HEY VIP LUXURY CAR TRANSPORT - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</td>
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</td>
+											<td>CUST-1234</td>
+											<td>
+												Mohammad Al Shamsi Trading Establishment - CN -
+												1234567
+											</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</td>
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</td>
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</td>
+											<td>CUST-1234</td>
+											<td>Pak Express Luxury Cards Transport LLC - 123456</td>
+											<td>2020-07-07</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="row">
+								<div class="col-12 sl-note">
+									<p><span>Note: </span> Click on any row to select</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 pagination-display" style="margin-top: 0">
+									<ul class="pagination">
+										<li class="page-item">
+											<a class="page-link" href="#">1</a>
+										</li>
+										<li class="page-item active">
+											<a class="page-link" href="#">2</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">3</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">4</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">5</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="myModal-ace">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row supplier-list" style="width: 70vw;">
+						<div class="col-12">
+							<div class="row li-part-1">
+								<div class="col-8 offset-2">
+									<h6>Supplier List</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row jv-part-5">
+								<table class="table table-striped" style="width: 100%">
+									<thead class="table-head-s">
+										<tr style="text-align: center">
+											<th>
+												<input type="checkbox" id="webdeveloper" class="form-check-input" />
+											</th>
+											<th>Product/Material</th>
+											<th>Unit Cost</th>
+											<th>VAT Rate</th>
+											<!-- <th>VAT Amount</th>
+                        <th>Discount Amount</th>
+                        <th>Quantity</th> -->
+											<th>Total Price (AED)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-row-custom">
+											<td class="oh-first-td search-bar">
+												<i class="fas fa-plus-circle add-oh"></i>
+											</td>
+											<td class="search-bar search-bar-end" colspan="7">
+												<input class="form-control search-bar-end" type="text"
+													placeholder=" Search by person, operation or date" />
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td class="oh-first-td">
+												<input type="checkbox" id="webdeveloper" class="form-check-input">
+											</td>
+											<td>
+												<div class="s-t-image-box" style="justify-content: flex-start;">
+													<img src="img/ace-watch.svg" />
+													<div class="s-t-img-text">
+														<h1>Rolex Wristwatch Royal Black 223-YM</h1>
+														<p>Wristwear</p>
+													</div>
+												</div>
+											</td>
+											<!-- <td>
+                          <div class="s-just-text-in-table">2345.23</div>
+                        </td>
+                        <td>
+                          <div class="s-just-text-in-table">99%</div>
+                        </td>
+                        <td>
+                          <div class="s-just-text-in-table">2345.21</div>
+                        </td> -->
+											<td>
+												<div class="s-ace-abc">
+													<div class="s-white-bgc s-increase-decrease-2">
+														<div class="s-id-box">
+															<i class="fas fa-minus"></i>
+														</div>
+														<span>100</span>
+														<div class="s-id-box">
+															<i class="fas fa-plus"></i>
+														</div>
+													</div>
+													<div class="s-white-bgc s-just-text-in-table-2">
+														12.6%
+													</div>
+												</div>
+											</td>
+											<td>
+												<div class="s-white-bgc s-increase-decrease"
+													style="display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+													<span
+														style="width: 100%; display: flex; align-items: center; justify-content: space-evenly;">
+														<div class="s-id-box">
+															<i class="fas fa-minus"></i>
+														</div>
+														<span>100</span>
+														<div class="s-id-box">
+															<i class="fas fa-plus"></i>
+														</div>
+													</span>
+													<input type="text" class="form-control">
+												</div>
+											</td>
+											<td style="padding: 0 !important;">
+												<div class="s-ace-price" style="height: 7vw;">
+													<div class="s-price-display" style="height: 7vw;">1234.23</div>
+													<span class="s-price-dots" style="height: 7vw;">
+														<span class="s-price-dots">
+															<div class="dropdown">
+																<button type="button" class="btn dropdown-toggle"
+																	data-toggle="dropdown">
+																	<i class="fas fa-ellipsis-v"></i>
+																</button>
+																<div class="dropdown-menu">
+																	<a class="dropdown-item" href="#">This is a very
+																		long link</a>
+																	<a class="dropdown-item" href="#">Link 2</a>
+																	<a class="dropdown-item" href="#">Link 3</a>
+																</div>
+															</div>
+														</span>
+													</span>
+													<span class="s-price-cross" style="height: 7vw;">
+														<i class="fas fa-times"></i>
+													</span>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="row">
+								<div class="col-12 sl-note">
+									<p><span>Note: </span> Click on any row to select</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 pagination-display" style="margin-top: 0">
+									<ul class="pagination">
+										<li class="page-item">
+											<a class="page-link" href="#">1</a>
+										</li>
+										<li class="page-item active">
+											<a class="page-link" href="#">2</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">3</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">4</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">5</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="myModal15">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row supplier-list supplier-list-2">
+						<div class="col-12">
+							<div class="row li-part-1 mb-4">
+								<div class="col-8 offset-2">
+									<h6>Supplier List</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row jv-part-5">
+								<table class="table table-striped pop-table-2" style="width: 100%">
+									<!-- <thead class="table-head-s">
+                                      <tr> 
+                                        <th>Supplier Number</th>
+                                        <th>Supplier Name</th>
+                                      </tr>
+                                    </thead> -->
+									<tbody>
+										<tr class="table-row-custom">
+											<td class="search-bar search-bar-end" colspan="3">
+												<input class="form-control search-bar-end" type="text"
+													placeholder=" Search by person, operation or date" />
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>
+												<p style="color: #0096d8">CUST-1234</p>
+												<p>300000000045214</p>
+												<p>Version 1</p>
+											</td>
+											<td>
+												<p>
+													Supplier Name: HEY VIP LUXURY CAR TRANSPORT - 123456
+												</p>
+												<p>Inactive Date: 07-May-2020 08:00 AM</p>
+												<p>Folder: Questionnaire Library</p>
+												<p>Score Questionnaire: Yes</p>
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>
+												<p style="color: #0096d8">CUST-1234</p>
+												<p>300000000045214</p>
+												<p>Version 1</p>
+											</td>
+											<td>
+												<p>
+													Supplier Name: HEY VIP LUXURY CAR TRANSPORT - 123456
+												</p>
+												<p>Inactive Date: 07-May-2020 08:00 AM</p>
+												<p>Folder: Questionnaire Library</p>
+												<p>Score Questionnaire: Yes</p>
+											</td>
+										</tr>
+										<tr class="table-bordered">
+											<td>
+												<p style="color: #0096d8">CUST-1234</p>
+												<p>300000000045214</p>
+												<p>Version 1</p>
+											</td>
+											<td>
+												<p>
+													Supplier Name: HEY VIP LUXURY CAR TRANSPORT - 123456
+												</p>
+												<p>Inactive Date: 07-May-2020 08:00 AM</p>
+												<p>Folder: Questionnaire Library</p>
+												<p>Score Questionnaire: Yes</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="row">
+								<div class="col-12 sl-note">
+									<p><span>Note: </span> Click on any row to select</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 pagination-display" style="margin-top: 0">
+									<ul class="pagination">
+										<li class="page-item">
+											<a class="page-link" href="#">1</a>
+										</li>
+										<li class="page-item active">
+											<a class="page-link" href="#">2</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">3</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">4</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link" href="#">5</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal16">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row test-po">
+						<div class="col-12">
+							<div class="row yr-part-1">
+								<div class="col-8 offset-2">
+									<h6>For Your Response</h6>
+								</div>
+								<div class="col-1 offset-1">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+							<div class="row yr-part-3 yr-part-3-oh">
+								<div class="col-12">
+									<p>Purchase Order: Test Purchase order #124593</p>
+								</div>
+							</div>
+							<div class="row yr-part-10">
+								<div class="col-9">
+									<div class="row">
+										<div class="col-6">
+											<p>From: <span>PIB.MANSOOR</span></p>
+											<p>To: <span>PIB.MANSOOR</span></p>
+											<p>Sent: <span>7 Oct 20 2:11 pm</span></p>
+											<p>Due: <span>9 Oct 20 2:11 pm</span></p>
+											<p>ID: <span>123456</span></p>
+										</div>
+										<div class="col-6">
+											<p>Attachments</p>
+											<p>
+												<span><i class="fas fa-paperclip mr-2"></i></span>
+												Att1.pdf
+											</p>
+											<p>
+												<span><i class="fas fa-paperclip mr-2"></i></span>Licensingissue.doc
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-3" style="padding-right: 0">
+									<button class="btn tpo-approve">Approve</button>
+									<button class="btn tpo-close">Reject</button>
+									<button class="btn tpo-ok" style="margin-left: 0">
+										Reassign
+									</button>
+									<button class="btn ri-btn">Request Information</button>
+								</div>
+							</div>
+							<div class="row yr-part-3">
+								<div class="col-12">
+									<p>Purchase Order: Test Purchase order #124593</p>
+								</div>
+							</div>
+							<div class="row yr-part-4">
+								<div class="col-8">
+									<table class="table table-bordered" id="yr-table">
+										<tr>
+											<td class="yr-td-1">P.O. Number</td>
+											<td class="yr-td-2">LPO-18037</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">P.O. Date</td>
+											<td class="yr-td-2">2020-07-07</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">Supplier</td>
+											<td class="yr-td-2">
+												Al Wathba National Insurance Co. P.S.C.
+											</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">Project</td>
+											<td class="yr-td-2"></td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">P.O. Amount (AED)</td>
+											<td class="yr-td-2">26250</td>
+										</tr>
+										<tr>
+											<td class="yr-td-1">VAT Amount</td>
+											<td class="yr-td-2">1250</td>
+										</tr>
+									</table>
+									<p style="
+                        color: #0096d8;
+                        font-size: 1vw;
+                        margin-top: 1vw;
+                        font-weight: 600;
+                      ">
+										Click here to see more details
+									</p>
+								</div>
+							</div>
+							<div class="row yr-part-3">
+								<div class="col-12">
+									<p>Action History</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<table class="table ac-table">
+										<thead>
+											<tr>
+												<th>No.</th>
+												<th>Action Date</th>
+												<th>Action</th>
+												<th>From</th>
+												<th>To</th>
+												<th>Remarks</th>
+											</tr>
+										</thead>
+										<tbody class="table-bordered">
+											<tr>
+												<td>1.</td>
+												<td>12 Oct 20 2:11 PM</td>
+												<td>Submit</td>
+												<td class="ac-name">PIB.MANSOOR</td>
+												<td class="ac-name">PIB.MANSOOR</td>
+												<td>Remarks test Remarks test</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="row yr-part-3">
+								<div class="col-12">
+									<p>Remarks</p>
+								</div>
+							</div>
+							<div class="row yr-part-6">
+								<div class="col-12">
+									<textarea class="form-control" rows="5"
+										placeholder="Please give remarks if any..."></textarea>
+								</div>
+							</div>
+							<div class="row yr-part-7">
+								<div class="col-3 offset-9">
+									<button class="btn yr-part-7-cancel">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="popmodal-1">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="container-fluid">
+					<div class="row top-heading-oh">
+						<div class="col-10 offset-1 top-friend">
+							<p>Add Friends</p>
+						</div>
+						<div class="top-friend-circle col-1">
+							<i class="fas fa-times"></i>
+						</div>
+					</div>
+					<div class="row search-bar-day-icon pop-2-padding">
+						<div class="col-11 search-bar-day">
+							<input type="text" class="searchTerm form-control" placeholder="xyz@5dsolutions.ae" />
+						</div>
+						<div class="col-1 sid-box">
+							<div class="search-icon-day">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+					</div>
+					<div class="row user-info">
+						<div class="col-8 user-img-info">
+							<img src="img/image-of-user.svg" alt="" />
+							<div class="user-info-box">
+								<h6>Saim Abbas <span>(Front End Developer)</span></h6>
+								<p>xyz@5Dsolutions.ae</p>
+							</div>
+						</div>
+						<div class="col-2 user-icon">
+							<i class="fas fa-user-plus"></i>
+						</div>
+					</div>
+					<div class="row user-info">
+						<div class="col-10 user-img-info">
+							<img src="img/image-of-user.svg" alt="" />
+							<div class="user-info-box">
+								<h6>Saim Abbas</h6>
+								<p>xyz@5Dsolutions.ae <span>(Not on iPortal)</span></p>
+							</div>
+						</div>
+						<div class="col-2 user-icon">
+							<button class="btn pop-pending">Pending</button>
+						</div>
+					</div>
+					<div class="row user-info">
+						<div class="col-10 user-img-info">
+							<img src="img/image-of-user.svg" alt="" />
+							<div class="user-info-box">
+								<h6>Saim Abbas <span>(Front End Developer)</span></h6>
+								<p>xyz@5Dsolutions.ae</p>
+							</div>
+						</div>
+						<div class="col-2 user-icon">
+							<i class="fas fa-user-plus"></i>
+						</div>
+					</div>
+					<div class="row user-info">
+						<div class="col-9 user-img-info">
+							<img src="img/image-of-user.svg" alt="" />
+							<div class="user-info-box">
+								<h6>Saim Abbas <span>(Front End Developer)</span></h6>
+								<p>xyz@5Dsolutions.ae</p>
+							</div>
+						</div>
+						<div class="col-3 user-icon">
+							<button class="btn pop-invite">
+								<i class="fas fa-user-plus"></i> Send Invite
+							</button>
+						</div>
+					</div>
+					<div class="row workspacee">
+						<div class="col-12 workspacee-content">
+							<p>
+								Looking for a different workspacee? You can try another email
+								address or ask your workspacee Administrator for an
+								invitation.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="popmodal-2">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="container-fluid">
+					<div class="row top-heading-oh">
+						<div class="col-10 offset-1 top-friend">
+							<p>Create or join team</p>
+						</div>
+						<div class="top-friend-circle col-1">
+							<i class="fas fa-times"></i>
+						</div>
+					</div>
+					<div class="row search-bar-day-icon">
+						<div class="col-11 search-bar-day">
+							<input type="text" class="searchTerm form-control" placeholder="Search Team" />
+						</div>
+						<div class="col-1 sid-box">
+							<div class="search-icon-day">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+					</div>
+					<div class="row pop-team-box-con">
+						<div class="col-4 pop-team-box">
+							<img src="img/create-team.svg" />
+							<h3>Create your own team</h3>
+							<p>
+								Create a public or private group with people in your
+								organization
+							</p>
+							<div class="pop-button-box">
+								<button class="btn create-team-button">CREATE TEAM</button>
+							</div>
+						</div>
+						<div class="col-4 pop-team-box">
+							<img src="img/join-team.svg" />
+							<h3>Join a team with a code</h3>
+							<div class="pop-input-box">
+								<input type="text" class="form-control" placeholder="Paste team invite link here" />
+							</div>
+							<div class="pop-button-box pop-button-box-other">
+								<button class="btn create-team-button">JOIN</button>
+							</div>
+						</div>
+						<div class="col-4 pop-team-box">
+							<img src="img/create-team.svg" />
+							<h3>Tesla - LA</h3>
+							<p>24 members | Public</p>
+							<div class="pop-button-box pop-button-box-other">
+								<button class="btn create-team-button">CREATE TEAM</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="popmodal-3">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="container-fluid">
+					<div class="row top-heading-oh">
+						<div class="col-10 offset-1 top-friend">
+							<p>Create Team</p>
+						</div>
+						<div class="top-friend-circle col-1">
+							<i class="fas fa-times"></i>
+						</div>
+					</div>
+					<div class="row search-bar-day-icon">
+						<div class="col-11 search-bar-day">
+							<input type="text" class="searchTerm form-control" placeholder="Search Team" />
+						</div>
+						<div class="col-1 sid-box">
+							<div class="search-icon-day">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<p class="pop-create-team-head">
+								Select the Privacy of your team
+							</p>
+						</div>
+						<div class="row msib-radio mrfq-2-radio">
+							<div class="col-6">
+								<input type="radio" name="ohohoh" id="public-pop" checked />
+								<label for="public-pop">
+									<i class="fas fa-globe public-globe"></i>
+									<div class="pop-r-text">
+										<h6>Public</h6>
+										<p>Anyone in your Organization can join</p>
+									</div>
+								</label>
+							</div>
+							<div class="col-6">
+								<input type="radio" name="ohohoh" id="private-pop" />
+								<label for="private-pop">
+									<i class="fas fa-lock private-lock"></i>
+									<div class="pop-r-text">
+										<h6>Private</h6>
+										<p>People need permission to join</p>
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<p class="pop-create-team-head">
+								Some quick details about your team
+							</p>
+						</div>
+
+						<div class="form-group pop-form-group">
+							<label>Team Name</label>
+							<input class="form-control form-control-lg" type="text"
+								placeholder="Give your team a name" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 team-pic-box">
+							<div class="team-picture-heading">Team Picture</div>
+							<div class="pic-upload-team">
+								<i class="fas fa-camera"></i>
+							</div>
+						</div>
+						<div class="col-9 team-detail">
+							<div class="form-group pop-form-group">
+								<label>Team Name</label>
+								<textarea class="form-control"
+									placeholder="Let people know what this team is all about"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 next-button-pop">
+							<button class="btn">
+								Next <i class="fas fa-chevron-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="popmodal-4">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="container-fluid">
+					<div class="row top-heading-oh">
+						<div class="col-10 offset-1 top-friend">
+							<p>Create Team</p>
+						</div>
+						<div class="top-friend-circle col-1">
+							<i class="fas fa-times"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<p class="pop-create-team-head add-tm">Add Team Members</p>
+						</div>
+						<div class="col-12">
+							<p class="add-tm-text">Search and add team members</p>
+						</div>
+					</div>
+					<div class="row search-bar-day-icon">
+						<div class="col-11 search-bar-day">
+							<input type="text" class="searchTerm form-control"
+								placeholder="Search by name, email or position" />
+						</div>
+						<div class="col-1 sid-box">
+							<div class="search-icon-day">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-11">
+							<div class="row tm-add-box">
+								<div class="col-1 tm-img">
+									<img src="img/4.jpg" alt="" />
+								</div>
+								<div class="col-9 tm-name-mail">
+									<p class="tm-name">
+										Muhammad Saim Abbas <span>(Front End Developer)</span>
+									</p>
+									<p class="tm-mail">xyz@example.com</p>
+								</div>
+								<div class="col-2 tm-add">
+									<button class="btn">ADD</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-11">
+							<div class="row tm-add-box">
+								<div class="col-1 tm-img">
+									<img src="img/4.jpg" alt="" />
+								</div>
+								<div class="col-9 tm-name-mail">
+									<p class="tm-name">
+										Muhammad Saim Abbas <span>(Front End Developer)</span>
+									</p>
+									<p class="tm-mail">xyz@example.com</p>
+								</div>
+								<div class="col-2 tm-add">
+									<button class="btn">ADD</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-11">
+							<div class="row tm-add-box">
+								<div class="col-1 tm-img">
+									<img src="img/4.jpg" alt="" />
+								</div>
+								<div class="col-9 tm-name-mail">
+									<p class="tm-name">
+										Muhammad Saim Abbas <span>(Front End Developer)</span>
+									</p>
+									<p class="tm-mail">xyz@example.com</p>
+								</div>
+								<div class="col-2 tm-add">
+									<button class="btn">ADD</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<p class="add-tm-text">Search and add team members</p>
+						</div>
+					</div>
+					<div class="row mem-con">
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<i class="fas fa-times mem-cross"></i>
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<i class="fas fa-times mem-cross"></i>
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<i class="fas fa-times mem-cross"></i>
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<i class="fas fa-times mem-cross"></i>
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<i class="fas fa-times mem-cross"></i>
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<i class="fas fa-times mem-cross"></i>
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<i class="fas fa-times mem-cross"></i>
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+						<div class="col-1 mem-box">
+							<div class="img-cross">
+								<i class="fas fa-times mem-cross"></i>
+								<img src="img/4.jpg" />
+							</div>
+							<p>Saim Abbas</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 next-button-pop">
+							<button class="btn">
+								Finish <i class="fas fa-chevron-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="myModal1-new">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 mmn-top-head">
+							<h1>Add New Type</h1>
+							<span><i class="fas fa-times" data-dismiss="modal"></i></span>
+						</div>
+						<div class="col-12 mmn-fields">
+							<div class="form-group">
+								<label><span>**</span> Type Name</label>
+								<input class="form-control" type="text" />
+							</div>
+							<div class="form-group">
+								<label>Type Description</label>
+								<textarea class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="col-12 mmn-fields mmn-3-fields">
+							<div class="form-group">
+								<label>Start Date</label>
+								<input class="form-control" type="date" />
+							</div>
+							<div class="form-group">
+								<label>End Date</label>
+								<input class="form-control" type="date" />
+							</div>
+							<div class="form-group saim-universal-checkbox">
+								<input type="checkbox" name="mmn-universal-checkbox" id="mmn-checkbox" checked />
+								<label for="mmn-checkbox" class="mmn-label-box">
+									<div class="mmn-checkbox-box">
+										<i class="fas fa-check"></i>
+									</div>
+									<span>Enabled</span>
+								</label>
+							</div>
+						</div>
+						<div class="col-12 mmn-fields-2">
+							<label>Select Category Display type</label>
+							<div class="form-group saim-universal-radio">
+								<div>
+									<input type="radio" name="mmn-universal-radio" id="mmn-radio-1" checked />
+									<label for="mmn-radio-1">
+										<div class="mmn-radio-circle">
+											<div class="mmn-radio-dot"></div>
+										</div>
+										<span>Icons</span>
+									</label>
+								</div>
+								<div>
+									<input type="radio" name="mmn-universal-radio" id="mmn-radio-2" />
+									<label for="mmn-radio-2">
+										<div class="mmn-radio-circle">
+											<div class="mmn-radio-dot"></div>
+										</div>
+										<span>Images</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 mmn-preview-window">
+							<div class="mmn-preview-left">
+								<div class="mmn-left-search-box">
+									<img src="img/mmn-search.svg" />
+									<input type="text" class="form-control" value="Furniture" />
+								</div>
+								<div class="mmn-left-preview-box">
+									<div class="mmn-preview-icon-container">
+										<img src="img/real-estate.svg" />
+										<span>Real Estate</span>
+									</div>
+								</div>
+								<div class="mmn-left-preview-box mmn-left-preview-box-search">
+									<i>No match found</i>
+									<h1>Suggested Icons</h1>
+									<div class="mmn-list-box">
+										<span><img src="img/mmn-home.svg" /> Home</span>
+										<span><img src="img/mmn-home.svg" /> Furniture</span>
+										<span><img src="img/mmn-home.svg" /> Mobiles</span>
+										<span><img src="img/mmn-home.svg" /> Home</span>
+										<span><img src="img/mmn-home.svg" /> Furniture</span>
+										<span><img src="img/mmn-home.svg" /> Mobiles</span>
+									</div>
+								</div>
+							</div>
+							<div class="mmn-preview-right">
+								<div class="mmn-preview-right-heading">
+									<h1>Icons (Example Preview)</h1>
+								</div>
+								<div class="mmn-preview-box-icons">
+									<div class="mmn-preview-icon-container">
+										<img src="img/real-estate.svg" />
+										<span>Real Estate</span>
+									</div>
+									<div class="mmn-preview-icon-container">
+										<img src="img/real-estate.svg" />
+										<span>Real Estate</span>
+									</div>
+									<div class="mmn-preview-icon-container">
+										<img src="img/real-estate.svg" />
+										<span>Real Estate</span>
+									</div>
+								</div>
+
+								<div class="mmn-btn-box">
+									<button class="btn mmn-save">Save</button>
+									<button class="btn mmn-cancel">Cancel</button>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="mmn-btn-box">
+                            <button class="btn mmn-save">Save</button>
+                            <button class="btn mmn-cancel">Cancel</button>
+                        </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal2-new">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 mmn-top-head">
+							<h1>Add New Type</h1>
+							<span><i class="fas fa-times" data-dismiss="modal"></i></span>
+						</div>
+						<div class="col-12 mmn-fields">
+							<div class="form-group">
+								<label><span>**</span> Type Name</label>
+								<input class="form-control" type="text" />
+							</div>
+							<div class="form-group">
+								<label>Type Description</label>
+								<textarea class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="col-12 mmn-fields mmn-3-fields">
+							<div class="form-group">
+								<label>Start Date</label>
+								<input class="form-control" type="date" />
+							</div>
+							<div class="form-group">
+								<label>End Date</label>
+								<input class="form-control" type="date" />
+							</div>
+							<div class="form-group saim-universal-checkbox">
+								<input type="checkbox" name="mmn-universal-checkbox" id="mmn-checkbox-2" checked />
+								<label for="mmn-checkbox-2" class="mmn-label-box">
+									<div class="mmn-checkbox-box">
+										<i class="fas fa-check"></i>
+									</div>
+									<span>Enabled</span>
+								</label>
+							</div>
+						</div>
+						<div class="col-12 mmn-fields-2">
+							<label>Select Category Display type</label>
+							<div class="form-group saim-universal-radio">
+								<div>
+									<input type="radio" name="mmn-universal-radio" id="mmn-radio-3" checked />
+									<label for="mmn-radio-3">
+										<div class="mmn-radio-circle">
+											<div class="mmn-radio-dot"></div>
+										</div>
+										<span>Icons</span>
+									</label>
+								</div>
+								<div>
+									<input type="radio" name="mmn-universal-radio" id="mmn-radio-4" />
+									<label for="mmn-radio-4">
+										<div class="mmn-radio-circle">
+											<div class="mmn-radio-dot"></div>
+										</div>
+										<span>Images</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 mmn-preview-window">
+							<div class="mmn-preview-left">
+								<div class="mmn-left-search-box-img">
+									<!-- <img src="img/mmn-upload.svg"> -->
+									<!-- <span>Upload/Browse</span> -->
+									<p>Item no. 256283</p>
+									<i class="fas fa-times"></i>
+								</div>
+								<div class="mmn-left-preview-box-img">
+									<!-- <p>Preview</p> -->
+									<div class="mmn-preview-img-container">
+										<img src="img/real-estate-img.svg" />
+										<span>Real Estate</span>
+										<div class="mmn-black-gradient"></div>
+									</div>
+								</div>
+							</div>
+							<div class="mmn-preview-right">
+								<div class="mmn-preview-right-heading">
+									<h1>Icons (Example Preview)</h1>
+								</div>
+								<div class="mmn-preview-box-icons">
+									<div class="mmn-preview-img-container">
+										<img src="img/real-estate-img.svg" />
+										<span>Real Estate</span>
+										<div class="mmn-black-gradient"></div>
+									</div>
+									<div class="mmn-preview-img-container">
+										<img src="img/real-estate-img.svg" />
+										<span>Real Estate</span>
+										<div class="mmn-black-gradient"></div>
+									</div>
+									<div class="mmn-preview-img-container">
+										<img src="img/real-estate-img.svg" />
+										<span>Real Estate</span>
+										<div class="mmn-black-gradient"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 mt-0 mmn-btn-box">
+							<button class="btn mmn-save">Save</button>
+							<button class="btn mmn-cancel">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="unknown-pop-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<i class="fas fa-times" data-dismiss="modal"></i>
+				<div class="u-1-main-box">
+					<div class="u-1-round">
+						<img src="img/u-1-round.svg">
+						<span>
+							<h1>Let's build it together</h1>
+							<button class="btn">Get started</button>
+						</span>
+					</div>
+					<div class="u-1-square" style="background-image: url('img/u-1-square.svg');">
+						<h1>You have dared to put something new!</h1>
+						<span><i class="fas fa-check-circle"></i> No Coding Required for Development</span>
+						<span><i class="fas fa-check-circle"></i> No Setup Fee to Start</span>
+						<span><i class="fas fa-check-circle"></i> Launch in a Day</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="unknown-pop-2">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<i class="fas fa-times" data-dismiss="modal"></i>
+				<div class="u-2-square">
+					<img src="img/SVG.svg" class="ui-svg">
+					<h1>Can't find what you are looking for?</h1>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nam perspiciatis quas labore
+						amet quisquam.</p>
+					<div class="u-1-search">
+						<select class="custom-select">
+							<option>Products</option>
+							<option>Saudi Arabia</option>
+							<option>Iraq</option>
+							<option>Iran</option>
+							<option>India</option>
+							<option>USA</option>
+							<option>China</option>
+							<option>England</option>
+							<option>Korea</option>
+						</select>
+						<input type="text" class="form-control">
+						<button class="btn">Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal" id="small-alert-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="small-alert-box" style="background-color: #4791FF;">
+					<img src="img/op-blue.svg" class="op-img">
+					<i class="fas fa-times" data-dismiss="modal"></i>
+					<h6>FYR: STANDARD</h6>
+					<p>Receipt Payment Number: REC-1432 has been
+						sent to you for approval</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="small-alert-2">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="small-alert-box" style="background-color: #2AAC67;">
+					<img src="img/op-img-2.svg" class="op-img">
+					<i class="fas fa-times" data-dismiss="modal"></i>
+					<h6>FYR: STANDARD</h6>
+					<p>Receipt Payment Number: REC-1432 has been
+						sent to you for approval</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="small-alert-3">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="small-alert-box" style="background-color: #FF7E7E;">
+					<img src="img/op-img-3.svg" class="op-img">
+					<i class="fas fa-times" data-dismiss="modal"></i>
+					<h6>FYR: STANDARD</h6>
+					<p>Receipt Payment Number: REC-1432 has been
+						sent to you for approval</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="big-alert-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="big-alert-box">
+					<div class="big-alert-icon">
+						<i class="fas fa-exclamation-triangle" style="color: #0096D8;"></i>
+					</div>
+					<div class="big-alert-content" style="background-color: #0096D8;">
+						<span>
+							<img src="img/op-log.svg">
+						</span>
+						<div>
+							<i class="fas fa-times"></i>
+							<h1>Hype Cycle for Digital Care Delivery
+								including Telemedicine and Virtual
+								Care 2020. Eazy Procure Report.</h1>
+							<a href="#">Find Out More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="big-alert-2">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="big-alert-box">
+					<div class="big-alert-icon">
+						<i class="fas fa-exclamation-triangle" style="color: #FF4A4A;"></i>
+					</div>
+					<div class="big-alert-content" style="background-color: #FF4A4A;">
+						<span>
+							<img src="img/op-log.svg">
+						</span>
+						<div>
+							<i class="fas fa-times"></i>
+							<h1>Hype Cycle for Digital Care Delivery
+								including Telemedicine and Virtual
+								Care 2020. Eazy Procure Report.</h1>
+							<a href="#">Find Out More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="big-alert-3">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="big-alert-box">
+					<div class="big-alert-icon">
+						<i class="fas fa-exclamation-triangle" style="color: #80E0AD;"></i>
+					</div>
+					<div class="big-alert-content" style="background-color: #80E0AD;">
+						<span>
+							<img src="img/op-log.svg">
+						</span>
+						<div>
+							<i class="fas fa-times"></i>
+							<h1>Hype Cycle for Digital Care Delivery
+								including Telemedicine and Virtual
+								Care 2020. Eazy Procure Report.</h1>
+							<a href="#">Find Out More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="modal" id="just-fields-pop">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row line-information">
+						<div class="col-12">
+							<div class="row li-part-1">
+								<div class="col-8 offset-2">
+									<h6>Add New Customer</h6>
+								</div>
+								<div class="col-1 offset-1" data-dismiss="modal">
+									<i class="fas fa-times-circle"></i>
+								</div>
+							</div>
+
+							<div class="row li-part-2 li-part-th">
+								<div class="col-4">
+									<div class="form-inline">
+										<div class="form-check mr-4">
+											<input type="radio" name="payment" id="th-1" class="form-check-input" checked />
+											<label for="th-1" class="form-check-label">Individual</label>
+										</div>
+										<div class="form-check">
+											<input type="radio" name="payment" id="th-2" class="form-check-input" />
+											<label for="th-2" class="form-check-label">Company</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label><span>**</span> GL No</label>
+										<input class="form-control" type="text" />
+									</div>
+									<div class="form-group">
+										<label><span>**</span> GL No</label>
+										<select class="form-control">
+											<option>Select Item</option>
+											<option>Saudi Arabia</option>
+											<option>Iraq</option>
+											<option>Iran</option>
+											<option>India</option>
+											<option>USA</option>
+											<option>China</option>
+											<option>England</option>
+											<option>Korea</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label><span>**</span> GL No</label>
+										<input class="form-control" type="text" />
+									</div>
+								</div>
+								<div class="col-8">
+									<div class="form-group">
+										<label><span>**</span> GL No</label>
+										<input class="form-control form-control-sm" type="text" />
+									</div>
+									<div class="row">
+										<div class="col-6">
+											<div class="form-group">
+												<label><span>**</span> GL No</label>
+												<input class="form-control form-control-sm" type="text" />
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="form-group">
+												<label><span>**</span> GL No</label>
+												<input class="form-control form-control-sm" type="text" />
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label><span>**</span> GL No</label>
+										<input class="form-control form-control-sm" type="text" />
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/javas.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<!-- <script>
+        $(".fa-times-circle").click(function(){
+            $("#myModal1 , .modal-backdrop").css({"display":"none"});
+            $("#myModal2 , .modal-backdrop").css({"display":"none"});
+            $("#myModal3 , .modal-backdrop").css({"display":"none"});
+            $("#myModal4 , .modal-backdrop").css({"display":"none"});
+            $("#myModal5 , .modal-backdrop").css({"display":"none"});
+            $("#myModal6 , .modal-backdrop").css({"display":"none"});
+            $("#myModal7 , .modal-backdrop").css({"display":"none"});
+        })
+    </script> -->
+	<script>
+		$(".lid-1").click(function () {
+			$(".lid-card-1").slideToggle(500);
+			$(".lid-1 i").toggleClass("fa-chevron-up");
+			$(".lid-1 i").toggleClass("fa-chevron-down");
+		});
+		$(".lid-2").click(function () {
+			$(".lid-card-2").slideToggle(500);
+			$(".lid-2 i").toggleClass("fa-chevron-up");
+			$(".lid-2 i").toggleClass("fa-chevron-down");
+		});
+		$(".lid-3").click(function () {
+			$(".lid-card-3").slideToggle(500);
+			$(".lid-3 i").toggleClass("fa-chevron-up");
+			$(".lid-3 i").toggleClass("fa-chevron-down");
+		});
+		$(".lid-4").click(function () {
+			$(".lid-card-4").slideToggle(500);
+			$(".lid-4 i").toggleClass("fa-chevron-up");
+			$(".lid-4 i").toggleClass("fa-chevron-down");
+		});
+		$(".lid-5").click(function () {
+			$(".lid-card-5").slideToggle(500);
+			$(".lid-5 i").toggleClass("fa-chevron-up");
+			$(".lid-5 i").toggleClass("fa-chevron-down");
+		});
+		$(".lid-6").click(function () {
+			$(".lid-card-6").slideToggle(500);
+			$(".lid-6 i").toggleClass("fa-chevron-up");
+			$(".lid-6 i").toggleClass("fa-chevron-down");
+		});
+		$(".lid-7").click(function () {
+			$(".lid-card-7").slideToggle(500);
+			$(".lid-7 i").toggleClass("fa-chevron-up");
+			$(".lid-7 i").toggleClass("fa-chevron-down");
+		});
+		$(".lid-8").click(function () {
+			$(".lid-card-8").slideToggle(500);
+			$(".lid-8 i").toggleClass("fa-chevron-up");
+			$(".lid-8 i").toggleClass("fa-chevron-down");
+		});
+		$(".searching-criteria").click(function () {
+			$("#sc").slideToggle(1000);
+			$(".searching-criteria i").toggleClass("fa-arrow-circle-right");
+			$(".searching-criteria i").toggleClass("fa-arrow-circle-down");
+		});
+		$(".search").click(function () {
+			$(".search-bar-end").slideToggle(1000);
+			$(".search i").toggleClass("fa-chevron-up");
+			$(".search i").toggleClass("fa-chevron-down");
+		});
+	</script>
+</body>
+
+</html>

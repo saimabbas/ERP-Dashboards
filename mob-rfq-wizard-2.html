@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mob ERP Home Page</title>
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="row m-0">
+            <div class="col-12 rz-main-div">
+                <div class="row rz-green-div">
+                    <div class="col-12 p-0 merp-1">
+                        <div class="merp-header">
+                            <img src="img/velocity.svg" />
+                            <p>Fountain Blue Auto Repairing LLC</p>
+                        </div>
+                        <img class="merp-burger" src="img/merp-burger.svg" />
+                    </div>
+                    <h1>Request For Quotation</h1>
+                </div>
+                <div class="row rz-gray-div">
+                    <img src="img/rz-span.svg">
+                    <h1>RFQ Overiew</h1>
+                    <div class="rz-prog-div">
+                        <div class="rz-prog-box">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="rz-prog-box">
+                            <span></span>
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="rz-prog-box">
+                            <span></span>
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="rz-prog-box">
+                            <span></span>
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="rz-prog-box rz-not-yet">
+                            <span></span>
+                            <i class="far fa-circle"></i>
+                        </div>
+                        <div class="rz-prog-box rz-not-yet">
+                            <span></span>
+                            <i class="far fa-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row rz-white-div">
+                    <div class="col-12 white-span">
+                        <h1>RFQ Number</h1>
+                        <input class="form-control" type="text" value="23245456">
+                    </div>
+                    <div class="col-12 white-span">
+                        <h1>Date</h1>
+                        <input class="form-control" type="date">
+                    </div>
+                    <div class="col-12 white-span">
+                        <h1>Date</h1>
+                        <select class="custom-select">
+                            <option>Approved</option>
+                            <option>Saudi Arabia</option>
+                            <option>Iraq</option>
+                            <option>Iran</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>China</option>
+                            <option>England</option>
+                            <option>Korea</option>
+                        </select>
+                    </div>
+                    <div class="col-12 white-span">
+                        <h1>Date</h1>
+                        <select class="custom-select" id="example" multiple="multiple" style="height: unset;">
+                            <option selected>Approved</option>
+                            <option>Saudi Arabia</option>
+                            <option>Iraq</option>
+                            <option>Iran</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>China</option>
+                            <option>England</option>
+                            <option>Korea</option>
+                        </select>
+                    </div>
+                    <div class="col-12 white-span">
+                        <h1>Order Date</h1>
+                        <div class="rz-field-box">
+                            <input type="text" class="form-control" value="Customer Name">
+                            <span><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-12 white-span">
+                        <h1>Order Date</h1>
+                        <div class="rz-field-box pb-2" style="height: 25vw; align-items: flex-end;">
+                            <textarea class="form-control"></textarea>
+                            <span style="border: 0; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);"><i
+                                    style="color: #FF7E7E;" class="far fa-trash-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-12 p-0">
+                        <div class="at-btn-top advanced-data-click">
+                            <span><i class="fas fa-plus"></i></span>
+                            Add New Invoice
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 p-0 merp-3">
+                <div class="merp-nav-boxes merp-nav-box-active">
+                    Home <i class="fas fa-circle"></i>
+                </div>
+                <div class="merp-nav-boxes"><img src="img/merp-grid.svg" /></div>
+                <div class="merp-nav-boxes"><img src="img/mern-search.svg" /></div>
+                <div class="merp-nav-boxes"><img src="img/merp-user.svg" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="task-kpi-box">
+        <div class="task-kpi-box-content wow animated slideInUp">
+            <div class="kpi-close"><span></span></div>
+            <div class="merp-head-note">
+                <h1>Task KPIs</h1>
+                <span>31</span>
+            </div>
+            <div class="kpi-super-box">
+                <div class="kpi-actual-content-box">
+                    <div class="kpi-left">
+                        <span><i class="fas fa-briefcase"></i></span>
+                        <div>
+                            <h1>Not yet started</h1>
+                            <p>10min ago</p>
+                        </div>
+                    </div>
+                    <div class="kpi-right">
+                        <div class="pie" data-pie='{ "percent": 50, "colorSlice": "#E91E63" }'>
+                            <svg width="200" height="200" viewBox="0 0 100 100"><text class="pie-percent-7" x="50%"
+                                    y="50%" font-size="1.5rem" font-weight="500" fill="teal" text-anchor="middle"
+                                    dominant-baseline="central">55%</text>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle=""
+                                    fill="none" stroke="white" stroke-width="10"></circle>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle="0"
+                                    class="pie-circle-7" fill="none" transform="rotate(-90, 50, 50)" stroke-width="10"
+                                    stroke-linecap="" stroke="teal" stroke-dasharray="145.20000000000002, 20000"
+                                    data-angel="55"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="kpi-actual-content-box">
+                    <div class="kpi-left">
+                        <span><i class="fas fa-briefcase"></i></span>
+                        <div>
+                            <h1>Not yet started</h1>
+                            <p>10min ago</p>
+                        </div>
+                    </div>
+                    <div class="kpi-right">
+                        <div class="pie" data-pie='{ "percent": 50, "colorSlice": "#E91E63" }'>
+                            <svg width="200" height="200" viewBox="0 0 100 100"><text class="pie-percent-7" x="50%"
+                                    y="50%" font-size="1.5rem" font-weight="500" fill="teal" text-anchor="middle"
+                                    dominant-baseline="central">55%</text>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle=""
+                                    fill="none" stroke="white" stroke-width="10"></circle>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle="0"
+                                    class="pie-circle-7" fill="none" transform="rotate(-90, 50, 50)" stroke-width="10"
+                                    stroke-linecap="" stroke="teal" stroke-dasharray="145.20000000000002, 20000"
+                                    data-angel="55"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="kpi-actual-content-box">
+                    <div class="kpi-left">
+                        <span><i class="fas fa-briefcase"></i></span>
+                        <div>
+                            <h1>Not yet started</h1>
+                            <p>10min ago</p>
+                        </div>
+                    </div>
+                    <div class="kpi-right">
+                        <div class="pie" data-pie='{ "percent": 50, "colorSlice": "#E91E63" }'>
+                            <svg width="200" height="200" viewBox="0 0 100 100"><text class="pie-percent-7" x="50%"
+                                    y="50%" font-size="1.5rem" font-weight="500" fill="teal" text-anchor="middle"
+                                    dominant-baseline="central">55%</text>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle=""
+                                    fill="none" stroke="white" stroke-width="10"></circle>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle="0"
+                                    class="pie-circle-7" fill="none" transform="rotate(-90, 50, 50)" stroke-width="10"
+                                    stroke-linecap="" stroke="teal" stroke-dasharray="145.20000000000002, 20000"
+                                    data-angel="55"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="kpi-actual-content-box">
+                    <div class="kpi-left">
+                        <span><i class="fas fa-briefcase"></i></span>
+                        <div>
+                            <h1>Not yet started</h1>
+                            <p>10min ago</p>
+                        </div>
+                    </div>
+                    <div class="kpi-right">
+                        <div class="pie" data-pie='{ "percent": 50, "colorSlice": "#E91E63" }'>
+                            <svg width="200" height="200" viewBox="0 0 100 100"><text class="pie-percent-7" x="50%"
+                                    y="50%" font-size="1.5rem" font-weight="500" fill="teal" text-anchor="middle"
+                                    dominant-baseline="central">55%</text>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle=""
+                                    fill="none" stroke="white" stroke-width="10"></circle>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle="0"
+                                    class="pie-circle-7" fill="none" transform="rotate(-90, 50, 50)" stroke-width="10"
+                                    stroke-linecap="" stroke="teal" stroke-dasharray="145.20000000000002, 20000"
+                                    data-angel="55"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="kpi-actual-content-box">
+                    <div class="kpi-left">
+                        <span><i class="fas fa-briefcase"></i></span>
+                        <div>
+                            <h1>Not yet started</h1>
+                            <p>10min ago</p>
+                        </div>
+                    </div>
+                    <div class="kpi-right">
+                        <div class="pie" data-pie='{ "percent": 50, "colorSlice": "#E91E63" }'>
+                            <svg width="200" height="200" viewBox="0 0 100 100"><text class="pie-percent-7" x="50%"
+                                    y="50%" font-size="1.5rem" font-weight="500" fill="teal" text-anchor="middle"
+                                    dominant-baseline="central">55%</text>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle=""
+                                    fill="none" stroke="white" stroke-width="10"></circle>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle="0"
+                                    class="pie-circle-7" fill="none" transform="rotate(-90, 50, 50)" stroke-width="10"
+                                    stroke-linecap="" stroke="teal" stroke-dasharray="145.20000000000002, 20000"
+                                    data-angel="55"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="kpi-actual-content-box">
+                    <div class="kpi-left">
+                        <span><i class="fas fa-briefcase"></i></span>
+                        <div>
+                            <h1>Not yet started</h1>
+                            <p>10min ago</p>
+                        </div>
+                    </div>
+                    <div class="kpi-right">
+                        <div class="pie" data-pie='{ "percent": 50, "colorSlice": "#E91E63" }'>
+                            <svg width="200" height="200" viewBox="0 0 100 100"><text class="pie-percent-7" x="50%"
+                                    y="50%" font-size="1.5rem" font-weight="500" fill="teal" text-anchor="middle"
+                                    dominant-baseline="central">55%</text>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle=""
+                                    fill="none" stroke="white" stroke-width="10"></circle>
+                                <circle cx="50" cy="50" r="42" shape-rendering="geometricPrecision" data-angle="0"
+                                    class="pie-circle-7" fill="none" transform="rotate(-90, 50, 50)" stroke-width="10"
+                                    stroke-linecap="" stroke="teal" stroke-dasharray="145.20000000000002, 20000"
+                                    data-angel="55"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="useful-alerts-box">
+        <div class="useful-alerts-box-content wow animated slideInUp">
+            <div class="alerts-close"><span></span></div>
+            <div class="merp-head-note">
+                <h1>Useful Alerts</h1>
+                <span>31</span>
+            </div>
+
+            <div class="alerts-super-box">
+                <div class="alert-actual-content-box">
+                    <div class="alert-cb-1">
+                        <h1>Tomorrow will be training abcd session by the company</h1>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="alert-cb-2">by <span>HR Admin</span>, 10m ago</div>
+                    <div class="alert-cb-3">Be advised all HR dept. personnel, kindly try to be on time tomorrow for the
+                        training session to avoid any fine. This session would be very...</div>
+                </div>
+                <div class="alert-actual-content-box">
+                    <div class="alert-cb-1">
+                        <h1>Tomorrow will be training abcd session by the company</h1>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="alert-cb-2">by <span>HR Admin</span>, 10m ago</div>
+                    <div class="alert-cb-3">Be advised all HR dept. personnel, kindly try to be on time tomorrow for the
+                        training session to avoid any fine. This session would be very...</div>
+                </div>
+                <div class="alert-actual-content-box">
+                    <div class="alert-cb-1">
+                        <h1>Tomorrow will be training abcd session by the company</h1>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="alert-cb-2">by <span>HR Admin</span>, 10m ago</div>
+                    <div class="alert-cb-3">Be advised all HR dept. personnel, kindly try to be on time tomorrow for the
+                        training session to avoid any fine. This session would be very...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="merp-menu-box">
+        <div class="merp-content-blur wow animated slideInRight"></div>
+        <div class="merp-menu-content wow animated slideInRight">
+            <div class="merp-mc-1">
+                <img src="img/fadi.svg">
+                <p>Mr. Fadi Qutami</p>
+            </div>
+            <div class="merp-mc-2">
+                <span><i class="far fa-bell"></i> Notifications</span>
+                <span><i class="far fa-envelope"></i> Messages</span>
+                <span><i class="far fa-check-square"></i> All Tasks</span>
+            </div>
+            <div class="merp-mc-2">
+                <span><i class="far fa-life-ring"></i> Help and support</span>
+                <span><i class="fas fa-exclamation-triangle"></i> Report a problem</span>
+                <span><i class="fas fa-info-circle"></i> About</span>
+            </div>
+            <div class="merp-mc-2">
+                <span><i class="fas fa-sign-out-alt"></i> Log out</span>
+            </div>
+            <div class="merp-mc-3">
+                <img src="img/merp-surf.svg">
+                <span>5D Solutions LLC</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="popa-btns-edit">
+        <span><i class="fas fa-times"></i></span>
+        <div style="background-color: #0096D8;">Submit</div>
+        <div style="background-color: #2AAC67;">Save and Submit</div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/javas.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/circularProgressBar.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(".task-kpi").click(() => {
+            $(".task-kpi-box").css({ display: "flex" });
+        });
+        $(".kpi-close").click(() => {
+            $(".task-kpi-box").css({ display: "none" });
+        });
+    </script>
+    <script>
+        $(".useful-alerts").click(() => {
+            $(".useful-alerts-box").css({ display: "flex" });
+        });
+        $(".alerts-close").click(() => {
+            $(".useful-alerts-box").css({ display: "none" });
+        });
+    </script>
+    <script>
+        $(".merp-burger").click(() => {
+            $(".merp-menu-box").css({ display: "flex" });
+        });
+        $(".merp-menu-box").click(() => {
+            $(".merp-menu-box").css({ display: "none" });
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".merp-slider", {
+            slidesPerView: "auto",
+            centeredSlides: false,
+            loop: true,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".ne-slider", {
+            slidesPerView: "3",
+            centeredSlides: true,
+            loop: true,
+        });
+    </script>
+    <script>
+        $('#example').select2({
+            placeholder: ''
+        });
+    </script>
+</body>
+
+</html>

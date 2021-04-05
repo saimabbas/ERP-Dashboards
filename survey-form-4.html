@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/colors-blue.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body class="body-color">
+    <div class="container-fluid whole-page-con-1">
+        <div class="row s-whole-page-con-2">
+            <div class="col-4 s-left-image">
+                <img src="img/bibi.svg" alt="">
+            </div>
+            <div class="col-sm-8 col-12 survey-form-4-container">
+                <div class="row s-survey-form-4-content">
+                    <div class="col-12">
+                        <p class="s-end-p p-1">Thanks Ali for making time for this.</p>
+                        <p class="p-2">I've found some of our recommended listings and services for you. <br> Feel free to check them out.</p>
+                        <p class="p-3">Just one last thing, how would you rate this experience?</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row s-survey-review mt-4">
+                            <div class="col-1 ">
+                                <img src="img/pain.svg" class="img-1 s-img-12">
+                                <p>Poor</p>
+                            </div>
+                            <div class="col-1 ">
+                                <img src="img/sad.svg" class="img-2 s-img-12">
+                                <p>Sad</p>
+                            </div>
+                            <div class="col-1 ">
+                                <img src="img/meh.svg" class="img-3">
+                                <p>Okay</p>
+                            </div>
+                            <div class="col-1 ">
+                                <img src="img/good.svg" class="yellow-bgc img-4">
+                                <p>Good</p>
+                            </div>
+                            <div class="col-1 ">
+                                <img src="img/happy.svg" class="img-5">
+                                <p>Great</p>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="s-finish-button">
+                        <button class="btn proceed-button ">Finish</button>
+                    </div>
+                </div>    
+                
+                <div class="col-12 s-s-survey-form-bottom-absolute">
+                    <div class="row s-survey-form-bottom ">
+                        <div class="col-sm-2 col-3">
+                            <a href="#"><p class="previous-arrow"><i class="fas fa-arrow-left"></i> Previous</p></a>
+                        </div>
+                        <div class="col-6 offset-1">
+                            <div class="form-group">
+                                <p>3 out of 15</p>
+                                <div class="range-bar">
+                                    <div class="s-custom-range">
+                                        <div class="s-custom-range-color-bar-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+        </div>
+    </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/iPortal.js"></script>
+    <script>
+
+        $(".img-1").click(function(){
+        $(".img-2 , .img-3 , .img-4 , .img-5").removeClass('yellow-bgc');
+        $(".img-1").addClass('yellow-bgc');
+        });
+
+        $(".img-2").click(function(){
+        $(".img-1 , .img-3 , .img-4 , .img-5").removeClass('yellow-bgc');
+        $(".img-2").addClass('yellow-bgc');
+        });
+
+        $(".img-3").click(function(){
+        $(".img-1 , .img-2 , .img-4 , .img-5").removeClass('yellow-bgc');
+        $(".img-3").addClass('yellow-bgc');
+        });
+
+        $(".img-4").click(function(){
+        $(".img-2 , .img-3 , .img-1 , .img-5").removeClass('yellow-bgc');
+        $(".img-4").addClass('yellow-bgc');
+        });
+
+        $(".img-5").click(function(){
+        $(".img-2 , .img-3 , .img-4 , .img-1").removeClass('yellow-bgc');
+        $(".img-5").addClass('yellow-bgc');
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Link</title>
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="super-box" >
+        <div class="bg-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/bgc-1.svg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/bgc-2.svg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/bgc-3.svg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/bgc-4.svg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/bgc-5.svg">
+                </div>
+            </div>
+        </div>
+        <div class="super-box-content">
+            <div class="bg-nav-s">
+                <div class="surf-box">
+                    <img src="img/surf-logo.svg" >
+                    <p>5D Solutions LLC</p>
+                </div>
+                <div class="surf-r-box">
+                    <p>5D Solutions  |  5D Solutions Terms of use for SURF ERP Portal  |  5D Solutions Privacy Policy</p>
+                </div>
+            </div>
+            <div class="bg-body-s">
+                <div class="bg-body-left">
+                    <img src="img/otp-img.svg" >
+                    <p>Enter OTP</p>
+                    <h6 class="otp-h6">An OTP has been sent to the uploader. <br> Please ask them for the 5 digit OTP code.</h6>
+                    <div class="container  pass-container">
+                        <form class="form-inline">
+                            <input type="text" class="form-control otp-r-styling" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+                            <input type="text" class="form-control otp-r-styling" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+                            <input type="text" class="form-control otp-r-styling" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+                            <input type="text" class="form-control otp-r-styling" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+                            <input type="text" class="form-control otp-r-styling" id="fifth" maxlength="1" onkeyup="clickEvent(this,'sixth')">
+                            <input type="text" class="form-control otp-r-styling" id="sixth" maxlength="1">
+                        </form>
+                          <h5 class="otp-h5">Resend One-Time Password</h5>
+                          <h6 class="resend-code-1 disable">OTP already sent!</h6>
+                          <div class="timer-id-box">
+                            <p class="otp-counter-r">Please wait <span id="counter"></span> before resending</p>
+                          </div>
+                </div>
+                    
+                  
+                    <button class="btn download-l-btn">Verify</button>
+                </div>
+                <div class="bg-body-right">
+                    <div class="basic-blur"></div>
+                    <div class="bg-body-right-content">
+                        <p>See why the world’s best companies use 5D Solutions ERP to become truly data-driven.</p>
+                        <h6 class="line-here-there">Services we provide</h6>
+                        <div class="four-logo-para-box">
+                            <div class="sbs-box">
+                                <div class="sbs-img-box">
+                                    <img src="img/sbs-img.svg">
+                                </div>
+                                <p>Smart Business Solutions</p>
+                            </div>
+                            <div class="sbs-box">
+                                <div class="sbs-img-box">
+                                    <img src="img/chart-img.svg">
+                                </div>
+                                <p>Financial Solutions</p>
+                            </div>
+                            <div class="sbs-box">
+                                <div class="sbs-img-box">
+                                    <img src="img/e-task-img.svg">
+                                </div>
+                                <p>eTask Manager</p>
+                            </div>
+                            <div class="sbs-box">
+                                <div class="sbs-img-box">
+                                    <img src="img/chatbot-img.svg">
+                                </div>
+                                <p>Hala Chatbot</p>
+                            </div>
+                        </div>
+                        <h6>And many more services!</h6>
+                        <button class="btn r-demo-btn">Request a Demo Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-footer-s">
+                 <p>5D SOLUTIONS © 2020</p>
+            </div>
+        </div>
+    </div>
+       
+
+
+
+
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/javas.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+    <script>
+        var swiper = new Swiper('.bg-swiper', {
+          effect: 'fade',
+          autoplay: 
+            {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+        });
+      </script>
+
+
+<script>
+    
+                    
+        var minute = 1;
+        var second = 60;
+        setInterval(function(){
+            if ( minute == 0 && second == 1)
+            {
+                document.getElementById("counter").innerHTML = "00:00";
+            }else{
+                second--;
+                if(second == 0){
+                    minute --;
+                    second = 60;
+                    if ( minute == 0)
+                    {
+                        minute = minute;
+                    }
+                }
+                document.getElementById("counter").innerHTML = minute + ":" + second ;
+            }
+        }, 1000);
+
+
+  
+        function clickEvent(first,last){
+			if(first.value.length){
+				document.getElementById(last).focus();
+			}
+        }
+
+        
+</script>
+
+
+
+</body>
+</html>

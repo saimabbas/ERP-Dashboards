@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row nav-top">
+        <div class="col-sm-6 col-9 nav-logo-display">
+          <i class="menu-icon fa fa-list"></i>
+          <img class="surf-logo" src="img/surf-logo.svg" />
+          <p class="top-logo-name">5D Solutions LLC</p>
+        </div>
+        <div class="col-3 col-sm-6 offset-sm-3 offset-0 nav-icons">
+          <i class="fas fa-home"></i>
+          <i class="fas fa-tasks"></i>
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-bullhorn"></i>
+          <i class="fas fa-envelope"><span class="notification">2</span></i>
+          <i class="fas fa-cloud"></i>
+          <div class="profile-display">
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-toggle="dropdown"
+                id="top-nav-whole"
+              >
+                <img
+                  class="profile-picture"
+                  src="img/profile-picture-image.jpg"
+                />
+                <div class="profile-name-dislay">
+                  <p class="wel">WELCOME</p>
+                  <p class="profile-name">Appraisal Hub Consulting LLC</p>
+                </div>
+                <i class="fas fa-chevron-down ml-4"></i>
+              </button>
+              <div class="dropdown-menu" id="top-nav-menu">
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-lock"></i> Change Password</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="far fa-user"></i> Profile</a
+                >
+                <a class="dropdown-item border-bottom-start" href="#"
+                  ><i class="far fa-edit"></i> SURF Updates</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-headset"></i> Support</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-tools"></i> Services</a
+                >
+                <a class="dropdown-item border-bottom-start" href="#"
+                  ><i class="fas fa-language"></i> Language</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-sign-out-alt"></i> logout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="whole-body">
+      <div class="container-fluid swiper-super-display">
+        <div class="row swiper-display">
+          <div class="col-1 swiper-prev-display">
+            <div class="swiper-button-prev-custom">
+              <img src="img/slider-prev.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-10 col-12 swiper-slides-display">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 372.svg" />
+                  <p>Company Profile</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 374.svg" />
+                  <p>Product Catalog</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 375.svg" />
+                  <p>Submit Quote</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 377.svg" />
+                  <p>Purchase Order</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 379.svg" />
+                  <p>Confirmations</p>
+                </div>
+              </div>
+            </div>
+            <div class="blue-underline"></div>
+          </div>
+          <div class="col-1 swiper-next-display">
+            <div class="swiper-button-next-custom">
+              <img src="img/slider-next.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row bread-super-display">
+          <div class="col-6 bread-end">
+            <div class="bread-display">
+              <div class="bread">
+                <i class="fas fa-chevron-right"></i>
+                <p><a href="#">Dashboard</a></p>
+              </div>
+            </div>
+            <div class="bread-display">
+              <div class="bread">
+                <i class="fas fa-chevron-right"></i>
+                <p><a href="#">Request For Quotation</a></p>
+              </div>
+            </div>
+            <div class="bread-display">
+              <div class="bread">
+                <i class="fas fa-chevron-right"></i>
+                <p class="active-page"><a href="#">New Record</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-12 offset-sm-2 po-end">
+            <h3 class="po-number">Purchase Order #12 - Kinetic</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="white-body">
+        <div class="container-fluid p-0">
+          <div class="row m-0">
+            <div class="col-12 inventory-head">
+              <button
+                class="btn collapse-filtrs-in"
+              >
+                Collapse Filters
+              </button>
+              <button
+                class="btn collapse-filtrs-in-2 "
+                data-toggle="modal"
+                data-target="#filter-modal"
+              >
+                Collapse Filters
+              </button>
+              <div class="in-search-box-icon">
+                <i class="fas fa-search"></i
+                ><input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search Items & Folders"
+                />
+              </div>
+              <div class="ultimate-saim-checkbox">
+                <input type="checkbox" name="sc-checkbox" id="sc-1-s" checked />
+                <label for="sc-1-s">
+                  <span class="sc-parent-content-box-s">
+                    <div class="sc-box-s">
+                      <i class="fas fa-check"></i>
+                    </div>
+                    <div class="sc-checkbox-content-s">
+                      <p>Select</p>
+                    </div>
+                  </span>
+                </label>
+              </div>
+              <div class="in-transfer-timeline">
+                <img src="img/transfer-timeline.svg" />
+                Transfer Timeline
+              </div>
+              <div class="form-group-in-s">
+                <label>Sort by : </label>
+                <select class="form-control">
+                  <option>Name</option>
+                  <option>Saudi Arabia</option>
+                  <option>Iraq</option>
+                  <option>Iran</option>
+                  <option>India</option>
+                  <option>USA</option>
+                  <option>China</option>
+                  <option>England</option>
+                  <option>Korea</option>
+                </select>
+              </div>
+              <div class="form-group-in-s mob-s-fm">
+                <label>Show : </label>
+                <select class="form-control">
+                  <option>Items and Folders</option>
+                  <option>Saudi Arabia</option>
+                  <option>Iraq</option>
+                  <option>Iran</option>
+                  <option>India</option>
+                  <option>USA</option>
+                  <option>China</option>
+                  <option>England</option>
+                  <option>Korea</option>
+                </select>
+              </div>
+              <ul class="nav nav-pills s-in-tabs-togs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" href="#home"
+                    ><i class="fas fa-border-all"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu1"
+                    ><i class="fas fa-list"></i
+                  ></a>
+                </li>
+              </ul>
+              <div class="dropdown s-in-drop">
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0">
+            <div class="col-2 p-0 invent-left">
+              <div class="row m-0">
+                <div class="col-12 il-head">
+                  <span>Filters</span>
+                </div>
+                <div class="col-12 il-box">
+                  <span>
+                    <p>Item Type</p>
+                    <div class="il-search-box">
+                      <i class="fas fa-search"></i>
+                      <input type="text" placeholder="Search here" />
+                    </div>
+                  </span>
+                  <span>
+                    <p>Item Name</p>
+                    <div class="il-search-box">
+                      <i class="fas fa-search"></i>
+                      <input type="text" placeholder="Search here" />
+                    </div>
+                  </span>
+                </div>
+                <div class="col-12 il-box">
+                  <h1>View By</h1>
+                  <div class="ultimate-saim-checkbox mt-1">
+                    <input
+                      type="checkbox"
+                      name="sc-checkbox"
+                      id="sc-2-s"
+                      checked
+                    />
+                    <label for="sc-2-s">
+                      <span class="sc-parent-content-box-s">
+                        <div class="sc-box-s">
+                          <i class="fas fa-check"></i>
+                        </div>
+                        <div class="sc-checkbox-content-s">
+                          <p>Direct Report</p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 il-box">
+                  <h1>Show</h1>
+                  <div class="ultimate-saim-checkbox mt-1">
+                    <input
+                      type="checkbox"
+                      name="sc-checkbox"
+                      id="sc-2-2"
+                      checked
+                    />
+                    <label for="sc-2-2">
+                      <span class="sc-parent-content-box-s">
+                        <div class="sc-box-s">
+                          <i class="fas fa-check"></i>
+                        </div>
+                        <div class="sc-checkbox-content-s">
+                          <p>Contingent Worker</p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="ultimate-saim-checkbox mt-1">
+                    <input
+                      type="checkbox"
+                      name="sc-checkbox"
+                      id="sc-2-3"
+                      checked
+                    />
+                    <label for="sc-2-3">
+                      <span class="sc-parent-content-box-s">
+                        <div class="sc-box-s">
+                          <i class="fas fa-check"></i>
+                        </div>
+                        <div class="sc-checkbox-content-s">
+                          <p>Employee</p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="ultimate-saim-checkbox mt-1">
+                    <input type="checkbox" name="sc-checkbox" id="sc-2-4" />
+                    <label for="sc-2-4">
+                      <span class="sc-parent-content-box-s">
+                        <div class="sc-box-s">
+                          <i class="fas fa-check"></i>
+                        </div>
+                        <div class="sc-checkbox-content-s">
+                          <p>Nonworker</p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 il-box">
+                  <h1>Include</h1>
+                  <div class="ultimate-saim-checkbox mt-1">
+                    <input
+                      type="checkbox"
+                      name="sc-checkbox"
+                      id="sc-2-5"
+                      checked
+                    />
+                    <label for="sc-2-5">
+                      <span class="sc-parent-content-box-s">
+                        <div class="sc-box-s">
+                          <i class="fas fa-check"></i>
+                        </div>
+                        <div class="sc-checkbox-content-s">
+                          <p>Suspended Assignments</p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="ultimate-saim-checkbox mt-1">
+                    <input type="checkbox" name="sc-checkbox" id="sc-2-6" />
+                    <label for="sc-2-6">
+                      <span class="sc-parent-content-box-s">
+                        <div class="sc-box-s">
+                          <i class="fas fa-check"></i>
+                        </div>
+                        <div class="sc-checkbox-content-s">
+                          <p>Nonprimary Assignments</p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 il-box">
+                  <h1>Sort By</h1>
+                  <div class="ultimate-saim-checkbox mt-1">
+                    <input
+                      type="radio"
+                      name="sc-checkbox"
+                      id="sc-2-5-c"
+                      checked
+                    />
+                    <label for="sc-2-5-c">
+                      <span class="sc-parent-content-box-s">
+                        <div class="sc-box-r-outer">
+                          <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="sc-checkbox-content-s">
+                          <p>Suspended Assignments</p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="ultimate-saim-checkbox mt-1">
+                    <input type="radio" name="sc-checkbox" id="sc-2-6-c" />
+                    <label for="sc-2-6-c">
+                      <span class="sc-parent-content-box-s">
+                        <div class="sc-box-r-outer">
+                          <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="sc-checkbox-content-s">
+                          <p>Nonprimary Assignments</p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12 il-box pb-0 px-0">
+                  <div
+                    class="form-group-in-s"
+                    style="width: 100%; padding: 0 0.75vw"
+                  >
+                    <select class="form-control">
+                      <option>First Name</option>
+                      <option>Saudi Arabia</option>
+                      <option>Iraq</option>
+                      <option>Iran</option>
+                      <option>India</option>
+                      <option>USA</option>
+                      <option>China</option>
+                      <option>England</option>
+                      <option>Korea</option>
+                    </select>
+                  </div>
+                  <div class="il-3-btn">
+                    <button class="btn il-out-btn">Reset</button>
+                    <button class="btn il-fill-btn">Apply</button>
+                    <button class="btn il-fill-btn">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col p-0 invent-right">
+              <span class="invent-right-heads">
+                <h1 class="invent-all-items">All Items</h1>
+                <h2 class="invent-folders">6 Folders & 21 Items (Total 27)</h2>
+              </span>
+              <div class="tab-content">
+                <div class="tab-pane active" id="home">
+                  <div class="row m-0">
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img
+                            src="img/invent-watch.svg"
+                            data-toggle="modal"
+                            data-target="#slide-modal"
+                          />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" data-target="#transit-modal" data-toggle="modal" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3 invent-grid-box">
+                      <div class="invent-grid-box-content">
+                        <div class="invent-grid-img-box">
+                          <img src="img/invent-watch.svg" />
+                          <div class="dropdown">
+                            <button
+                              type="button"
+                              class="btn btn-primary dropdown-toggle"
+                              data-toggle="dropdown"
+                            >
+                              <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"
+                                >This is long link</a
+                              >
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="invent-grid-text-box">
+                          <span>
+                            <p>1244544576</p>
+                            <img src="img/transfer-timeline.svg" />
+                          </span>
+                          <h1>Rolex Wristwatch Royal Black 223-YM</h1>
+                          <h2>On Hand Quantity: <span>1234</span></h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="menu1">
+                  <div class="row m-0">
+                    <div class="col-12 p-0 invent-table">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Product/Material</th>
+                            <th class="text-center">Unit Cost</th>
+                            <th class="text-center">VAT Rate</th>
+                            <th class="text-center">VAT Amount</th>
+                            <th class="text-center">Unit Cost</th>
+                            <th class="text-center">VAT Rate</th>
+                            <th class="text-center">VAT Amount</th>
+                            <th class="text-center">Unit Cost</th>
+                            <th class="text-center">VAT Rate</th>
+                            <th class="text-center">VAT Amount</th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="list-ajb-img-box">
+                              <div class="invent-list-img-box">
+                                <img
+                                  src="img/list-invent.svg"
+                                  class="dropdown-toggle"
+                                  data-toggle="dropdown"
+                                />
+                                <div class="invent-pop dropdown-menu border-0">
+                                  <span style="height: unset"
+                                    >Quantity Overview</span
+                                  >
+                                  <div>
+                                    <p>On Hand:</p>
+                                    <p>136 Units</p>
+                                  </div>
+                                  <div>
+                                    <p>Reserved:</p>
+                                    <p>6 Units</p>
+                                  </div>
+                                  <div>
+                                    <p>Available:</p>
+                                    <p>130 Units</p>
+                                  </div>
+                                </div>
+                                <span>
+                                  <h1>
+                                    Rolex Wristwatch Royal abc Black 223-YM
+                                  </h1>
+                                  <div class="transit-rola">
+                                    <p>wristwear</p>
+                                    <img
+                                      src="img/transfer-timeline.svg"
+                                      class="transit-trigger"
+                                      data-toggle="modal"
+                                      data-target="#transit-modal"
+                                    />
+                                  </div>
+                                </span>
+                              </div>
+                            </td>
+                            <td class="invent-list-just-text">2345.23</td>
+                            <td class="invent-list-just-text">99%</td>
+                            <td class="invent-list-just-text">2345.23</td>
+                            <td class="invent-list-just-text">99%</td>
+                            <td class="invent-list-just-text">2345.23</td>
+                            <td class="invent-list-just-text">99%</td>
+                            <td class="invent-list-just-text">2345.23</td>
+                            <td class="invent-list-just-text">99%</td>
+                            <td class="invent-list-just-text">2345.23</td>
+                            <td class="invent-list-just-text">99%</td>
+                            <td class="invent-list-drop">
+                              <div class="dropdown">
+                                <button
+                                  type="button"
+                                  class="btn btn-primary dropdown-toggle"
+                                  data-toggle="dropdown"
+                                >
+                                  <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Link 1</a>
+                                  <a class="dropdown-item" href="#">Link 2</a>
+                                  <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row footer">
+          <div class="col-sm-4 col-8 offset-sm-4 footer-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div class="col-12">
+            <p>
+              5D Solutions | 5D Solutions Terms of use for SURF ERP Portal | 5D
+              Solutions Privacy Policy
+            </p>
+          </div>
+          <div class="col-12">
+            <p>5D SOLUTIONS © 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="slide-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="container-fluid p-0">
+            <div class="row top-heading-oh m-0">
+              <div class="top-friend-circle col-1 pl-0 pr-0" data-dismiss="modal">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="col-10 offset-sm-1 offset-0 top-friend">
+                <p>Product Detail</p>
+              </div>
+              <div class="top-friend-circle mob-friend-chuff col-1" data-dismiss="modal">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+            <div class="row m-0 slide-img-top-pop">
+              <div class="col-12 ajb-div-mob-img-box">
+                <div class="mpi-img-display">
+                  <img
+                    src="img/pop-watch.svg"
+                    style="max-width: 100%; width: 100%"
+                  />
+                  <i
+                    class="far fa-trash-alt mpi-img-del"
+                    style="top: 1.5vw; right: 1.5vw; background-color: #fff"
+                  ></i>
+                </div>
+              </div>
+              <div class="col-12 swiper-pagination-mpi"></div>
+              <div class="col-12 mpi-swiper-display ajb-mpisd" >
+                <div class="swiper-mpi-prev">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="swiper-mpi-img">
+                  <div class="swiper-wrapper mpi-img-wrapper">
+                    <div class="swiper-slide mpi-img-slide col-3">
+                      <img src="img/headphone-black.png" />
+                    </div>
+                    <div class="swiper-slide mpi-img-slide col-3">
+                      <img src="img/headphone-black.png" />
+                    </div>
+                    <div class="swiper-slide mpi-img-slide col-3">
+                      <img src="img/headphone-black.png" />
+                    </div>
+                    <div class="swiper-slide mpi-img-slide col-3">
+                      <img src="img/headphone-black.png" />
+                    </div>
+                    <div class="swiper-slide mpi-img-slide col-3">
+                      <img src="img/headphone-black.png" />
+                    </div>
+                    <div class="swiper-slide mpi-img-slide col-3">
+                      <img src="img/headphone-black.png" />
+                    </div>
+                    <div class="swiper-slide mpi-img-slide col-3">
+                      <img src="img/headphone-black.png" />
+                    </div>
+                    <div class="swiper-slide mpi-img-slide col-3">
+                      <img src="img/headphone-black.png" />
+                    </div>
+                    <div class="swiper-slide mpi-img-slide col-3">
+                      <img src="img/headphone-black.png" />
+                    </div>
+                    <div class="swiper-slide mpi-img-slide col-3">
+                      <img src="img/headphone-black.png" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-mpi-next">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row pop-input-ground">
+              <div class="col-sm-4 col-12">
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="col-sm-4 col-12">
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="col-sm-4 col-12">
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="pop-input-box-s">
+                  <label>Product Code</label>
+                  <textarea class="form-control"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row m-o">
+              <div class="col-12 close-invent-pop">
+                <button class="btn">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="transit-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="in-transit">
+            <div class="row m-0">
+              <div class="col-12 transit-head">
+                <h3>In Transit</h3>
+                <div>
+                  <span data-dismiss="modal" class="mob-friend-chuff"><i class="fas fa-times"></i></span>
+                  <span data-dismiss="modal" ><i class="fas fa-chevron-left"></i></span>
+                </div>
+              </div>
+              <div class="col-12 transit-img-box">
+                <div class="transit-img-details-box">
+                  <img src="img/list-invent.svg"  />
+                  <div class="transit-text-box">
+                    <section>
+                      <h6>1244544576</h6>
+                      <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Link 1</a>
+                          <a class="dropdown-item" href="#">Link 2</a>
+                          <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                      </div>
+                    </section>
+                    <h5>Rolex Wristwatch Royal Black 223-YM</h5>
+                    <h4>Wristwatch</h4>
+                    <p>Quantity on hand <span>2300</span> each</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row m-0 transit-bot">
+              <div class="col-12 transit-sort">
+                <label for="">Sort by: </label>
+                <select class="form-control">
+                  <option>Delivery Date</option>
+                  <option>Delivery Date</option>
+                  <option>Delivery Date</option>
+                  <option>Delivery Date</option>
+                </select>
+              </div>
+              <div class="col-12 transit-step-container">
+                <div class="transit-step-box">
+                  <div class="tsb-content" style="height: unset">
+                    <div class="tsb-1">
+                      <h6>26 Apr 2020</h6>
+                      <h5>9:30 AM</h5>
+                    </div>
+                    <div class="tsb-2">
+                      <span>
+                        <img src="img/invt-1.jpeg">
+                      </span>
+                    </div>
+                    <div class="tsb-3">
+                      <h4>Left courier origin facility</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="transit-step-box">
+                  <div class="tsb-content">
+                    <div class="tsb-1">
+                      <h6>26 Apr 2020</h6>
+                      <h5>9:30 AM</h5>
+                    </div>
+                    <div class="tsb-2">
+                      <span>
+                        <img src="img/invt-2.jpeg">
+                      </span>
+                      <div class="tsb-line"></div>
+                    </div>
+                    <div class="tsb-3">
+                      <h4>Left courier origin facility</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="transit-step-box">
+                  <div class="tsb-content">
+                    <div class="tsb-1">
+                      <h6>26 Apr 2020</h6>
+                      <h5>9:30 AM</h5>
+                    </div>
+                    <div class="tsb-2">
+                      <span>
+                        <img src="img/invt-3.jpeg">
+                      </span>
+                      <div class="tsb-line"></div>
+                    </div>
+                    <div class="tsb-3">
+                      <h4>Left courier origin facility</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="transit-step-box">
+                  <div class="tsb-content">
+                    <div class="tsb-1">
+                      <h6>26 Apr 2020</h6>
+                      <h5>9:30 AM</h5>
+                    </div>
+                    <div class="tsb-2">
+                      <span>
+                        <img src="img/invt-4.jpeg">
+                      </span>
+                      <div class="tsb-line"></div>
+                    </div>
+                    <div class="tsb-3">
+                      <h4>Left courier origin facility</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="transit-step-box">
+                  <div class="tsb-content">
+                    <div class="tsb-1">
+                      <h6>26 Apr 2020</h6>
+                      <h5>9:30 AM</h5>
+                    </div>
+                    <div class="tsb-2">
+                      <span>
+                        <img src="img/invt-5.svg">
+                      </span>
+                      <div class="tsb-line"></div>
+                    </div>
+                    <div class="tsb-3">
+                      <h4>Left courier origin facility</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal mob-filter-modal" id="filter-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="container-fluid p-0">
+            <div class="row m-0">
+              <div class="col-12 p-0 invent-left">
+                <div class="row m-0" style="width: 100%;">
+                  <div class="col-12 il-head">
+                    <span>Filters</span>
+                  </div>
+                  <div class="col-12 il-box">
+                    <span>
+                      <p>Item Type</p>
+                      <div class="il-search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search here" />
+                      </div>
+                    </span>
+                    <span>
+                      <p>Item Name</p>
+                      <div class="il-search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search here" />
+                      </div>
+                    </span>
+                  </div>
+                  <div class="col-12 il-box">
+                    <h1>View By</h1>
+                    <div class="ultimate-saim-checkbox mt-1">
+                      <input
+                        type="checkbox"
+                        name="sc-checkbox"
+                        id="sc-2-s"
+                        checked
+                      />
+                      <label for="sc-2-s">
+                        <span class="sc-parent-content-box-s">
+                          <div class="sc-box-s">
+                            <i class="fas fa-check"></i>
+                          </div>
+                          <div class="sc-checkbox-content-s">
+                            <p>Direct Report</p>
+                          </div>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 il-box">
+                    <h1>Show</h1>
+                    <div class="ultimate-saim-checkbox mt-1">
+                      <input
+                        type="checkbox"
+                        name="sc-checkbox"
+                        id="sc-2-2"
+                        checked
+                      />
+                      <label for="sc-2-2">
+                        <span class="sc-parent-content-box-s">
+                          <div class="sc-box-s">
+                            <i class="fas fa-check"></i>
+                          </div>
+                          <div class="sc-checkbox-content-s">
+                            <p>Contingent Worker</p>
+                          </div>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="ultimate-saim-checkbox mt-1">
+                      <input
+                        type="checkbox"
+                        name="sc-checkbox"
+                        id="sc-2-3"
+                        checked
+                      />
+                      <label for="sc-2-3">
+                        <span class="sc-parent-content-box-s">
+                          <div class="sc-box-s">
+                            <i class="fas fa-check"></i>
+                          </div>
+                          <div class="sc-checkbox-content-s">
+                            <p>Employee</p>
+                          </div>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="ultimate-saim-checkbox mt-1">
+                      <input type="checkbox" name="sc-checkbox" id="sc-2-4" />
+                      <label for="sc-2-4">
+                        <span class="sc-parent-content-box-s">
+                          <div class="sc-box-s">
+                            <i class="fas fa-check"></i>
+                          </div>
+                          <div class="sc-checkbox-content-s">
+                            <p>Nonworker</p>
+                          </div>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 il-box">
+                    <h1>Include</h1>
+                    <div class="ultimate-saim-checkbox mt-1">
+                      <input
+                        type="checkbox"
+                        name="sc-checkbox"
+                        id="sc-2-5"
+                        checked
+                      />
+                      <label for="sc-2-5">
+                        <span class="sc-parent-content-box-s">
+                          <div class="sc-box-s">
+                            <i class="fas fa-check"></i>
+                          </div>
+                          <div class="sc-checkbox-content-s">
+                            <p>Suspended Assignments</p>
+                          </div>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="ultimate-saim-checkbox mt-1">
+                      <input type="checkbox" name="sc-checkbox" id="sc-2-6" />
+                      <label for="sc-2-6">
+                        <span class="sc-parent-content-box-s">
+                          <div class="sc-box-s">
+                            <i class="fas fa-check"></i>
+                          </div>
+                          <div class="sc-checkbox-content-s">
+                            <p>Nonprimary Assignments</p>
+                          </div>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 il-box">
+                    <h1>Sort By</h1>
+                    <div class="ultimate-saim-checkbox mt-1">
+                      <input
+                        type="radio"
+                        name="sc-checkbox"
+                        id="sc-2-5-c"
+                        checked
+                      />
+                      <label for="sc-2-5-c">
+                        <span class="sc-parent-content-box-s">
+                          <div class="sc-box-r-outer">
+                            <i class="fas fa-circle"></i>
+                          </div>
+                          <div class="sc-checkbox-content-s">
+                            <p>Suspended Assignments</p>
+                          </div>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="ultimate-saim-checkbox mt-1">
+                      <input type="radio" name="sc-checkbox" id="sc-2-6-c" />
+                      <label for="sc-2-6-c">
+                        <span class="sc-parent-content-box-s">
+                          <div class="sc-box-r-outer">
+                            <i class="fas fa-circle"></i>
+                          </div>
+                          <div class="sc-checkbox-content-s">
+                            <p>Nonprimary Assignments</p>
+                          </div>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 il-box pb-0 px-0">
+                    <div
+                      class="form-group-in-s"
+                      style="width: 100%; padding: 0 0.75vw"
+                    >
+                      <select class="form-control">
+                        <option>First Name</option>
+                        <option>Saudi Arabia</option>
+                        <option>Iraq</option>
+                        <option>Iran</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>China</option>
+                        <option>England</option>
+                        <option>Korea</option>
+                      </select>
+                    </div>
+                    <div class="il-3-btn">
+                      <button class="btn il-out-btn">Reset</button>
+                      <button class="btn il-fill-btn">Apply</button>
+                      <button class="btn il-fill-btn">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/javas.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
+
+    <script>
+      $(".collapse-filtrs-in").click(() => {
+        $(".invent-left").toggleClass("s-left-invent");
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".swiper-mpi-img", {
+        navigation: {
+          nextEl: ".swiper-mpi-next",
+          prevEl: ".swiper-mpi-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination-mpi",
+          dynamicBullets: true,
+        },
+        slidesPerView: "auto",
+        observer: true,
+        observeParents: true,
+      });
+    </script>
+
+    <script>
+      function myFunction(x) {
+        if (x.matches) {
+          // mobile
+          var swiper = new Swiper(".swiper-container", {
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            navigation: {
+              nextEl: ".swiper-button-next-custom",
+              prevEl: ".swiper-button-prev-custom",
+            },
+            loop: true,
+            spaceBetween: 0,
+          });
+        } else {
+          // desktop
+          var swiper = new Swiper(".swiper-container", {
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            navigation: {
+              nextEl: ".swiper-button-next-custom",
+              prevEl: ".swiper-button-prev-custom",
+            },
+            loop: true,
+            spaceBetween: 10,
+          });
+        }
+      }
+      var x = window.matchMedia("(max-width: 500px)");
+      myFunction(x); // Call listener function at run time
+      x.addListener(myFunction); // Attach listener function on state changes
+    </script>
+
+    <script>
+      $(".col-1.search").click(function () {
+        $(".search-bar-end").slideToggle(1000);
+        $(".col-1.search i").toggleClass("fa-chevron-up");
+        $(".col-1.search i").toggleClass("fa-chevron-down");
+      });
+      $(".search").click(function () {
+        $(".search-bar-end").slideToggle(1000);
+        $(".search i").toggleClass("fa-chevron-up");
+        $(".search i").toggleClass("fa-chevron-down");
+      });
+    </script>
+  </body>
+</html>

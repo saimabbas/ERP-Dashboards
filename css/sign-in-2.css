@@ -1,0 +1,176 @@
+
+  *
+{
+    font-family: Poppins, sans-serif;
+}
+body
+{
+    background-color: rgba(55, 88, 255, 0.5);
+}
+.whole-page-image
+{
+    width: 50vw !important;
+    height: 50vw !important;
+}
+.whole-page-con-1 .row
+{
+    margin-left: 0;
+}
+.end-nav-edit .col-5.nav-profile-top {
+    -ms-flex: 0 0 37.5%;
+    flex: 0 0 37.5%;
+    max-width: 37.5%;
+  }
+.whole-page-con-2
+{
+    background-color: white;
+    width: 95vw;
+    height: 92vh;
+    border-radius: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.left-image
+{
+    background-color: rgba(55, 88, 255, 0.2);
+    border-radius: 60px 0 0 60px;
+}
+.left-image img
+{
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.icons-top i
+{
+    font-size: 1.3vw;
+    margin-right: 1vw;
+}
+.fa-wifi
+{
+    transform: rotate(45deg);
+}
+.icons-top
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+.signin-bottom-links a , .resend-otp a
+{
+    text-decoration: none;
+}
+.signin-bottom-links p
+{
+    font-size: 1vw;
+    margin: 0 0 0 0 !important;
+    color: #3758FF;
+    margin-left: 3vw !important;
+}
+.signin-bottom-links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 4vh;
+    right: 2vh;
+}
+.logo-signin
+{
+    width: 17vh;
+    margin-bottom: 5vh;
+    margin-top: -10vh;
+}
+.form-control::placeholder
+{
+    font-size: 1vw;
+}
+.signin-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-left: 5vw;
+}
+.signin-content h6
+{
+    font-size: 2.5vh;
+    font-weight: bolder;
+    margin-top: 1vh;
+}
+.signin-content label
+{
+    font-size: 2vh;
+    font-weight: bold;
+    margin-top: 2.5vh;
+}
+.signin-content .form-control
+{
+    height: 3vw;
+    width: 22vw;
+}
+.signin-content .btn
+{
+    background-color: #3758FF;
+    color: white;
+    font-size: 1vw;
+    width: 22vw;
+    font-weight: bold;
+}
+.form-inline .form-control
+{
+    width: 2.5vw !important;
+    height: 3vw !important;
+    border-radius: 0 0 0 0 !important;
+    font-size: 2.7vh;
+    border-bottom: 1px solid gray;
+    border-top: 0px solid gray;
+    border-left: 0px solid gray;
+    border-right: 0px solid gray;
+}
+.form-inline
+{
+    width: 22vw;
+    display: flex;
+    justify-content: space-between;
+}
+.resend-otp
+{
+    margin: 2vh 0 !important;
+    color: #3758FF;
+}
+.below-button
+{
+    position: absolute;
+}
+.below-button p
+{
+    font-size: 1vw;
+    color: #707070;
+    text-align: center;
+    width: 22vw;
+    margin: 0.5vw 0;
+}
+.left-image p
+{
+    position: absolute;
+    bottom: 0.6vw;
+    left: 3vw;
+    color: #3758FF;
+    font-size: 1vw;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+  }

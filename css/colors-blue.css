@@ -1,0 +1,80 @@
+.home-headings h2 span
+{
+    color:  #007bff;
+}
+.sign-up-end button:hover
+{
+    box-shadow: 0 0 5px gray;
+}
+.footer-part-2-part-3 .fab:hover
+{
+    color: #007bff;
+    transition: 0.7s;
+}
+.footer-part-1 h6:hover , .nav-icons-top .fas:hover , .nav-profile-top .end-profile-name:hover
+{
+    color: #007bff;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.icon-links-container .col-1 p:hover
+{
+    color: #007bff;
+    transition: 0.7s;
+}
+.footer-services li:hover
+{
+    color: #007bff;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.side-bar .fas:hover , .side-bar .far:hover 
+  {
+    color: #007bff;
+    transition: 0.7s;
+    cursor: pointer;
+  }
+  .signin-bottom-links a p:hover , .resend-otp a:hover , .left-image p:hover 
+  {
+    color: gray;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .icons-top .fab:hover
+  {
+    color: gray;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .proceed-button:hover
+  {
+      box-shadow: 0 3px 4px rgba(0, 123, 255, 0.3);
+      color: white;
+  }
+  .previous-arrow:hover , .all-tasks a:hover , .survey-form-bottom a:hover , .select-button:hover 
+  {
+      color: #007bff !important;
+      transition: 0.5s;
+      cursor: pointer;
+  }
+.connection-button .btn i:hover
+  {
+    color: #0088C4 !important;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .working-button:hover
+  {
+      color: white;
+      box-shadow: 0 5px 7px rgba(0, 137, 196, 0.3);
+      transition: 0.5s;
+      cursor: pointer;
+  }
+  .done-button:hover
+  {
+      color: white;
+      box-shadow: 0 5px 7px rgba(42, 172, 103, 0.3);
+      transition: 0.5s;
+      cursor: pointer;
+  }
+  

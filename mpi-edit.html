@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Product Item Edit</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+        <div class="container-fluid">
+            <div class="row nav-top">
+                <div class="col-6 nav-logo-display">
+                    <i class="menu-icon fa fa-list"></i>
+                    <img class="surf-logo" src="img/surf-logo.svg">
+                    <p class="top-logo-name">5D Solutions LLC</p>
+                </div>
+                <div class="col-3 offset-3 nav-icons">
+                    <i class="fas fa-home"></i>
+                    <i class="fas fa-tasks"></i>
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-bullhorn"></i>
+                    <i class="fas fa-envelope"><span class="notification">2</span></i>
+                    <i class="fas fa-cloud"></i>
+                    <div class="profile-display">
+                        <div class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" id="top-nav-whole">
+                                <img class="profile-picture" src="img/profile-picture-image.jpg" />
+                                <div class="profile-name-dislay">
+                                    <p class="wel">WELCOME</p>
+                                    <p class="profile-name">Appraisal Hub Consulting LLC</p>
+                                </div>
+                                <i class="fas fa-chevron-down ml-4"></i>
+                            </button>
+                            <div class="dropdown-menu " id="top-nav-menu">
+                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Change Password</a>
+                                <a class="dropdown-item" href="#"><i class="far fa-user"></i> Profile</a>
+                                <a class="dropdown-item border-bottom-start" href="#"><i class="far fa-edit"></i> SURF Updates</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-headset"></i> Support</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-tools"></i> Services</a>
+                                <a class="dropdown-item border-bottom-start" href="#"><i class="fas fa-language"></i> Language</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> logout</a>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="whole-body">
+
+        <div class="container-fluid swiper-super-display">
+            <div class="row swiper-display">
+                <div class="col-1 swiper-prev-display">
+                    <div class="swiper-button-prev-custom"><img src="img/slider-prev.svg" alt=""></div>
+                </div>
+                <div class="col-10 swiper-slides-display">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide col-1"><img src="img/Group 372.svg"><p>Company Profile</p></div>
+                          <div class="swiper-slide col-1"><img src="img/Group 374.svg"><p>Product Catalog</p></div>
+                          <div class="swiper-slide col-1"><img src="img/Group 375.svg"><p>Submit Quote</p></div>
+                          <div class="swiper-slide col-1"><img src="img/Group 377.svg"><p>Purchase Order</p></div>
+                          <div class="swiper-slide col-1"><img src="img/Group 379.svg"><p>GRN/Work Confirmations</p></div>
+                        </div>
+                    </div>
+                    <div class="blue-underline"></div>
+                </div>
+                <div class="col-1 swiper-next-display">
+                    <div class="swiper-button-next-custom"><img src="img/slider-next.svg"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row bread-super-display">
+                <div class="col-6 bread-end">
+                    <div class="bread-display">
+                        <div class="bread">
+                            <i class="fas fa-chevron-right"></i>
+                            <p><a href="#">Dashboard</a></p>
+                        </div>
+                    </div>
+                    <div class="bread-display">
+                        <div class="bread">
+                            <i class="fas fa-chevron-right"></i>
+                            <p><a href="#">Request For Quotation</a></p>
+                        </div>
+                    </div>
+                    <div class="bread-display">
+                        <div class="bread">
+                            <i class="fas fa-chevron-right"></i>
+                            <p class="active-page"><a href="#">New Record</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 offset-2 po-end"><h3 class="po-number">Purchase Order #12 - Kinetic</h3></div>
+            </div>
+        </div>
+
+
+        <div class="white-body">
+            <div class="container-fluid">
+                <div class="row tab-super-container">
+                    <div class="col-10">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item main-tab-item">
+                              <a class="nav-link active" data-toggle="tab" href="#supplier">Master Product Item</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#site-address">Site Address</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#bank-and-accounts">Bank and Accounts</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#assigned-products">Assigned Products</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#assigned-rate">Assigned Rate</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#others">Others</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#extra-information">Extra Informatin</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-1 offset-1 dots">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/dots.svg">
+                            </button>
+                            <div class="dropdown-menu" id="three-dots-menu">
+                              <a class="dropdown-item" href="#">Extra Informatin 1</a>
+                              <a class="dropdown-item" href="#">Extra Informatin 2</a>
+                              <a class="dropdown-item" href="#">Extra Informatin 3</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="supplier">
+                        <div class="row" style="justify-content: space-between;">
+                            <div class="col-8">
+                                <div class="row mpi-info-left">
+                                    <div class="col-6 ">
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label>Operating Unit</label>
+                                                    <input class="form-control  " type="text" disabled>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label>Item Code</label>
+                                                    <input class="form-control " type="text" disabled>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <label>Item Description</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                            <div class="col-1" style="align-items: center;">
+                                                <img src="img/mpi-pencil.svg" style="margin-top: 3vw;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label><span>*</span> Type</label>
+                                                    <select class="form-control form-control-sm">
+                                                        <option>Audio</option>
+                                                        <option>Audio</option>
+                                                        <option>Audio</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-pencil.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label>Pack/Size Count</label>
+                                                    <input class="form-control  " type="text">
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-pencil.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="mpi1" class="form-check-input" checked>
+                                                            <label for="mpi1" class="form-check-label">Shippable</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="checkbox" id="mpi2" class="form-check-input" checked>
+                                                            <label for="mpi2" class="form-check-label">Inventory Item</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="checkbox" id="mpi3" class="form-check-input" checked>
+                                                            <label for="mpi3" class="form-check-label">VAT Enable</label>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="mpi4" class="form-check-input" checked>
+                                                            <label for="mpi4" class="form-check-label">Purchaseable</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="checkbox" id="mpi5" class="form-check-input" checked>
+                                                            <label for="mpi5" class="form-check-label">Customer Ordered</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="checkbox" id="mpi6" class="form-check-input">
+                                                            <label for="mpi6" class="form-check-label">Product Privacy</label>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label><span>*</span> Organization</label>
+                                                    <select class="form-control form-control-sm" >
+                                                        <option>Audio</option>
+                                                        <option>Audio</option>
+                                                        <option>Audio</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-pencil.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label><span>*</span> Iten Name</label>
+                                                    <input class="form-control " type="text">
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-pencil.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label><span>*</span>Arabic Item Name</label>
+                                                    <input class="form-control " type="text">
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-pencil.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label><span>*</span>Sub Type</label>
+                                                    <select class="form-control form-control-sm">
+                                                        <option>Audio</option>
+                                                        <option>Audio</option>
+                                                        <option>Audio</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-pencil.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label><span>*</span> Unit of Measurement</label>
+                                                    <select class="form-control form-control-sm">
+                                                        <option>Audio</option>
+                                                        <option>Audio</option>
+                                                        <option>Audio</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-pencil.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label>MRP</label>
+                                                    <input class="form-control " type="text">
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-pencil.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label>Target Level</label>
+                                                    <input class="form-control " type="text">
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-pencil.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label>User Item Type</label>
+                                                    <select class="form-control mpi-edit form-control-sm">
+                                                        <option>Audio</option>
+                                                        <option>Audio</option>
+                                                        <option>Audio</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-save.svg" class="mpi-icon">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-11">
+                                                <div class="form-group">
+                                                    <label>Pack/Size Count</label>
+                                                    <input class="form-control " type="date">
+                                                  </div>
+                                            </div>
+                                            <div class="col-1">
+                                                <img src="img/mpi-pencil.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 mpi-info-right">
+                                <div class="row">
+                                    <div class="col-12 tab-buttons" style="justify-content: flex-end;">
+                                        <button class="btn edit-button">Edit</button>
+                                        <button class="btn share-button ml-3">Share</button>
+                                        <button class="btn cancel-button ml-3">Cancel</button>
+                                    </div>
+                                    <div class="col-6 offset-6 attach-documents">
+                                        <p><i class="fas fa-paperclip"></i> Attach Documents</p>
+                                    </div>
+                                </div>
+                                <div class="row right-mpi-box-all">
+                                    <div class="col-12" style="padding: 0;">
+                                        <div class="mpi-img-display">
+                                            <img src="img/headphone-black.png">
+                                            <i class="far fa-trash-alt mpi-img-del"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 swiper-pagination-mpi"> </div>
+                                    <div class="col-12 mpi-swiper-display">
+                                        <div class="swiper-mpi-prev"><i class="fas fa-chevron-left"></i></div>
+                                        <div class="swiper-mpi-img">
+                                            <div class="swiper-wrapper mpi-img-wrapper">
+                                              <div class="swiper-slide mpi-img-slide col-3"><img src="img/headphone-black.png"></div>
+                                              <div class="swiper-slide mpi-img-slide col-3"><img src="img/headphone-black.png"></div>
+                                              <div class="swiper-slide mpi-img-slide col-3"><img src="img/headphone-black.png"></div>
+                                              <div class="swiper-slide mpi-img-slide col-3"><img src="img/headphone-black.png"></div>
+                                              <div class="swiper-slide mpi-img-slide col-3"><img src="img/headphone-black.png"></div>
+                                              <div class="swiper-slide mpi-img-slide col-3"><img src="img/headphone-black.png"></div>
+                                              <div class="swiper-slide mpi-img-slide col-3"><img src="img/headphone-black.png"></div>
+                                              <div class="swiper-slide mpi-img-slide col-3"><img src="img/headphone-black.png"></div>
+                                              <div class="swiper-slide mpi-img-slide col-3"><img src="img/headphone-black.png"></div>
+                                              <div class="swiper-slide mpi-img-slide col-3"><img src="img/headphone-black.png"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-mpi-next"><i class="fas fa-chevron-right"></i></div>
+                                    </div>
+                                    <div class="col-12 mpi-upload">
+                                        <p class="mpi-drag-drop"><i class="fas fa-plus"></i> Click here to upload or drag and drop</p>
+                                        <p class="can-upload">You can upload upto 10 images</p>
+
+                                        <div class="mpi-prog">
+                                            <p class="mpi-prog-p">Image1.JPG</p>
+                                            <div class="mpi-prog-container">
+                                                <div class="mpi-prog-box">
+                                                    <div class="mpi-prog-con">
+                                                        <div class="mpi-prog-con-inside"></div>
+                                                    </div>
+                                                    <p class="mpi-prog-percent">45%</p>
+                                                </div>
+                                                <div class="mpi-prog-cancel"><i class="fas fa-times"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="mpi-prog">
+                                            <p class="mpi-prog-p">Image1.JPG</p>
+                                            <div class="mpi-prog-container">
+                                                <div class="mpi-prog-box">
+                                                    <div class="mpi-prog-con">
+                                                        <div class="mpi-prog-con-inside"></div>
+                                                    </div>
+                                                    <p class="mpi-prog-percent">45%</p>
+                                                </div>
+                                                <div class="mpi-prog-cancel"><i class="fas fa-times"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="mpi-prog">
+                                            <p class="mpi-prog-p">Image1.JPG</p>
+                                            <div class="mpi-prog-container">
+                                                <div class="mpi-prog-box">
+                                                    <div class="mpi-prog-con">
+                                                        <div class="mpi-prog-con-inside"></div>
+                                                    </div>
+                                                    <p class="mpi-prog-percent">45%</p>
+                                                </div>
+                                                <div class="mpi-prog-cancel"><i class="fas fa-times"></i></div>
+                                            </div>
+                                        </div>
+
+                                        <p class="images-uploaded">7/10 images uploaded</p>
+
+                                    </div>
+
+                                    
+                                </div>
+                                <img src="img/map.svg" style="max-width: 100vw; width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container" id="site-address">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row tab-content-part-1">
+                                    <div class="col-5 tab-content-part-1-1">
+                                        <div class="creation-date">
+                                            <p>CREATION DATE</p>
+                                            <p>25.2.2020</p>
+                                        </div>
+                                        <div class="purchaser">
+                                            <p class="mb-2">PURCHASER</p>
+                                            <p>Jessie Lin</p>
+                                            <p>jessie@5dsol.com</p>
+                                        </div>
+                                        <div class="supplier">
+                                            <p>SUPPLIER</p>
+                                            <p>Amazon</p>
+                                            <p>amazonsupplieremail@gmail.com</p>
+                                            <p>Prepayment</p>
+                                        </div>
+                                        <div class="order-currency">
+                                            <p>ORDER CURRENCY</p>
+                                            <p>AED</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 tab-content-part-1-2">
+                                        <div class="status-approved">
+                                            <p>STATUS</p>
+                                            <p>Approved</p>
+                                        </div>
+                                        <div class="location">
+                                            <p>LOCATION/ADDRESS</p>
+                                            <p>JASAD</p>
+                                            <p>Lorimer Street 452, Miami, FL</p>
+                                            <p>USA</p>
+                                        </div>
+                                        <div class="legal-entity">
+                                            <p>LEGAL ENTITY</p>
+                                            <p class="mb-2">JASAD</p>
+                                            <p>BUDGET</p>
+                                            <p>Included in Budget - " <span>Office supplies 2020</span> "</p>
+                                            <p>Available amount : 4376.00 AED</p>
+                                        </div>
+                                        <div class="taxes">
+                                            <p>TAXES</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 tab-content-part-1-3">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p>SUBTOTAL AED</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TAX SUM</p>
+                                                <p class="price-display"><span class="price-bold">0.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TOTAL</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-8 offset-4 tab-buttons">
+                                        <button class="btn edit-button">Edit</button>
+                                        <button class="btn share-button">Share</button>
+                                        <button class="btn approval-button">Submit for approval</button>
+                                        <button class="btn cancel-button">Cancel</button>
+                                    </div>
+                                    <div class="col-4 offset-8 attach-documents">
+                                        <p><i class="fas fa-paperclip"></i> Attach Documents</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8 offset-4 map">
+                                        <img src="img/map.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container" id="bank-and-accounts">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row tab-content-part-1">
+                                    <div class="col-5 tab-content-part-1-1">
+                                        <div class="creation-date">
+                                            <p>CREATION DATE</p>
+                                            <p>25.2.2020</p>
+                                        </div>
+                                        <div class="purchaser">
+                                            <p class="mb-2">PURCHASER</p>
+                                            <p>Jessie Lin</p>
+                                            <p>jessie@5dsol.com</p>
+                                        </div>
+                                        <div class="supplier">
+                                            <p>SUPPLIER</p>
+                                            <p>Amazon</p>
+                                            <p>amazonsupplieremail@gmail.com</p>
+                                            <p>Prepayment</p>
+                                        </div>
+                                        <div class="order-currency">
+                                            <p>ORDER CURRENCY</p>
+                                            <p>AED</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 tab-content-part-1-2">
+                                        <div class="status-approved">
+                                            <p>STATUS</p>
+                                            <p>Approved</p>
+                                        </div>
+                                        <div class="location">
+                                            <p>LOCATION/ADDRESS</p>
+                                            <p>JASAD</p>
+                                            <p>Lorimer Street 452, Miami, FL</p>
+                                            <p>USA</p>
+                                        </div>
+                                        <div class="legal-entity">
+                                            <p>LEGAL ENTITY</p>
+                                            <p class="mb-2">JASAD</p>
+                                            <p>BUDGET</p>
+                                            <p>Included in Budget - " <span>Office supplies 2020</span> "</p>
+                                            <p>Available amount : 4376.00 AED</p>
+                                        </div>
+                                        <div class="taxes">
+                                            <p>TAXES</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 tab-content-part-1-3">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p>SUBTOTAL AED</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TAX SUM</p>
+                                                <p class="price-display"><span class="price-bold">0.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TOTAL</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-8 offset-4 tab-buttons">
+                                        <button class="btn edit-button">Edit</button>
+                                        <button class="btn share-button">Share</button>
+                                        <button class="btn approval-button">Submit for approval</button>
+                                        <button class="btn cancel-button">Cancel</button>
+                                    </div>
+                                    <div class="col-4 offset-8 attach-documents">
+                                        <p><i class="fas fa-paperclip"></i> Attach Documents</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8 offset-4 map">
+                                        <img src="img/map.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container" id="assigned-products">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row tab-content-part-1">
+                                    <div class="col-5 tab-content-part-1-1">
+                                        <div class="creation-date">
+                                            <p>CREATION DATE</p>
+                                            <p>25.2.2020</p>
+                                        </div>
+                                        <div class="purchaser">
+                                            <p class="mb-2">PURCHASER</p>
+                                            <p>Jessie Lin</p>
+                                            <p>jessie@5dsol.com</p>
+                                        </div>
+                                        <div class="supplier">
+                                            <p>SUPPLIER</p>
+                                            <p>Amazon</p>
+                                            <p>amazonsupplieremail@gmail.com</p>
+                                            <p>Prepayment</p>
+                                        </div>
+                                        <div class="order-currency">
+                                            <p>ORDER CURRENCY</p>
+                                            <p>AED</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 tab-content-part-1-2">
+                                        <div class="status-approved">
+                                            <p>STATUS</p>
+                                            <p>Approved</p>
+                                        </div>
+                                        <div class="location">
+                                            <p>LOCATION/ADDRESS</p>
+                                            <p>JASAD</p>
+                                            <p>Lorimer Street 452, Miami, FL</p>
+                                            <p>USA</p>
+                                        </div>
+                                        <div class="legal-entity">
+                                            <p>LEGAL ENTITY</p>
+                                            <p class="mb-2">JASAD</p>
+                                            <p>BUDGET</p>
+                                            <p>Included in Budget - " <span>Office supplies 2020</span> "</p>
+                                            <p>Available amount : 4376.00 AED</p>
+                                        </div>
+                                        <div class="taxes">
+                                            <p>TAXES</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 tab-content-part-1-3">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p>SUBTOTAL AED</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TAX SUM</p>
+                                                <p class="price-display"><span class="price-bold">0.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TOTAL</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-8 offset-4 tab-buttons">
+                                        <button class="btn edit-button">Edit</button>
+                                        <button class="btn share-button">Share</button>
+                                        <button class="btn approval-button">Submit for approval</button>
+                                        <button class="btn cancel-button">Cancel</button>
+                                    </div>
+                                    <div class="col-4 offset-8 attach-documents">
+                                        <p><i class="fas fa-paperclip"></i> Attach Documents</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8 offset-4 map">
+                                        <img src="img/map.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container" id="assigned-rate">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row tab-content-part-1">
+                                    <div class="col-5 tab-content-part-1-1">
+                                        <div class="creation-date">
+                                            <p>CREATION DATE</p>
+                                            <p>25.2.2020</p>
+                                        </div>
+                                        <div class="purchaser">
+                                            <p class="mb-2">PURCHASER</p>
+                                            <p>Jessie Lin</p>
+                                            <p>jessie@5dsol.com</p>
+                                        </div>
+                                        <div class="supplier">
+                                            <p>SUPPLIER</p>
+                                            <p>Amazon</p>
+                                            <p>amazonsupplieremail@gmail.com</p>
+                                            <p>Prepayment</p>
+                                        </div>
+                                        <div class="order-currency">
+                                            <p>ORDER CURRENCY</p>
+                                            <p>AED</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 tab-content-part-1-2">
+                                        <div class="status-approved">
+                                            <p>STATUS</p>
+                                            <p>Approved</p>
+                                        </div>
+                                        <div class="location">
+                                            <p>LOCATION/ADDRESS</p>
+                                            <p>JASAD</p>
+                                            <p>Lorimer Street 452, Miami, FL</p>
+                                            <p>USA</p>
+                                        </div>
+                                        <div class="legal-entity">
+                                            <p>LEGAL ENTITY</p>
+                                            <p class="mb-2">JASAD</p>
+                                            <p>BUDGET</p>
+                                            <p>Included in Budget - " <span>Office supplies 2020</span> "</p>
+                                            <p>Available amount : 4376.00 AED</p>
+                                        </div>
+                                        <div class="taxes">
+                                            <p>TAXES</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 tab-content-part-1-3">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p>SUBTOTAL AED</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TAX SUM</p>
+                                                <p class="price-display"><span class="price-bold">0.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TOTAL</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-8 offset-4 tab-buttons">
+                                        <button class="btn edit-button">Edit</button>
+                                        <button class="btn share-button">Share</button>
+                                        <button class="btn approval-button">Submit for approval</button>
+                                        <button class="btn cancel-button">Cancel</button>
+                                    </div>
+                                    <div class="col-4 offset-8 attach-documents">
+                                        <p><i class="fas fa-paperclip"></i> Attach Documents</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8 offset-4 map">
+                                        <img src="img/map.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container" id="others">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row tab-content-part-1">
+                                    <div class="col-5 tab-content-part-1-1">
+                                        <div class="creation-date">
+                                            <p>CREATION DATE</p>
+                                            <p>25.2.2020</p>
+                                        </div>
+                                        <div class="purchaser">
+                                            <p class="mb-2">PURCHASER</p>
+                                            <p>Jessie Lin</p>
+                                            <p>jessie@5dsol.com</p>
+                                        </div>
+                                        <div class="supplier">
+                                            <p>SUPPLIER</p>
+                                            <p>Amazon</p>
+                                            <p>amazonsupplieremail@gmail.com</p>
+                                            <p>Prepayment</p>
+                                        </div>
+                                        <div class="order-currency">
+                                            <p>ORDER CURRENCY</p>
+                                            <p>AED</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 tab-content-part-1-2">
+                                        <div class="status-approved">
+                                            <p>STATUS</p>
+                                            <p>Approved</p>
+                                        </div>
+                                        <div class="location">
+                                            <p>LOCATION/ADDRESS</p>
+                                            <p>JASAD</p>
+                                            <p>Lorimer Street 452, Miami, FL</p>
+                                            <p>USA</p>
+                                        </div>
+                                        <div class="legal-entity">
+                                            <p>LEGAL ENTITY</p>
+                                            <p class="mb-2">JASAD</p>
+                                            <p>BUDGET</p>
+                                            <p>Included in Budget - " <span>Office supplies 2020</span> "</p>
+                                            <p>Available amount : 4376.00 AED</p>
+                                        </div>
+                                        <div class="taxes">
+                                            <p>TAXES</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 tab-content-part-1-3">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p>SUBTOTAL AED</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TAX SUM</p>
+                                                <p class="price-display"><span class="price-bold">0.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TOTAL</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-8 offset-4 tab-buttons">
+                                        <button class="btn edit-button">Edit</button>
+                                        <button class="btn share-button">Share</button>
+                                        <button class="btn approval-button">Submit for approval</button>
+                                        <button class="btn cancel-button">Cancel</button>
+                                    </div>
+                                    <div class="col-4 offset-8 attach-documents">
+                                        <p><i class="fas fa-paperclip"></i> Attach Documents</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8 offset-4 map">
+                                        <img src="img/map.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container" id="extra-information">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row tab-content-part-1">
+                                    <div class="col-5 tab-content-part-1-1">
+                                        <div class="creation-date">
+                                            <p>CREATION DATE</p>
+                                            <p>25.2.2020</p>
+                                        </div>
+                                        <div class="purchaser">
+                                            <p class="mb-2">PURCHASER</p>
+                                            <p>Jessie Lin</p>
+                                            <p>jessie@5dsol.com</p>
+                                        </div>
+                                        <div class="supplier">
+                                            <p>SUPPLIER</p>
+                                            <p>Amazon</p>
+                                            <p>amazonsupplieremail@gmail.com</p>
+                                            <p>Prepayment</p>
+                                        </div>
+                                        <div class="order-currency">
+                                            <p>ORDER CURRENCY</p>
+                                            <p>AED</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 tab-content-part-1-2">
+                                        <div class="status-approved">
+                                            <p>STATUS</p>
+                                            <p>Approved</p>
+                                        </div>
+                                        <div class="location">
+                                            <p>LOCATION/ADDRESS</p>
+                                            <p>JASAD</p>
+                                            <p>Lorimer Street 452, Miami, FL</p>
+                                            <p>USA</p>
+                                        </div>
+                                        <div class="legal-entity">
+                                            <p>LEGAL ENTITY</p>
+                                            <p class="mb-2">JASAD</p>
+                                            <p>BUDGET</p>
+                                            <p>Included in Budget - " <span>Office supplies 2020</span> "</p>
+                                            <p>Available amount : 4376.00 AED</p>
+                                        </div>
+                                        <div class="taxes">
+                                            <p>TAXES</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 tab-content-part-1-3">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p>SUBTOTAL AED</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TAX SUM</p>
+                                                <p class="price-display"><span class="price-bold">0.00</span> AED</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>TOTAL</p>
+                                                <p class="price-display"><span class="price-bold">186.00</span> AED</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-8 offset-4 tab-buttons">
+                                        <button class="btn edit-button">Edit</button>
+                                        <button class="btn share-button">Share</button>
+                                        <button class="btn approval-button">Submit for approval</button>
+                                        <button class="btn cancel-button">Cancel</button>
+                                    </div>
+                                    <div class="col-4 offset-8 attach-documents">
+                                        <p><i class="fas fa-paperclip"></i> Attach Documents</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8 offset-4 map">
+                                        <img src="img/map.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-4 offset-4 footer-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="col-12">
+                    <p>5D Solutions  |  5D Solutions Terms of use for SURF ERP Portal  |  5D Solutions Privacy Policy</p>
+                </div>
+                <div class="col-12">
+                    <p>5D SOLUTIONS © 2020</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/javas.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-mpi-img', {
+          navigation: {
+            nextEl: '.swiper-mpi-next',
+            prevEl: '.swiper-mpi-prev',
+          },
+        pagination: {
+        el: '.swiper-pagination-mpi',
+        dynamicBullets: true,
+      },
+    slidesPerView: 'auto',
+        });
+
+        
+      </script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    navigation: {
+        nextEl: '.swiper-button-next-custom',
+        prevEl: '.swiper-button-prev-custom',
+      },
+    loop:true,
+    spaceBetween: 10
+  });
+  </script>
+  
+  <script>
+    $(".col-1.search").click(function(){
+          $(".search-bar-end").slideToggle(1000);
+          $(".col-1.search i").toggleClass("fa-chevron-up")
+          $(".col-1.search i").toggleClass("fa-chevron-down")
+      });
+      $(".search").click(function () {
+        $(".search-bar-end").slideToggle(1000);
+        $(".search i").toggleClass("fa-chevron-up");
+        $(".search i").toggleClass("fa-chevron-down");
+      });
+</script>
+</body>
+</html>
