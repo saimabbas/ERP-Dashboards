@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase Order</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row nav-top">
+        <div class="col-6 nav-logo-display">
+          <i class="menu-icon fa fa-list"></i>
+          <img class="surf-logo" src="img/surf-logo.svg" />
+          <p class="top-logo-name">5D Solutions LLC</p>
+        </div>
+        <div class="col-3 offset-3 nav-icons">
+          <i class="fas fa-home"></i>
+          <i class="fas fa-tasks"></i>
+          <i class="fas fa-bell"></i>
+          <i class="fas fa-bullhorn"></i>
+          <i class="fas fa-envelope"><span class="notification">2</span></i>
+          <i class="fas fa-cloud"></i>
+          <div class="profile-display">
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-toggle="dropdown"
+                id="top-nav-whole"
+              >
+                <img
+                  class="profile-picture"
+                  src="img/profile-picture-image.jpg"
+                />
+                <div class="profile-name-dislay">
+                  <p class="wel">WELCOME</p>
+                  <p class="profile-name">Appraisal Hub Consulting LLC</p>
+                </div>
+                <i class="fas fa-chevron-down ml-4"></i>
+              </button>
+              <div class="dropdown-menu" id="top-nav-menu">
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-lock"></i> Change Password</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="far fa-user"></i> Profile</a
+                >
+                <a class="dropdown-item border-bottom-start" href="#"
+                  ><i class="far fa-edit"></i> SURF Updates</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-headset"></i> Support</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-tools"></i> Services</a
+                >
+                <a class="dropdown-item border-bottom-start" href="#"
+                  ><i class="fas fa-language"></i> Language</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="fas fa-sign-out-alt"></i> logout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="whole-body">
+      <div class="container-fluid swiper-super-display">
+        <div class="row swiper-display">
+          <div class="col-1 swiper-prev-display">
+            <div class="swiper-button-prev-custom">
+              <img src="img/slider-prev.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-10 swiper-slides-display">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 372.svg" />
+                  <p>Company Profile</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 374.svg" />
+                  <p>Product Catalog</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 375.svg" />
+                  <p>Submit Quote</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 377.svg" />
+                  <p>Purchase Order</p>
+                </div>
+                <div class="swiper-slide col-1">
+                  <img src="img/Group 379.svg" />
+                  <p>GRN/Work Confirmations</p>
+                </div>
+              </div>
+            </div>
+            <div class="blue-underline"></div>
+          </div>
+          <div class="col-1 swiper-next-display">
+            <div class="swiper-button-next-custom">
+              <img src="img/slider-next.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row bread-super-display">
+          <div class="col-6 bread-end">
+            <div class="bread-display">
+              <div class="bread">
+                <i class="fas fa-chevron-right"></i>
+                <p><a href="#">Dashboard</a></p>
+              </div>
+            </div>
+            <div class="bread-display">
+              <div class="bread">
+                <i class="fas fa-chevron-right"></i>
+                <p><a href="#">Request For Quotation</a></p>
+              </div>
+            </div>
+            <div class="bread-display">
+              <div class="bread">
+                <i class="fas fa-chevron-right"></i>
+                <p class="active-page"><a href="#">New Record</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 offset-2 po-end">
+            <h3 class="po-number">Purchase Order #12 - Kinetic</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12"></div>
+        </div>
+      </div>
+
+      <div class="white-body">
+        <div class="container-fluid">
+          <div class="row tab-super-container">
+            <div class="col-10">
+              <ul class="nav nav-tabs">
+                <li class="nav-item main-tab-item">
+                  <a class="nav-link active" data-toggle="tab" href="#services"
+                    >My Services</a
+                  >
+                </li>
+                <li class="nav-item main-tab-item">
+                  <a class="nav-link" data-toggle="tab" href="#invoices"
+                    >My Invoices</a
+                  >
+                </li>
+                <li class="nav-item main-tab-item">
+                  <a class="nav-link" data-toggle="tab" href="#settings"
+                    >Settings</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-1 offset-1 dots">
+              <div class="dropdown">
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  <img src="img/dots.svg" />
+                </button>
+                <div class="dropdown-menu" id="three-dots-menu">
+                  <a class="dropdown-item" href="#">Extra Informatin 1</a>
+                  <a class="dropdown-item" href="#">Extra Informatin 2</a>
+                  <a class="dropdown-item" href="#">Extra Informatin 3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active container p-0" id="services">
+              <div class="services-mut-table">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="mut-table-left">Company Name</td>
+                      <td class="mut-table-right">
+                        <span class="mut-right-special-td"
+                          >5D Solutions Ledger</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="mut-table-left">Licence Number</td>
+                      <td class="mut-table-right">3575</td>
+                    </tr>
+                    <tr>
+                      <td class="mut-table-left">Primary Contact Person</td>
+                      <td class="mut-table-right">
+                        Al Wathba National Insurance Co. P.S.C.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="mut-table-left">5D SURf Suite Person</td>
+                      <td class="mut-table-right"></td>
+                    </tr>
+                    <tr>
+                      <td class="mut-table-left">Agreement Signed Date</td>
+                      <td class="mut-table-right">2020-07-07</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="mut-table-left">Company Name</td>
+                      <td class="mut-table-right">5D Solutions Ledger</td>
+                    </tr>
+                    <tr>
+                      <td class="mut-table-left">Licence Number</td>
+                      <td class="mut-table-right">3575</td>
+                    </tr>
+                    <tr>
+                      <td class="mut-table-left">Primary Contact Person</td>
+                      <td class="mut-table-right">
+                        Al Wathba National Insurance Co. P.S.C.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="mut-table-left">5D SURf Suite Person</td>
+                      <td class="mut-table-right"></td>
+                    </tr>
+                    <tr>
+                      <td class="mut-table-left">Agreement Signed Date</td>
+                      <td class="mut-table-right">2020-07-07</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+			  <table class="table mut-ser-table-extra" style="width: 100%;">
+				<thead class="table-head-s">
+					<tr>
+						<th>Type of Service</th>
+						<th>Service Date</th>
+						<th>Service Detail</th>
+						<th>Expiry Date</th>
+						<th>Business Owner(s)</th>
+						<th>5D Resources</th>
+						<th>Status</th>
+						<!-- <th style="background-color: #F7F8F9; color: #707070;" class="search">Search </th> -->
+						<th style="background-color: #F7F8F9; color: #707070; text-align: center;"
+							class="search">Search <i class="fas fa-chevron-up ml-2"></i></th>
+					</tr>
+	
+				</thead>
+				<tbody>
+					<tr class="table-row-custom">
+						<td class="search-bar search-bar-end" colspan="12">
+							<input class="form-control search-bar-end" type="text"
+								placeholder=" Search by person, operation or date" />
+						</td>
+					</tr>
+					<tr class="table-bordered">
+						<td>Takaful Emarat Insurance P.S.C</td>
+						<td>Sept 20, 2020</td>
+						<td>1,050.00 AED</td>
+						<td>1,050.00 AED</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+					</tr>
+					<tr class="table-bordered">
+						<td>Takaful Emarat Insurance P.S.C</td>
+						<td>Sept 20, 2020</td>
+						<td>1,050.00 AED</td>
+						<td>1,050.00 AED</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+					</tr>
+					<tr class="table-bordered">
+						<td>Takaful Emarat Insurance P.S.C</td>
+						<td>Sept 20, 2020</td>
+						<td>1,050.00 AED</td>
+						<td>1,050.00 AED</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+					</tr>
+					<tr class="table-bordered">
+						<td>Takaful Emarat Insurance P.S.C</td>
+						<td>Sept 20, 2020</td>
+						<td>1,050.00 AED</td>
+						<td>1,050.00 AED</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+						<td>Initiated</td>
+					</tr>
+				</tbody>
+			</table>
+            </div>
+            <div class="tab-pane fade container p-0" id="invoices">
+              <div class="mut-invoices-box">
+				  <h1>Customer Invoice(s)</h1>
+				  <div class="mut-b-container">
+					  <div class="mutb-box-1">
+						  <div class="mutb-tag">
+							  <div>5D Solutions LLC Bank Information</div>
+							  <!-- <img src="img/mutbtag.svg" alt=""> -->
+						  </div>
+						  <div class="mutb-text-line-box">
+							  <h1>ACCOUNT NAME:</h1>
+							  <p>5D Solutions</p>
+						  </div>
+						  <div class="mutb-text-line-box">
+							  <h1>BANK NAME:</h1>
+							  <p>The National Bank of RAS AL KHAIMAH (P.S.C)</p>
+						  </div>
+						  <div class="mutb-text-line-box">
+							  <h1>BRANCH:</h1>
+							  <p>EMMAR BUSINESS PARK, DUBAI, UAE</p>
+						  </div>
+						  <div class="mutb-text-line-box">
+							  <h1>IBAN:</h1>
+							  <p>AE92 0400 0003 2255 6946 001</p>
+						  </div>
+					  </div>
+					  <div class="mutb-box-2">
+						  <h1>Total Due Amount:</h1>
+						  <h2>AED 3,342.00</h2>
+						  <div>
+							If your require any further information, feel free to contact us on info@5derp.com or your Account Manager
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+			  <div class="ser-table-div">
+				<table class="table" style="width: 100%">
+				  <thead class="table-head-s">
+					<tr>
+					  <th>Invoice</th>
+					  <th>Invoice Date</th>
+					  <th>Due Date</th>
+					  <th>Total Amount</th>
+					  <th>Paid Amount</th>
+					  <th>Status</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr class="table-bordered">
+					  <td>Debit Note</td>
+					  <td>Debit Note</td>
+					  <td>Sept 20, 2020</td>
+					  <td>AED 870</td>
+					  <td>AED 870</td>
+					  <td class="mut-active-invoice">Active</td>
+					</tr>
+					<tr class="table-bordered">
+					  <td>Debit Note</td>
+					  <td>Debit Note</td>
+					  <td>Sept 20, 2020</td>
+					  <td>AED 870</td>
+					  <td>AED 870</td>
+					  <td class="mut-inactive-invoice">Inactive</td>
+					</tr>
+					<tr class="table-bordered">
+					  <td>Debit Note</td>
+					  <td>Debit Note</td>
+					  <td>Sept 20, 2020</td>
+					  <td>AED 870</td>
+					  <td>AED 870</td>
+					  <td class="mut-paid-invoice">Paid</td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+            </div>
+			<div class="tab-pane fade container p-0" id="settings">
+				<div class="mut-settings-box">
+					<div class="mut-s-main-container">
+						<div class="mut-s-box-1">
+							<h1 class="muts-3-head">Company Logo</h1>
+							<div>
+								<img class="muts-img" src="img/biofoot.png" alt="">
+								<img class="mut-del-icon" src="img/deleteiconmut.svg" alt="">
+                        		<img class="mut-pen-icon" src="img/mutpencil.svg" alt="">
+							</div>
+						</div>
+						<div class="mut-s-box-2">
+							<h1 class="muts-3-head">Homepage Background Image</h1>
+							<div>
+								<div class="muts-pause-cancel">
+									<img src="img/mutspause.svg" alt="">
+									<img src="img/mutscancel.svg" alt="">
+								</div>
+								<h2>Uploading</h2>
+								<h3>69%  .  12 Seconds remaining</h3>
+								<div class="muts-outer-bar"><div class="muts-inner-bar"></div></div>
+							</div>
+						</div>
+						<div class="mut-s-box-3">
+							<h1 class="muts-3-head">Facewall Cover Image</h1>
+							<div>
+								<div class="muts-main-text-box">
+									<h3>Drop your files here</h3>
+									<h3>or <span>browse</span></h3>
+								</div>
+								<h6>Should be ~ 1000x2000 px</h6>
+							</div>
+						</div>
+					</div>
+					<div class="muts-3-2-container">
+						<div class="muts-3-box">
+							<h1 class="muts-3-head">Header Background Colour</h1>
+							<div class="must-selector">
+								<div style="background-color: lightblue;"></div>
+								<i class="fas fa-caret-down"></i>
+							</div>
+							<div class="muts-icon-selector">
+								<input type="checkbox" name="" id="">
+								<span><i class="fas fa-print"></i></span>
+								<p>Show Print Icon</p>
+							</div>
+							<div class="muts-icon-selector">
+								<input type="checkbox" name="" id="">
+								<span><i class="far fa-heart"></i></span>
+								<p>Show Favourite Icon</p>
+							</div>
+							<div class="muts-icon-selector">
+								<input type="checkbox" name="" id="">
+								<span><i class="fas fa-bullhorn"></i></span>
+								<p>Show Announcement Icon</p>
+							</div>
+						</div>
+						<div class="muts-3-box">
+							<h1 class="muts-3-head">Header Font Color</h1>
+							<div class="must-selector">
+								<div style="background-color: lightgreen;"></div>
+								<i class="fas fa-caret-down"></i>
+							</div>
+							<div class="muts-icon-selector">
+								<input type="checkbox" name="" id="">
+								<span><i class="fas fa-print"></i></span>
+								<p>Show Task Manager Icon</p>
+							</div>
+							<div class="muts-icon-selector">
+								<input type="checkbox" name="" id="">
+								<span><i class="far fa-heart"></i></span>
+								<p>Show Chatting Icon</p>
+							</div>
+							<div class="muts-icon-selector">
+								<input type="checkbox" name="" id="">
+								<span><i class="fas fa-bullhorn"></i></span>
+								<p>Show Settings Icon</p>
+							</div>
+						</div>
+						<div class="muts-3-box">
+							<h1 class="muts-3-head">Header Font Family</h1>
+							<div class="must-selector">
+								<select>
+									<option>Sans Serif</option>
+									<option>Sans Serif</option>
+									<option>Sans Serif</option>
+									<option>Sans Serif</option>
+								</select>
+								<i class="fas fa-caret-down"></i>
+							</div>
+							<div class="muts-icon-selector">
+								<input type="checkbox" name="" id="">
+								<span><i class="fas fa-print"></i></span>
+								<p>Show Notification Icon</p>
+							</div>
+							<div class="muts-icon-selector">
+								<input type="checkbox" name="" id="">
+								<span><i class="far fa-heart"></i></span>
+								<p>Show Home Page Recent News</p>
+							</div>
+							<div class="muts-icon-selector">
+								<input type="checkbox" name="" id="">
+								<span><i class="fas fa-bullhorn"></i></span>
+								<p>Show Home Page HR Announcements</p>
+							</div>
+						</div>
+					</div>
+					<div class="mut-save-btn">
+						<button class="btn">SAVE</button>
+					</div>
+				</div>
+			</div>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="container-fluid">
+        <div class="row footer">
+          <div class="col-4 offset-4 footer-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div class="col-12">
+            <p>
+              5D Solutions | 5D Solutions Terms of use for SURF ERP Portal | 5D
+              Solutions Privacy Policy
+            </p>
+          </div>
+          <div class="col-12">
+            <p>5D SOLUTIONS © 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/javas.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-custom",
+        },
+        loop: true,
+        spaceBetween: 10,
+      });
+    </script>
+    <script>
+      $(".hold-1 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-1 .yes").css("display", "flex");
+      });
+      $(".hold-1 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-1 .no").css("display", "flex");
+      });
+
+      $(".hold-2 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-2 .yes").css("display", "flex");
+      });
+      $(".hold-2 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-2 .no").css("display", "flex");
+      });
+
+      $(".hold-3 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-3 .yes").css("display", "flex");
+      });
+      $(".hold-3 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-3 .no").css("display", "flex");
+      });
+
+      $(".hold-4 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-4 .yes").css("display", "flex");
+      });
+      $(".hold-4 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-4 .no").css("display", "flex");
+      });
+
+      $(".hold-5 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-5 .yes").css("display", "flex");
+      });
+      $(".hold-5 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-5 .no").css("display", "flex");
+      });
+
+      $(".hold-6 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-6 .yes").css("display", "flex");
+      });
+      $(".hold-6 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-6 .no").css("display", "flex");
+      });
+
+      $(".hold-7 .no").click(function () {
+        $(this).css("display", "none");
+        $(".hold-7 .yes").css("display", "flex");
+      });
+      $(".hold-7 .yes").click(function () {
+        $(this).css("display", "none");
+        $(".hold-7 .no").css("display", "flex");
+      });
+    </script>
+    <script>
+      $(".col-1.search").click(function () {
+        $(".search-bar-end").slideToggle(1000);
+        $(".col-1.search i").toggleClass("fa-chevron-up");
+        $(".col-1.search i").toggleClass("fa-chevron-down");
+      });
+      $(".search").click(function () {
+        $(".search-bar-end").slideToggle(1000);
+        $(".search i").toggleClass("fa-chevron-up");
+        $(".search i").toggleClass("fa-chevron-down");
+      });
+    </script>
+    <script>
+      $("tbody tr td input.disable-oh")
+        .parent()
+        .css("background-color", "#F7F8F9");
+    </script>
+  </body>
+</html>
